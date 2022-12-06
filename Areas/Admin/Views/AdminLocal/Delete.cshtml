@@ -1,0 +1,48 @@
+﻿@model OrionTM_Web.Models.Local
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Locais > Excluir</h2>
+
+
+<div class="col-md-10">
+<table class="table">
+    <tr>
+        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+                <label asp-for="Codigo" class="control-label"></label>
+                <input asp-for="Codigo" class="form-control" readonly />
+                <span asp-validation-for="Codigo" class="text-danger"></span>
+            </div>
+        </th>
+
+
+        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+             <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" readonly />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </th>
+    </tr>
+
+</table>
+</div>
+
+<h4 class="modal-title">Atenção!</h4>
+<div class="modal-body">
+    A exclusão deste LOCAL acarretará ne esclusão dos TERMINAIS relacionados a este LOCAL
+    <br />
+    Tem certeza que deseja excluir o LOCAL:  <strong>@Html.DisplayFor(model => model.Nome) </strong>?
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <input class="btn btn-primary btn-sm btn-danger" type="submit" value="Excluir" />
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+    </div>
+}
+    

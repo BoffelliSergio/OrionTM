@@ -1,0 +1,52 @@
+﻿@model OrionTM_Web.Models.Configuracao
+
+@{
+    ViewData["Title"] = "Configurações";
+}
+
+<h2>Configurações > Excluir</h2>
+
+
+<hr />
+
+
+<div class="col-md-6">
+
+    <table class="table">
+        <tr>
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                    <label asp-for="Campo" class="control-label"></label>:
+                    <input asp-for="Campo" class="form-control" readonly />
+                    <span asp-validation-for="Campo" class="text-danger"></span>
+                </div>
+            </th>
+
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                    <label asp-for="Valor" class="control-label"></label>:
+                    <input asp-for="Valor" class="form-control" readonly />
+                    <span asp-validation-for="Valor" class="text-danger"></span>
+                </div>
+            </th>
+        </tr>
+    </table>
+  
+
+  
+</div>
+
+<h4 class="modal-title">Atenção!</h4>
+<div class="modal-body">
+
+    Tem certeza que deseja excluir a CONFIGURAÇÂO: <strong>@Html.DisplayFor(model => model.Campo) </strong>?
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <input class="btn btn-primary btn-sm btn-danger" type="submit" value="Excluir" />
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+    </div>
+}
+

@@ -1,0 +1,47 @@
+﻿@model OrionTM_Web.Models.Link
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Links > Excluir</h2>
+
+<hr />
+<div class="col-md-4">
+
+    <table class="table">
+        <tr>
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label"></label>:
+                    <input asp-for="Nome" class="form-control" readonly />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+            </th>
+
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                    <label asp-for="Capacidade" class="control-label"></label>:
+                    <input asp-for="Capacidade" class="form-control" readonly />
+                    <span asp-validation-for="Capacidade" class="text-danger"></span>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+  </div>
+
+<h4 class="modal-title">Atenção!</h4>
+<div class="modal-body">
+    A exclusão deste LINK acarretará ne esclusão de LOCAIS e TERMINAIS relacionados a este LINK
+    <br />
+    Tem certeza que deseja excluir o LINK: <strong>@Html.DisplayFor(model => model.Nome) </strong>?
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div >
+        <input class="btn btn-primary btn-sm btn-danger" type="submit" value="Excluir" />
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+    </div>
+}

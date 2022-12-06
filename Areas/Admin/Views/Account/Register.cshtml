@@ -1,0 +1,64 @@
+﻿@model RegisterViewModel
+
+<h4>Registrar usuário</h4>
+
+<form asp-controller="Account" asp-action="Register" method="post">
+    <hr />
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <table class="table">
+    <tr >
+
+        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                  
+                <div class="form-group">
+                    <label asp-for="UserName"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PhoneNumber"></label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+        </th>
+
+        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                                   
+
+                <div class="form-group">
+                    <label asp-for="PasswordConf"></label>
+                    <input asp-for="PasswordConf" class="form-control" />
+                    <span asp-validation-for="PasswordConf" class="text-danger"></span>
+                </div>
+
+                <br />
+
+                <div class="form-group">
+                    <label>Administrador?</label>
+                    <input type="checkbox" asp-for="IsAdm"  />
+                    <span asp-validation-for="IsAdm" class="text-danger"></span>
+                </div>
+
+                <br />
+                <div class="form-gorup">
+                    <input type="submit" class="btn btn-success" value="Registar" />
+                </div>
+        </th>
+        
+     </tr>
+    </table>
+</form>

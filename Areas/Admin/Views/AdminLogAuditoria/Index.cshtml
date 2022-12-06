@@ -1,0 +1,81 @@
+﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.LogAuditoria>
+
+
+@{    ViewData["Title"] = "Auditoria";}
+
+
+<form method="get" class="form-inline">
+
+    <div>
+
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                 <h3>Auditoria</h3>
+             </dt>
+      
+            <dt class="col-sm-2">
+                <input name="filter" class="form-control" placeholder="Modulo" value="@Model.RouteValue["filter"]" />
+            </dt>
+
+            <dt class="col-sm-1">
+                <button type="submit" class="btn btn-info ">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                </button>
+             </dt>
+            <dt class="col-sm-2">
+                <h4>Total: @Model.TotalRecordCount</h4>
+             </dt>
+        </dl>
+    </div>
+
+</form>
+
+<hr />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Modulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Detalhe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    @Html.DisplayFor(modelItem => item.Modulo)
+                </td>
+                <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    @Html.DisplayFor(modelItem => item.Detalhe)
+                </td>
+
+                <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    @Html.DisplayFor(modelItem => item.Data)
+                </td>
+                <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    @Html.DisplayFor(modelItem => item.Usuario)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <vc:pager paging-list="@Model"></vc:pager>
+</div>

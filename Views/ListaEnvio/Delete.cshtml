@@ -1,0 +1,48 @@
+﻿@model OrionTM_Web.Models.ListaEnvio
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Lista de Envio > Excluir</h2>
+
+<hr />
+<div class="col-md-4">
+
+    <table class="table">
+        <tr>
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label"></label>:
+                    <input asp-for="Nome" class="form-control" readonly />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+            </th>
+
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                    <label asp-for="Descricao" class="control-label"></label>:
+                    <input asp-for="Descricao" class="form-control" readonly />
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+   
+</div>
+
+<h4 class="modal-title">Atenção!</h4>
+<div class="modal-body">
+
+    Tem certeza que deseja excluir a LISTA DE ENVIO: <strong>@Html.DisplayFor(model => model.Nome) </strong>?
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+        <input class="btn btn-primary btn-sm btn-danger" type="submit" value="Excluir" />
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+    </div>
+}
+

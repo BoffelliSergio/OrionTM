@@ -1,0 +1,80 @@
+﻿@model OrionTM_Web.Models.Terminal
+
+@{
+    ViewData["Title"] = "Terminais";
+}
+
+<h2>Terminais > Incluir</h2>
+
+
+<div>
+    <h3 style="color: red;">@Html.ValidationMessage("Aviso")</h3>
+</div>
+
+
+
+
+
+<hr />
+
+<div class="col-md-6">
+        <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+        <table class="table">
+            <tr>
+                <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                              
+                    <div class="form-group">
+                        <label asp-for="Codigo" class="control-label"></label>:
+                        <input asp-for="Codigo" class="form-control" />
+                        <span asp-validation-for="Codigo" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Modelo</label>
+                        <select asp-for="ModeloId" class="form-control" asp-items="ViewBag.ModeloId"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Local</label>:
+                        <select asp-for="LocalId" class="form-control" asp-items="ViewBag.LocalId"></select>
+                    </div>
+
+                </th>
+
+                <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+ 
+                    <div class="form-group">
+                        <label asp-for="IP" class="control-label"></label>:
+                        <input asp-for="IP" class="form-control" />
+                        <span asp-validation-for="IP" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="DNS" class="control-label"></label>:
+                        <input asp-for="DNS" class="form-control" />
+                        <span asp-validation-for="DNS" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="DefaultGateway" class="control-label"></label>:
+                        <input asp-for="DefaultGateway" class="form-control" />
+                        <span asp-validation-for="DefaultGateway" class="text-danger"></span>
+                    </div>
+
+                </th>
+            </tr>
+
+        </table>
+                    
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Incluir" class="btn btn-primary btn-sm" />
+            <a class="btn btn-secondary btn-sm" asp-action="Index">Voltar</a>
+        </div>
+        </form>
+    </div>
+
+

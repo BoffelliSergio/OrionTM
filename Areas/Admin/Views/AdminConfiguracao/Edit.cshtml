@@ -1,0 +1,53 @@
+﻿@model OrionTM_Web.Models.Configuracao
+
+@{
+    ViewData["Title"] = "Configurações";
+}
+
+<h2>Configurações > Editar</h2>
+
+
+<hr />
+<div class="row">
+
+    <div class="col-md-6">
+
+        <form asp-action="Edit">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ConfiguracaoId" />
+
+
+            <table class="table">
+                <tr>
+                    <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="form-group">
+                            <label asp-for="Campo" class="control-label"></label>
+                            <input asp-for="Campo" class="form-control" readonly />
+                            <span asp-validation-for="Campo" class="text-danger"></span>
+                        </div>
+                    </th>
+
+                    <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+                        <div class="form-group">
+                            <label asp-for="Valor" class="control-label"></label>
+                            <input asp-for="Valor" class="form-control" />
+                            <span asp-validation-for="Valor" class="text-danger"></span>
+                        </div>
+
+                    </th>
+                </tr>
+            </table>
+
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-warning btn-sm" />
+                <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+

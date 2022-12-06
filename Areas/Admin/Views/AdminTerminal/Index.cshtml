@@ -1,0 +1,93 @@
+﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Terminal>
+
+
+@{    ViewData["Title"] = "Terminais";}
+
+
+
+
+<form method="get" class="form-inline">
+
+    <div>
+        <dl class="row">
+
+             <dt class="col-sm-2">
+                <h3>Terminais</h3>
+             </dt>
+                   
+            <dt class="col-sm-2">
+                <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
+            </dt>
+
+            <dt class="col-sm-1">
+                <button type="submit" class="btn btn-info ">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                </button>
+            </dt>
+            <dt class="col-sm-1">
+                <th class="col-sm-4">
+                    <a class="btn btn-primary " asp-action="Create">Incluir</a>
+                </th>
+            </dt>
+            <dt class="col-sm-2">
+                <h4>Total: @Model.TotalRecordCount</h4>
+            </dt>
+        </dl>
+    </div>
+
+</form>
+
+<hr />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Local)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DtAtualizaao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                @Html.DisplayFor(modelItem => item.Local.Nome)
+            </td>
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                @Html.DisplayFor(modelItem => item.Modelo.Descricao)
+            </td>
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                @Html.DisplayFor(modelItem => item.IP)
+            </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                @Html.DisplayFor(modelItem => item.DtAtualizaao)
+            </td>
+            <td>
+                    <a class="btn btn-outline-info btn-sm" asp-action="Details" asp-route-id="@item.TerminalId">Detalhes</a>
+                    <a class="btn btn-outline-warning btn-sm" asp-action="Edit" asp-route-id="@item.TerminalId">Editar</a>
+                    <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@item.TerminalId">Excluir</a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+     <vc:pager paging-list="@Model"></vc:pager>
+</div>

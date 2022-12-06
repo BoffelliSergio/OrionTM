@@ -1,0 +1,39 @@
+﻿@model OrionTM_Web.Models.Link
+
+@{
+    ViewData["Title"] = "Links";
+}
+
+<h2>Links > Detalhes</h2>
+
+<hr />
+<div class="col-md-4">
+
+
+    <table class="table">
+        <tr>
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                        <label asp-for="Nome" class="control-label"></label>:
+                        <input asp-for="Nome" class="form-control" readonly />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+            </th>
+
+            <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <div class="form-group">
+                     <label asp-for="Capacidade" class="control-label"></label>:
+                     <input asp-for="Capacidade" class="form-control" readonly  />
+                     <span asp-validation-for="Capacidade" class="text-danger"></span>
+                  </div>
+            </th>
+        </tr>
+    </table>
+       
+</div>
+
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.LinkId" class="btn btn-primary btn-sm">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+</div>

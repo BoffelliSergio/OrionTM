@@ -1,0 +1,56 @@
+﻿@model OrionTM_Web.Models.ListaEnvio
+
+@{
+    ViewData["Title"] = "Lista de Envio";
+}
+
+
+<h2>Lista de Envio > Incluir</h2>
+
+<div>
+    <h3 style="color: red;">@Html.ValidationMessage("Aviso")</h3>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <table class="table">
+            <tr>
+                <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="form-group">
+                            <dt>
+                            <label asp-for="Nome" class="control-label"></label>:
+                            </dt>
+                            <dl>
+                            <input asp-for="Nome" class="form-control" />
+                            <span asp-validation-for="Nome" class="text-danger"></span>
+                            </dl>
+                        </div>
+                    </th>
+               
+                    <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                          <div class="form-group">
+                            <dt>
+                            <label asp-for="Descricao" class="control-label"></label>:
+                            </dt>
+                            <dl>
+                                <input asp-for="Descricao" class="form-control" />
+                                <span asp-validation-for="Descricao" class="text-danger"></span>
+                            </dl>
+                            </div>
+                    </th>
+                 </tr>
+             </table>
+
+            <div class="form-group">
+                <input type="submit" value="Incluir" class="btn btn-primary btn-sm" />
+                <a class="btn btn-secondary btn-sm" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+

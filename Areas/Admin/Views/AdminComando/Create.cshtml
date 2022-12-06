@@ -1,0 +1,59 @@
+﻿@model OrionTM_Web.Models.Comando
+
+
+@{
+    ViewData["Title"] = "Comandos";
+}
+
+<h2>Comandos > Incluir</h2>
+
+<div>
+    <h3 style="color: red;">@Html.ValidationMessage("Aviso")</h3>
+</div>
+
+
+<hr />
+<div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <table class="table">
+            <tr>
+                <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                            <label asp-for="Nome" class="control-label"></label>:
+                            <input asp-for="Nome" class="form-control" />
+                            <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                            <label asp-for="Descricao" class="control-label"></label>:
+                            <input asp-for="Descricao" class="form-control" />
+                            <span asp-validation-for="Descricao" class="text-danger"></span>
+                    </div>
+                                            
+
+                    <div class="form-group">
+                        <label asp-for="Caminho" class="control-label"></label>:
+                        <input asp-for="Caminho" class="form-control" />
+                        <span asp-validation-for="Caminho" class="text-danger"></span>
+                    </div>
+                   
+
+                </th>
+            </tr>
+
+        </table>
+              
+
+
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Incluir" class="btn btn-primary btn-sm" />
+            <a class="btn btn-secondary btn-sm" asp-action="Index">Voltar</a>
+        </div>
+        </form>
+ </div>
+
+
+
+
