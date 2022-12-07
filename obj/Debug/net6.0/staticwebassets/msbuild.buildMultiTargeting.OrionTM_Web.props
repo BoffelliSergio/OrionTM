@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OrionTM_Web.props" />
+</Project>

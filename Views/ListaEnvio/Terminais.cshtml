@@ -1,51 +1,46 @@
 ﻿@model DetalhesEnvioViewModel
 
 
-@{
-    ViewData["Title"] = "Lista de Envio";
-}
+@{ViewData["Title"] = "Lista de Envio";}x
 
-  
-@*
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<!-- plugin -->
-<script src="https://www.virtuosoft.eu/code/bootstrap-duallistbox/bootstrap-duallistbox/v3.0.2/jquery.bootstrap-duallistbox.js"></script>
-<link rel="stylesheet" type="text/css" href="https://www.virtuosoft.eu/code/bootstrap-duallistbox/bootstrap-duallistbox/v3.0.2/bootstrap-duallistbox.css">
-
-*@<!-- Demo -->
 <div class="container">
- 
-    <div class="row" style="margin-bottom: 40px;">
-        <div class="col">
-            <form asp-action="Terminais">
-                <select multiple="multiple" size="10" name="duallistbox_demo1[]" title="duallistbox_demo1[]">
-
+    <form asp-action="Terminais">
+         <div class="row" style="margin-bottom: 40px;">
+            <div class="col-md-5">
+                <select name="terminais_from" id="multiselect" class="form-control" size="8" multiple="multiple">
                     @foreach (var item in Model.Terminais)
                     {
                         <option value="@item.TerminalId">@item.Codigo</option>
                     }
-
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="button" id="multiselect_rightAll" class="btn btn-block"><i class="glyphicon glyphicon-forward"></i></button>
+                <button type="button" id="multiselect_rightSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                <button type="button" id="multiselect_leftSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                <button type="button" id="multiselect_leftAll" class="btn btn-block"><i class="glyphicon glyphicon-backward"></i></button>
+            </div>
+            <div class="col-md-5">
+                <select name="terminais_add" id="multiselect_to" class="form-control" size="8" multiple="multiple">
                     @foreach (var item in Model.DetalheListaEnvio)
                     {
-                        <option value="@item.Terminal.TerminalId" selected="selected">@item.Terminal.Codigo</option>
+                        <option value="@item.Terminal.TerminalId">@item.Terminal.Codigo</option>
                     }
-
                 </select>
-                <br>
-                <div class="row">
-                    <div class="col-md-6 offset-md-6">
-                        <button type="submit" class="btn btn-primary w-100">Salvar</button>
-                    </div>
-                </div>
-            </form>
-
-
-
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-md-2 offset-md-10">
+               
+                <button type="submit" class="btn btn-primary w-100">Salvar</button>
+            </div>
+        </div>
+    </form>
 </div>
+
+
+
 
 
 

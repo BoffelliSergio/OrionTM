@@ -5,292 +5,293 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OrionTM_Web
 build_property.RootNamespace = OrionTM_Web
-build_property.ProjectDir = C:\Users\sboffelli\Desktop\OTM\
+build_property.ProjectDir = C:\PROJETOS\PESSOAL\OrionTM\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\sboffelli\Desktop\OTM
+build_property.MSBuildProjectDirectory = C:\PROJETOS\PESSOAL\OrionTM
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Account/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Account/Register.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminComando/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminComando/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db21hbmRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminComando/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminComando/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db21hbmRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminComando/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminComando/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db21hbmRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminComando/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminComando/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db21hbmRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminComando/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminComando/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db21hbmRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminConfiguracao/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminConfiguracao/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25maWd1cmFjYW9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminConfiguracao/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminConfiguracao/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25maWd1cmFjYW9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminConfiguracao/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminConfiguracao/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25maWd1cmFjYW9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminConfiguracao/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminConfiguracao/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25maWd1cmFjYW9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminConfiguracao/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminConfiguracao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25maWd1cmFjYW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminConfiguracao/LeConfig.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminConfiguracao/LeConfig.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db25maWd1cmFjYW9cTGVDb25maWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLinks/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLinks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5MaW5rc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLinks/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLinks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5MaW5rc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLinks/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLinks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5MaW5rc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLinks/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLinks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5MaW5rc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLinks/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLinks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5MaW5rc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLocal/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLocal/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2NhbFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLocal/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLocal/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2NhbFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLocal/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLocal/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2NhbFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLocal/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLocal/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2NhbFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLocal/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLocal/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2NhbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLogAuditoria/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLogAuditoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2dBdWRpdG9yaWFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLog/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLog/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2dcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLog/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLog/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2dcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLog/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLog/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2dcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLog/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLog/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2dcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminLog/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminLog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Mb2dcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminModelo/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminModelo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Nb2RlbG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminModelo/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminModelo/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Nb2RlbG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminModelo/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminModelo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Nb2RlbG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminModelo/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminModelo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Nb2RlbG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminModelo/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminModelo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Nb2RlbG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminPacote/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminPacote/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYWNvdGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminTerminal/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminTerminal/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UZXJtaW5hbFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminTerminal/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminTerminal/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UZXJtaW5hbFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminTerminal/Details.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminTerminal/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UZXJtaW5hbFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminTerminal/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminTerminal/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UZXJtaW5hbFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/AdminTerminal/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/AdminTerminal/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UZXJtaW5hbFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Admin/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Shared/_LeBanco.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Shared/_LeBanco.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MZUJhbmNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Shared/_RegisterPartial.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Shared/_RegisterPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9SZWdpc3RlclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/Usuarios/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Account/AccessDeneid.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Account/AccessDeneid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5laWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Account/Login.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Account/Register.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/BuscaLog/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/BuscaLog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Comandos/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Comandos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Contato/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Contato/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Envio/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Envio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Home/Demo.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Home/Demo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Home/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/ListaEnvio/Create.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/ListaEnvio/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/ListaEnvio/Delete.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/ListaEnvio/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/ListaEnvio/Edit.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/ListaEnvio/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/ListaEnvio/Index.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/ListaEnvio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/ListaEnvio/Terminais.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/ListaEnvio/Terminais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xUZXJtaW5haXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/Error.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/_CategoriaResumo.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/_CategoriaResumo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yaWFSZXN1bW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/_Images.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/_Images.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbWFnZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/_LanchesResumo.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/_LanchesResumo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYW5jaGVzUmVzdW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/_LoginParcial.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/_LoginParcial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcmNpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/_ViewImports.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/_ViewStart.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sboffelli/Desktop/OTM/Views/Shared/_Layout.cshtml]
+[C:/PROJETOS/PESSOAL/OrionTM/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qr574ru553

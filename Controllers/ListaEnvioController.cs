@@ -5,6 +5,7 @@ using ReflectionIT.Mvc.Paging;
 using OrionTM_Web.Models;
 using OrionTM_Web.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 
 namespace OrionTM_Web.Controllers
 {
@@ -52,16 +53,37 @@ namespace OrionTM_Web.Controllers
 
         }
 
+      
+        
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Terminais(string ids)
+        public async Task<IActionResult> Terminais(int? id , IFormCollection form)
         {
+           
+            var DependencyListaEnvioId = Convert.ToInt32(id);
+            List<string> terminais_add = form["terminais_add"].ToList();
 
-            var detalhesEnvioViewModel = new DetalhesEnvioViewModel();
+            //REMOVE ITENSx
+            var detalhesEnvioViewModel = _context.DetalheListaEnvio.Where(p => p.ListaEnvioId == id);
+            _context.DetalheListaEnvio.RemoveRange(detalhesEnvioViewModel);
+            _context.SaveChanges();
 
 
+            //ADICIONA NOVOS ITENS A LISTA
+            foreach (var item in terminais_add)
+            {
+                DetalheListaEnvio d = new DetalheListaEnvio();
+                d.ListaEnvioId = DependencyListaEnvioId;
+                d.TerminalId = Convert.ToInt32(item);
 
-            return RedirectToAction(nameof(Index));
+                _context.DetalheListaEnvio.Add(d);
+                _context.SaveChanges();
+            }
+
+
+            return RedirectToAction(nameof(Terminais));
         }
 
 
