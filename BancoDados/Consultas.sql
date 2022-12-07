@@ -12,6 +12,5 @@ where d.ListaEnvioId = 11
 order by l.Nome , t.Codigo asc
 ;
 
-
 --delete from DetalheListaEnvio where ListaEnvioId = 14
 
