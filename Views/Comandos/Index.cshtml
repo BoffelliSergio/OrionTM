@@ -1,11 +1,60 @@
-﻿<br />
+﻿@model ComandosEnvioViewModel
 
-@*<img src="~/images/negado1.jpg" alt="Area de Administração" class="marginTop1" />*@
-<div class="container">
-    <div class="jumbotron">
-        <p>
-            <h2>Comandos</h2>
-        </p>
-    </div>
-    <a asp-area="" asp-controller="Home" asp-action="Index">Volta a Home Page</a>
-</div>
+
+<table class="table">
+
+    <tr>
+        <div>Comando</div>
+        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="col-md-5">
+                <select name="Comandos_from" id="multiselect" class="form-control" size="5" >
+                    @foreach (var item in Model.Comandos)
+                    {
+                        <option value="@item.ComandoId">@item.Nome</option>
+                    }
+                </select>
+            </div>
+        </td>
+     </tr>
+
+     <tr>
+        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div>Lista de Envio</div>
+            <div class="col-md-5">
+                <select name="ListaEnvio_from" id="multiselect" class="form-control" size="5" >
+                    @foreach (var item in Model.ListaEnvio)
+                    {
+                        <option value="@item.ListaEnvioId">@item.Nome</option>
+                    }
+                </select>
+            </div>
+        </td>
+     </tr>
+
+    <tr>
+        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div>Local</div>
+            <div class="col-md-5">
+                <select name="Locais_from" id="multiselect" class="form-control" size="5">
+                    @foreach (var item in Model.Locais)
+                    {
+                        <option value="@item.LocalId">@item.Codigo - @item.Nome</option>
+                    }
+                </select>
+            </div>
+        </td>
+    </tr>
+    
+    <tr>
+        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div>Terminal</div>
+            <div class="col-md-5">
+                <select name="terminais_from" id="multiselect" class="form-control" size="5" >
+                    @foreach (var item in Model.Terminais)
+                    {
+                        <option value="@item.TerminalId">@item.Codigo</option>
+                    }
+                </select>
+            </div>
+        </td>
+    </tr>

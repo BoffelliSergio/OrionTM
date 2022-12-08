@@ -26,6 +26,7 @@
     <Compile Remove="Areas\Admin\Controllers\LocaisController.cs" />
     <Compile Remove="Areas\Admin\Controllers\ModelosController.cs" />
     <Compile Remove="Models\Locais.cs" />
+    <Compile Remove="ViewModels\EnvioViewModel.cs" />
   </ItemGroup>
 
   <ItemGroup>

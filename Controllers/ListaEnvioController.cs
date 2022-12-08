@@ -20,7 +20,10 @@ namespace OrionTM_Web.Controllers
 
         public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Nome")
         {
-            var resultado = _context.ListaEnvio.AsNoTracking().AsQueryable();
+            if (User.Identity.IsAuthenticated)
+            {
+
+                var resultado = _context.ListaEnvio.AsNoTracking().AsQueryable();
             if (!string.IsNullOrWhiteSpace(filter))
             {
                 resultado = resultado.Where(p => p.Nome.ToUpper().Contains(filter.ToUpper()));
@@ -31,7 +34,8 @@ namespace OrionTM_Web.Controllers
 
 
             return View(model);
-
+            }
+            return RedirectToAction("Login", "Account");
         }
 
         public  IActionResult Terminais(int? id)
