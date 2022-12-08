@@ -6,35 +6,63 @@
 
 <div class="container">
     <form asp-action="Terminais">
-         <div class="row" style="margin-bottom: 40px;">
-            <div class="col-md-5">
-                <select name="terminais_from" id="multiselect" class="form-control" size="8" multiple="multiple">
-                    @foreach (var item in Model.Terminais)
-                    {
+
+        <table class="table">
+
+            <tr>
+                <th class="col-md-4">
+                    
+                <h4>Terminais Disponíveis</h4>
+               
+                <div class="row" style="margin-bottom: 40px;">
+                                                  
+                     <select name="terminais_from" id="multiselect" class="form-control" size="15" multiple="multiple">
+                     @foreach (var item in Model.Terminais)
+                     {
                         <option value="@item.TerminalId">@item.Codigo</option>
-                    }
-                </select>
-            </div>
-            <div class="col-md-2">
-                <button type="button" id="multiselect_rightAll" class="btn btn-block"><i class="glyphicon glyphicon-forward"></i></button>
-                <button type="button" id="multiselect_rightSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
-                <button type="button" id="multiselect_leftSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
-                <button type="button" id="multiselect_leftAll" class="btn btn-block"><i class="glyphicon glyphicon-backward"></i></button>
-            </div>
-            <div class="col-md-5">
-                <select name="terminais_add" id="multiselect_to" class="form-control" size="8" multiple="multiple">
-                    @foreach (var item in Model.DetalheListaEnvio)
+                        }
+                    </select>
+                </div>
+                </th>
+            
+
+                <th class="col-md-1">
+                    <h4>&nbsp;</h4>
+                    <h4>&nbsp;</h4>
+                    <h4>&nbsp;</h4>
+                    <h4>&nbsp;</h4>
+                    <button type="button" id="multiselect_rightAll" class="btn btn-block"><i class="glyphicon glyphicon-forward"></i></button>
+                    <button type="button" id="multiselect_rightSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                    <button type="button" id="multiselect_leftSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                    <button type="button" id="multiselect_leftAll" class="btn btn-block"><i class="glyphicon glyphicon-backward"></i></button>
+                </th>
+            
+                <th class="col-md-4">
+                    <div>              
+                    @foreach (var item in Model.ListaEnvio)
                     {
-                        <option value="@item.Terminal.TerminalId">@item.Terminal.Codigo</option>
+                        <h4> <option value="@item.Nome">Lista > @item.Nome</option></h4>                      
                     }
-                </select>
-            </div>
-        </div>
+                    </div>
+                    <div >
+                    <select name="terminais_add" id="multiselect_to" class="form-control" size="15" multiple="multiple">
+                        @foreach (var item in Model.DetalheListaEnvio)
+                        {
+                            <option value="@item.Terminal.TerminalId">@item.Terminal.Codigo</option>
+                        }
+                    </select>
+                    </div>
+                </th>
+            </tr>
+      </table>
+        <table>
         <div class="row">
             <div class="col-md-2 offset-md-10">
-                <button type="submit" class="btn btn-primary w-100">Salvar</button>
+                    <button type="submit" class="btn btn-warning  btn-sm">Salvar</button>
+                <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
             </div>
         </div>
+        </table>
     </form>
 </div>
 

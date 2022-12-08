@@ -85,7 +85,6 @@ namespace OrionTM_Web.Controllers
                 _context.SaveChanges();
             }
 
-
             return RedirectToAction(nameof(Terminais));
         }
 
@@ -148,12 +147,12 @@ namespace OrionTM_Web.Controllers
                 return NotFound();
             }
 
-            var link = await _context.ListaEnvio.FindAsync(id);
-            if (link == null)
+            var listaEnvio = await _context.ListaEnvio.FindAsync(id);
+            if (listaEnvio == null)
             {
                 return NotFound();
             }
-            return View(link);
+            return View(listaEnvio);
         }
 
       
@@ -244,9 +243,6 @@ namespace OrionTM_Web.Controllers
             }
             return View(listaEnvio);
         }
-
-
-
 
 
         private bool ListaEnvioExists(int id)
