@@ -12,7 +12,7 @@ namespace OrionTM_Web.Models
 
         public int EquipmentId { get; set; }
 
-        public DateTime DtAtualizaao { get; set; }
+        public DateTime DtAtualizacao { get; set; }
 
         public int Task { get; set; }
 
