@@ -25,8 +25,19 @@
     <Compile Remove="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Remove="Areas\Admin\Controllers\LocaisController.cs" />
     <Compile Remove="Areas\Admin\Controllers\ModelosController.cs" />
+    <Compile Remove="Models\CarrinhoCompra.cs" />
+    <Compile Remove="Models\CarrinhoCompraItem.cs" />
+    <Compile Remove="Models\Categoria.cs" />
+    <Compile Remove="Models\Lanche.cs" />
     <Compile Remove="Models\Locais.cs" />
+    <Compile Remove="Models\Pedido.cs" />
+    <Compile Remove="Models\PedidoDetalhe.cs" />
     <Compile Remove="ViewModels\EnvioViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\_CategoriaResumo.cshtml" />
+    <Content Remove="Views\Shared\_LanchesResumo.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

@@ -61,8 +61,7 @@ public class Startup
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
-            
+    
         services.AddControllersWithViews();
 
         services.AddPaging(options =>
