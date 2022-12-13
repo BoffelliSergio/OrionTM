@@ -1,12 +1,15 @@
 ﻿@model ComandosEnvioViewModel
 
 
+
+<div class="container">
+    <form asp-action="Comandos">
 <table class="table">
 
     <tr>
-        <div>Comando</div>
-        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <div class="col-md-5">
+        <td >
+            <div><h4>Comando</h4></div>
+            <div>
                 <select name="Comandos_from" id="multiselect" class="form-control" size="5" >
                     @foreach (var item in Model.Comandos)
                     {
@@ -18,9 +21,9 @@
      </tr>
 
      <tr>
-        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <div>Lista de Envio</div>
-            <div class="col-md-5">
+        <td >
+            <div><h4>Lista de Envio</h4></div>
+            <div >
                 <select name="ListaEnvio_from" id="multiselect" class="form-control" size="5" >
                     @foreach (var item in Model.ListaEnvio)
                     {
@@ -29,12 +32,12 @@
                 </select>
             </div>
         </td>
-     </tr>
-
-    <tr>
-        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <div>Local</div>
-            <div class="col-md-5">
+    
+        <td >
+            <div>
+                <div><h4>Local</h4></div>
+            </div>
+            <div >
                 <select name="Locais_from" id="multiselect" class="form-control" size="5">
                     @foreach (var item in Model.Locais)
                     {
@@ -43,12 +46,10 @@
                 </select>
             </div>
         </td>
-    </tr>
-    
-    <tr>
-        <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <div>Terminal</div>
-            <div class="col-md-5">
+   
+        <td >
+            <div><h4>Terminal</h4></div>
+            <div >
                 <select name="terminais_from" id="multiselect" class="form-control" size="5" >
                     @foreach (var item in Model.Terminais)
                     {
@@ -58,3 +59,13 @@
             </div>
         </td>
     </tr>
+    </table>
+     <table>
+        <div class="row">
+            <div class="col-md-2 offset-md-10">
+                    <button type="submit" class="btn btn-warning  btn-sm">Salvar</button>
+            </div>
+        </div>
+        </table>
+    </form>
+</div>
