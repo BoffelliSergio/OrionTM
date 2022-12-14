@@ -1,71 +1,41 @@
 ﻿@model ComandosEnvioViewModel
 
+<h3>Envio de Comandos</h3>
 
 
-<div class="container">
-    <form asp-action="Comandos">
-<table class="table">
+<table>
 
     <tr>
-        <td >
-            <div><h4>Comando</h4></div>
-            <div>
-                <select name="Comandos_from" id="multiselect" class="form-control" size="5" >
-                    @foreach (var item in Model.Comandos)
-                    {
-                        <option value="@item.ComandoId">@item.Nome</option>
-                    }
-                </select>
-            </div>
-        </td>
-     </tr>
+        <td>
 
-     <tr>
-        <td >
-            <div><h4>Lista de Envio</h4></div>
-            <div >
-                <select name="ListaEnvio_from" id="multiselect" class="form-control" size="5" >
-                    @foreach (var item in Model.ListaEnvio)
-                    {
-                        <option value="@item.ListaEnvioId">@item.Nome</option>
-                    }
-                </select>
-            </div>
-        </td>
-    
-        <td >
-            <div>
-                <div><h4>Local</h4></div>
-            </div>
-            <div >
-                <select name="Locais_from" id="multiselect" class="form-control" size="5">
-                    @foreach (var item in Model.Locais)
-                    {
-                        <option value="@item.LocalId">@item.Codigo - @item.Nome</option>
-                    }
-                </select>
-            </div>
-        </td>
-   
-        <td >
-            <div><h4>Terminal</h4></div>
-            <div >
-                <select name="terminais_from" id="multiselect" class="form-control" size="5" >
-                    @foreach (var item in Model.Terminais)
-                    {
-                        <option value="@item.TerminalId">@item.Codigo</option>
-                    }
-                </select>
-            </div>
+            @foreach (var item in Model.FilaTasks)
+            {
+                <tr>
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        @Html.DisplayFor(model => item.TerminalId)
+                    </td>
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        @Html.DisplayFor(model => item.DtAtualizacao)
+                    </td>
+
+                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        @Html.DisplayFor(model => item.Status)
+                    </td>
+                  </tr>
+            }
+
         </td>
     </tr>
-    </table>
-     <table>
-        <div class="row">
-            <div class="col-md-2 offset-md-10">
-                    <button type="submit" class="btn btn-warning  btn-sm">Salvar</button>
-            </div>
-        </div>
-        </table>
-    </form>
-</div>
+
+
+
+
+    <tr>
+        <td>
+            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorTerminais" >Por Terminais</a>
+            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLocais" >Por Locais</a>
+            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLista" >Por Lista</a>
+        </td>
+    </tr>
+
+</table>

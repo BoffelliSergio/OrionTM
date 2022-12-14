@@ -12,6 +12,10 @@ namespace OrionTM_Web.ViewModels
         public IEnumerable<Comando> Comandos { get; set; }
 
         public IEnumerable<Local> Locais { get; set; }
+        
+        public IEnumerable<FilaTasks> FilaTasks { get; set; }
+
+        public IEnumerable<DetalheListaEnvio> DetalheListaEnvio { get; set; }
 
 
     }

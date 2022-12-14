@@ -79,7 +79,6 @@ namespace OrionTM_Web.Controllers
                 DetalheListaEnvio d = new DetalheListaEnvio();
                 d.ListaEnvioId = DependencyListaEnvioId;
                 d.TerminalId = Convert.ToInt32(item);
-
                 _context.DetalheListaEnvio.Add(d);
                 _context.SaveChanges();
             }

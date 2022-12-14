@@ -219,6 +219,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Boffelli/Orion/OrionTM/Views/Comandos/EnvioPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcRW52aW9Qb3JMaXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Comandos/EnvioPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcRW52aW9Qb3JMb2NhaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Comandos/EnvioPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcRW52aW9Qb3JUZXJtaW5haXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Boffelli/Orion/OrionTM/Views/Comandos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

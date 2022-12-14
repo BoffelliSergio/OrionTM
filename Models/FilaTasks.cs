@@ -10,7 +10,7 @@ namespace OrionTM_Web.Models
 
         public int FilaTasksId { get; set; }
 
-        public int EquipmentId { get; set; }
+        public int TerminalId { get; set; }
 
         public DateTime DtAtualizacao { get; set; }
 
@@ -19,7 +19,6 @@ namespace OrionTM_Web.Models
         public int TaskID { get; set; }
 
         public int Status { get; set; }
-
 
     }
 }
