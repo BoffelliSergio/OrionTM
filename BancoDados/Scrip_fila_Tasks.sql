@@ -1,7 +1,10 @@
+
 USE [OtmDataBase]
 GO
 
-/****** Object:  Table [dbo].[FilaTasks]    Script Date: 08/12/2022 14:33:22 ******/
+Drop Table FilaTasks
+
+/****** Object:  Table [dbo].[FilaTasks]    Script Date: 16/12/2022 23:06:05 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,11 +13,11 @@ GO
 
 CREATE TABLE [dbo].[FilaTasks](
 	[FilaTasksId] [int] IDENTITY(1,1) NOT NULL,
-	[EquipmentId] [int] NOT NULL,
+	[TerminalId] [int] NOT NULL,
 	[DtAtualizacao] [datetime2](7) NOT NULL,
-	[Task] [int] NOT NULL,
-	[TaskID] [int] NOT NULL,
-	[Status] [int] NOT NULL,
+	[TaskId] [int] NOT NULL,
+	[ComandoId] [int] NOT NULL,
+	[StatusId] [int] NOT NULL,
  CONSTRAINT [PK_FilaTasks] PRIMARY KEY CLUSTERED 
 (
 	[FilaTasksId] ASC
@@ -22,4 +25,31 @@ CREATE TABLE [dbo].[FilaTasks](
 ) ON [PRIMARY]
 GO
 
+ALTER TABLE [dbo].[FilaTasks]  WITH CHECK ADD  CONSTRAINT [FK_FilaTasks_Terminal_TerminalId] FOREIGN KEY([TerminalId])
+REFERENCES [dbo].[Terminal] ([TerminalId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[FilaTasks] CHECK CONSTRAINT [FK_FilaTasks_Terminal_TerminalId]
+GO
+
+ALTER TABLE [dbo].[FilaTasks]  WITH CHECK ADD  CONSTRAINT [FK_FilaTasks_Status_StatusId] FOREIGN KEY([StatusId])
+REFERENCES [dbo].[Status] ([StatusId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[FilaTasks] CHECK CONSTRAINT [FK_FilaTasks_Status_StatusId]
+GO
+
+ALTER TABLE [dbo].[FilaTasks]  WITH CHECK ADD  CONSTRAINT [FK_FilaTasks_Comando_ComandoId] FOREIGN KEY([ComandoId])
+REFERENCES [dbo].[Comando] ([ComandoId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[FilaTasks] CHECK CONSTRAINT [FK_FilaTasks_Comando_ComandoId]
+GO
+
+ALTER TABLE [dbo].[FilaTasks]  WITH CHECK ADD  CONSTRAINT [FK_FilaTasks_Task_TaskId] FOREIGN KEY([TaskId])
+REFERENCES [dbo].[Task] ([TaskId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[FilaTasks] CHECK CONSTRAINT [FK_FilaTasks_Task_TaskId]
+GO
 

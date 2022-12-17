@@ -29,7 +29,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                 resultado = resultado.Where(p => p.Nome.ToUpper().Contains(filter.ToUpper()));
             }
 
-            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
+            var model = await PagingList.CreateAsync(resultado, 10, pageindex, sort, "Nome");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
             return View(model);
 

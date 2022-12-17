@@ -4,8 +4,7 @@ using OrionTM_Web.Context;
 using ReflectionIT.Mvc.Paging;
 using OrionTM_Web.Models;
 using OrionTM_Web.ViewModels;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.CodeAnalysis.VisualBasic.Syntax;
+
 
 namespace OrionTM_Web.Controllers
 {
@@ -57,7 +56,6 @@ namespace OrionTM_Web.Controllers
 
         }
                 
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

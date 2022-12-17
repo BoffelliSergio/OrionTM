@@ -26,7 +26,8 @@ namespace OrionTM_Web.Context
         public DbSet<Comando> Comando { get; set; }
         public DbSet<Pacote> Pacote { get; set; }
         public DbSet<FilaTasks> FilaTasks { get; set; }
-
+        public DbSet<Status> Status { get; set; }
+        public DbSet<Tasks> Tasks { get; set; }
 
     }
 }

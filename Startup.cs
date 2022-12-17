@@ -60,8 +60,7 @@ public class Startup
         });
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-    
+            
         services.AddControllersWithViews();
 
         services.AddPaging(options =>
@@ -70,9 +69,7 @@ public class Startup
                 options.PageParameterName = "pageindex";
             });
 
-
-
-
+      
         services.AddMemoryCache();
         services.AddSession();
 

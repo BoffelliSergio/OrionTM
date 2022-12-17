@@ -1,41 +1,100 @@
-﻿@model ComandosEnvioViewModel
+﻿@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.FilaTasks>
 
-<meta http-equiv="refresh" content="600">
 
-<h3>Envio de Comandos</h3>
+@{
+    ViewData["Title"] = "Comandos";
+}
+
+<form method="get" class="form-inline">
+
+    <div>
+        <dl class="row">
+            <dt class="col-sm-3">
+                <h3>Envio de Comandos</h3>
+            </dt>
+
+            <dt class="col-sm-2">
+                <input name="filter" class="form-control" placeholder="TerminalId" value="@Model.RouteValue["filter"]" />
+            </dt>
+
+            <dt class="col-sm-1">
+                <button type="submit" class="btn btn-info ">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                </button>
+            </dt>
+            <dt class="col-sm-2">
+                <h4>Total: @Model.TotalRecordCount</h4>
+            </dt>
+        </dl>
+    </div>
+
+</form>
+
+<hr />
+
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th>
+               Terminal
+            </th>
+            <th>
+                Tipo Comando
+            </th>
+            <th>
+                Comando
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Data
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Terminal.Codigo)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Tasks.TasksDescricao)
+                </td>
+                <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    @Html.DisplayFor(modelItem => item.Comando.Nome)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Status.StsDescricao)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
+                </td>
+               
+            </tr>
+
+        }
+    </tbody>
+</table>
+<div>
+    <vc:pager paging-list="@Model"></vc:pager>
+</div>
 
 <table>
-
     <tr>
         <td>
-
-            @foreach (var item in Model.FilaTasks)
-            {
-                <tr>
-                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        @Html.DisplayFor(model => item.TerminalId)
-                    </td>
-                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        @Html.DisplayFor(model => item.DtAtualizacao)
-                    </td>
-                    <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                        @Html.DisplayFor(model => item.Status)
-                    </td>
-                  </tr>
-            }
-
+            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLista">Envio Por Lista </a>
+            <a class="btn btn-outline-warning btn-sm" asp-action="EnvioPorLocais">Envio por Localidade</a>
+            <a class="btn btn-outline-danger btn-sm" asp-action="EnvioPorTerminais">Envio por Terminal</a>
         </td>
     </tr>
-
-
-
-
-    <tr>
-        <td>
-            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorTerminais" >Por Terminais</a>
-            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLocais" >Por Locais</a>
-            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLista" >Por Lista</a>
-        </td>
-    </tr>
-
 </table>
+
+
+

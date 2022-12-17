@@ -4,10 +4,13 @@ using OrionTM_Web.Context;
 using OrionTM_Web.Models;
 using OrionTM_Web.ViewModels;
 using ReflectionIT.Mvc.Paging;
+
+
 using System.ComponentModel.Design;
 
 namespace OrionTM_Web.Controllers
 {
+    
     public class ComandosController : Controller
     {
 
@@ -17,28 +20,27 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-
-
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "DtAtualizacao")
         {
-            if (User.Identity.IsAuthenticated)
+            var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
+
+            var resultado = appDbContext.AsNoTracking().AsQueryable();
+
+            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(5)));
+
+
+            if (!string.IsNullOrWhiteSpace(filter))
             {
-                var ComandosEnvioViewModel = new ComandosEnvioViewModel();
-                ComandosEnvioViewModel.Terminais = _context.Terminal;
-                ComandosEnvioViewModel.FilaTasks = _context.FilaTasks;
-
-                foreach (var terminal in _context.FilaTasks)
-                {
-                    
-                }
-
-                    return View(ComandosEnvioViewModel);
+                resultado = resultado.Where(p => p.TerminalId.Equals(Convert.ToInt32(filter)));
             }
-            return RedirectToAction("Login", "Account");
+
+
+            var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+            return View(model);
         }
 
-
-
+       
         public IActionResult EnvioPorTerminais()
         {
             if (User.Identity.IsAuthenticated)
@@ -70,9 +72,9 @@ namespace OrionTM_Web.Controllers
 
                     f.TerminalId = Convert.ToInt32(item);
                     f.DtAtualizacao = DateTime.Now;
-                    f.Task = 5;
-                    f.TaskID = Convert.ToInt32(ComandoId);
-                    f.Status = 0;
+                    f.TasksId = 5;
+                    f.ComandoId = Convert.ToInt32(ComandoId);
+                    f.StatusId = 0;
                     _context.FilaTasks.Add(f);
                     _context.SaveChanges();
                 }
@@ -125,9 +127,9 @@ namespace OrionTM_Web.Controllers
                         FilaTasks l = new FilaTasks();
                         l.TerminalId = Convert.ToInt32(terminal.TerminalId);
                         l.DtAtualizacao = DateTime.Now;
-                        l.Task = 5;
-                        l.TaskID = Convert.ToInt32(ComandoId);
-                        l.Status = 0;
+                        l.TasksId = 5;
+                        l.ComandoId = Convert.ToInt32(ComandoId);
+                        l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
 
@@ -182,9 +184,9 @@ namespace OrionTM_Web.Controllers
                         FilaTasks l = new FilaTasks();
                         l.TerminalId = Convert.ToInt32(lista.TerminalId);
                         l.DtAtualizacao = DateTime.Now;
-                        l.Task = 5;
-                        l.TaskID = Convert.ToInt32(ComandoId);
-                        l.Status = 0;
+                        l.TasksId = 5;
+                        l.ComandoId = Convert.ToInt32(ComandoId);
+                        l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
 
