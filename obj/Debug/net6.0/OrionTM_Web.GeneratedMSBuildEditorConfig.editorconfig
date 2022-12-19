@@ -215,6 +215,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/EnvioPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcRW52aW9Qb3JMaXN0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/EnvioPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcRW52aW9Qb3JMb2NhaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/EnvioPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcRW52aW9Qb3JUZXJtaW5haXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Boffelli/Orion/OrionTM/Views/BuscaLog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -273,6 +285,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Boffelli/Orion/OrionTM/Views/ListaEnvio/Terminais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xUZXJtaW5haXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resetar/EnvioPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRhclxFbnZpb1Bvckxpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resetar/EnvioPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRhclxFbnZpb1BvckxvY2Fpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resetar/EnvioPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRhclxFbnZpb1BvclRlcm1pbmFpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resetar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRhclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Boffelli/Orion/OrionTM/Views/Shared/Error.cshtml]

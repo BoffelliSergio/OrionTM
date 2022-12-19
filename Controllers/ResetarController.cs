@@ -11,12 +11,12 @@ using System.ComponentModel.Design;
 namespace OrionTM_Web.Controllers
 {
     
-    public class ComandosController : Controller
+    public class ResetarController : Controller
     {
 
         private readonly AppDbContext _context;
 
-        public ComandosController(AppDbContext context)
+        public ResetarController(AppDbContext context)
         {
             _context = context;
         }
@@ -26,16 +26,13 @@ namespace OrionTM_Web.Controllers
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
 
-
             // somente executar comandos
-            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(5)));
-
+            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(6)));
 
             if (!string.IsNullOrWhiteSpace(filter))
             {
                 resultado = resultado.Where(p => p.TerminalId.Equals(Convert.ToInt32(filter)));
             }
-
 
             var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
@@ -74,8 +71,8 @@ namespace OrionTM_Web.Controllers
 
                     f.TerminalId = Convert.ToInt32(item);
                     f.DtAtualizacao = DateTime.Now;
-                    f.TasksId = 5;
-                    f.ComandoId = Convert.ToInt32(ComandoId);
+                    f.TasksId = 6;
+                    f.ComandoId = Convert.ToInt32(1);
                     f.StatusId = 0;
                     _context.FilaTasks.Add(f);
                     _context.SaveChanges();
@@ -129,8 +126,8 @@ namespace OrionTM_Web.Controllers
                         FilaTasks l = new FilaTasks();
                         l.TerminalId = Convert.ToInt32(terminal.TerminalId);
                         l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 5;
-                        l.ComandoId = Convert.ToInt32(ComandoId);
+                        l.TasksId = 6;
+                        l.ComandoId = Convert.ToInt32(1);
                         l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
@@ -186,8 +183,8 @@ namespace OrionTM_Web.Controllers
                         FilaTasks l = new FilaTasks();
                         l.TerminalId = Convert.ToInt32(lista.TerminalId);
                         l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 5;
-                        l.ComandoId = Convert.ToInt32(ComandoId);
+                        l.TasksId = 6;
+                        l.ComandoId = Convert.ToInt32(1);
                         l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
@@ -204,11 +201,6 @@ namespace OrionTM_Web.Controllers
             return View(ComandosEnvioViewModel);
 
         }
-
-
-
-
-
 
     }
 }

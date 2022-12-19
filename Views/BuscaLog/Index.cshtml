@@ -1,11 +1,97 @@
-﻿<br />
+﻿@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.FilaTasks>
 
-@*<img src="~/images/negado1.jpg" alt="Area de Administração" class="marginTop1" />*@
-<div class="container">
-    <div class="jumbotron">
-        <p>
-            <h2>Busca Logs</h2>
-        </p>
+
+@{
+    ViewData["Title"] = "Busca Logs";
+}
+
+<form method="get" class="form-inline">
+
+    <div>
+        <dl class="row">
+            <dt class="col-sm-3">
+                <h3>Busca Logs</h3>
+            </dt>
+
+            <dt class="col-sm-2">
+                <input name="filter" class="form-control" placeholder="TerminalId" value="@Model.RouteValue["filter"]" />
+            </dt>
+
+            <dt class="col-sm-1">
+                <button type="submit" class="btn btn-info ">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                </button>
+            </dt>
+            <dt class="col-sm-2">
+                <h4>Total: @Model.TotalRecordCount</h4>
+            </dt>
+        </dl>
     </div>
-    <a asp-area="" asp-controller="Home" asp-action="Index">Volta a Home Page</a>
+
+</form>
+
+<hr />
+
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th>
+               Terminal
+            </th>
+           <th>
+                Log
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Data
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Terminal.Codigo)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Tasks.TasksDescricao)
+                </td>
+                <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    @Html.DisplayFor(modelItem => item.Comando.Nome)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Status.StsDescricao)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
+                </td>
+               
+            </tr>
+
+        }
+    </tbody>
+</table>
+<div>
+    <vc:pager paging-list="@Model"></vc:pager>
 </div>
+
+<table>
+    <tr>
+        <td>
+            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLista">Envio Por Lista </a>
+            <a class="btn btn-outline-warning btn-sm" asp-action="EnvioPorLocais">Envio por Localidade</a>
+            <a class="btn btn-outline-danger btn-sm" asp-action="EnvioPorTerminais">Envio por Terminal</a>
+        </td>
+    </tr>
+</table>
+
+
+
