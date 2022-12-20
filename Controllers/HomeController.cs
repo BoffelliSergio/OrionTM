@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Context;
 using OrionTM_Web.Models;
 using OrionTM_Web.ViewModels;
+using ReflectionIT.Mvc.Paging;
 using System.Diagnostics;
 
 namespace OrionTM_Web.Controllers
@@ -17,19 +18,50 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-
-        public IActionResult Index()
+        // GET: Admin/AdminTerminal
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Codigo")
         {
+            if (User.Identity.IsAuthenticated)
+            {
+             var appDbContext = _context.Terminal.Include(t => t.Local).Include(t => t.Modelo);
 
-            return View();
+            var resultado = appDbContext.AsNoTracking().AsQueryable();
+            if (!string.IsNullOrWhiteSpace(filter))
+            {
+                resultado = resultado.Where(p => p.Codigo.ToUpper().Contains(filter.ToUpper())).OrderBy(l => l.Codigo);
+            }
+
+            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+            return View(model);
+            }
+            return RedirectToAction("Login", "Account");
         }
 
 
-        public IActionResult Demo()
+        // GET: Admin/AdminTerminal/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-          
-            return View();
+            if (id == null || _context.Terminal == null)
+            {
+                return NotFound();
+            }
+
+            var terminal = await _context.Terminal
+                .Include(t => t.Local)
+                .Include(t => t.Modelo)
+                .FirstOrDefaultAsync(m => m.TerminalId == id);
+            if (terminal == null)
+            {
+                return NotFound();
+            }
+            ViewData["LocalId"] = new SelectList(_context.Local, "LocalId", "Nome", terminal.LocalId);
+            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Descricao", terminal.ModeloId);
+
+            return View(terminal);
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -41,7 +41,7 @@ namespace OrionTM_Web.Models
         [Required(ErrorMessage = "Data Atualização")]
         [Display(Name = "Data Ultima Atualização")]
         public DateTime DtAtualizaao { get; set; }
-               
+        
         public virtual Local Local { get; set; }
 
         public virtual Modelo Modelo { get; set; }

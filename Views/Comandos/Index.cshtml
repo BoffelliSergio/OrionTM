@@ -6,6 +6,25 @@
 @{
     ViewData["Title"] = "Comandos";
 }
+@*
+glyphicon-ok-circle
+glyphicon-ban-circle
+
+ @if (Html.DisplayFor(modelItem => item.Status.StsDescricao).Equals(1))
+                    {
+                        <text>
+                          ok
+                        </text>
+                    }
+                    else
+                    {
+                        <text>
+                           nok
+                        </text>
+                    }
+
+*@
+
 
 <form method="get" class="form-inline">
 
@@ -37,6 +56,7 @@
 <table class="table table-striped ">
     <thead>
         <tr>
+           
             <th>
                Terminal
             </th>
@@ -44,12 +64,12 @@
                 Comando
             </th>
             <th>
-                Status
-            </th>
-            <th>
                 Data
             </th>
-            <th></th>
+            <th>
+                Status
+            </th>
+           
         </tr>
     </thead>
     <tbody>
@@ -62,12 +82,14 @@
                <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     @Html.DisplayFor(modelItem => item.Comando.Nome)
                 </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Status.StsDescricao)
-                </td>
+               
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.DtAtualizacao)
                 </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Status.StsDescricao)
+                </td>
+
             </tr>
 
         }

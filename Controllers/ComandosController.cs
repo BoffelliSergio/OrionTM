@@ -22,27 +22,31 @@ namespace OrionTM_Web.Controllers
         }
         public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "DtAtualizacao")
         {
-            var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
+
+            if (User.Identity.IsAuthenticated)
+            {
+
+                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
 
-
             // somente executar comandos
             resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(5)));
-
 
             if (!string.IsNullOrWhiteSpace(filter))
             {
                 resultado = resultado.Where(p => p.TerminalId.Equals(Convert.ToInt32(filter)));
             }
 
-
             var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
             return View(model);
+            }
+            return RedirectToAction("Login", "Account");
         }
 
-       
+
+
         public IActionResult EnvioPorTerminais()
         {
             if (User.Identity.IsAuthenticated)
@@ -80,14 +84,23 @@ namespace OrionTM_Web.Controllers
                     _context.FilaTasks.Add(f);
                     _context.SaveChanges();
                 }
+
+                _context.LogAuditoria.Add(
+                        new LogAuditoria
+                        {
+                            Usuario = User.Identity.Name,
+                            Modulo = "Comandos",
+                            Detalhe = String.Concat("Envio Comando Por Termianal" ),
+                            Data = DateTime.UtcNow
+                        });
+                _context.SaveChanges();
+
             }
 
             // recarrega os dados
-
             ComandosEnvioViewModel.Terminais = _context.Terminal;
             ComandosEnvioViewModel.Comandos = _context.Comando;
             return View(ComandosEnvioViewModel);
-            
         }
 
 
@@ -134,8 +147,17 @@ namespace OrionTM_Web.Controllers
                         l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
-
                     }
+                    _context.LogAuditoria.Add(
+                       new LogAuditoria
+                       {
+                           Usuario = User.Identity.Name,
+                           Modulo = "Comandos",
+                           Detalhe = String.Concat("Envio Comando Por Local"),
+                           Data = DateTime.UtcNow
+                       });
+                    _context.SaveChanges();
+
                 }
             }
 
@@ -193,6 +215,17 @@ namespace OrionTM_Web.Controllers
                         _context.SaveChanges();
 
                     }
+                    _context.LogAuditoria.Add(
+                       new LogAuditoria
+                       {
+                           Usuario = User.Identity.Name,
+                           Modulo = "Comandos",
+                           Detalhe = String.Concat("Envio Comando Por Lista"),
+                           Data = DateTime.UtcNow
+                       });
+                    _context.SaveChanges();
+
+
                 }
             }
 

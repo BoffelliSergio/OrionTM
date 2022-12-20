@@ -35,6 +35,8 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                 resultado = resultado.Where(p => p.Codigo.ToUpper().Contains(filter.ToUpper())).OrderBy(l=> l.Codigo);
             }
 
+      
+
             var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
             return View(model);

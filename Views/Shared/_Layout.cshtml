@@ -21,11 +21,11 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex ">
 
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     <a class="nav-link text-white" asp-area="" asp-controller="ListaEnvio" asp-action="Index">Lista Envio</a>
                     <a class="nav-link text-white" asp-area="" asp-controller="Envio" asp-action="Index">Envio Pacotes</a>
                     <a class="nav-link text-white" asp-area="" asp-controller="BuscaLog" asp-action="Index">Busca Logs</a>
                     <a class="nav-link text-white" asp-area="" asp-controller="Comandos" asp-action="Index">Comandos</a>
-                    <a class="nav-link text-white" asp-area="" asp-controller="Resetar" asp-action="Index">Resetar</a>
                     <a class="nav-link text-white" asp-area="" asp-controller="Contato" asp-action="Index">Suporte</a>
 
                     @if(User.IsInRole("Admin"))
