@@ -28,6 +28,8 @@ namespace OrionTM_Web.Context
         public DbSet<FilaTasks> FilaTasks { get; set; }
         public DbSet<Status> Status { get; set; }
         public DbSet<Tasks> Tasks { get; set; }
+        public DbSet<tst_SP> tst_SP { get; set; }
+
 
     }
 }
