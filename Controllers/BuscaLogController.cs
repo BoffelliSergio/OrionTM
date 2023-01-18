@@ -36,8 +36,9 @@ namespace OrionTM_Web.Controllers
 
             if (!string.IsNullOrWhiteSpace(filter))
             {
-                resultado = resultado.Where(p => p.TerminalId.Equals(Convert.ToInt32(filter)));
-            }
+                    resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
+
+                }
 
             var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
