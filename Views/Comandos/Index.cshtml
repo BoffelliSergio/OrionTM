@@ -4,34 +4,15 @@
 
 
 @{
-    ViewData["Title"] = "Comandos";
+    ViewData["Title"] = "Logs";
 }
-@*
-glyphicon-ok-circle
-glyphicon-ban-circle
-
- @if (Html.DisplayFor(modelItem => item.Status.StsDescricao).Equals(1))
-                    {
-                        <text>
-                          ok
-                        </text>
-                    }
-                    else
-                    {
-                        <text>
-                           nok
-                        </text>
-                    }
-
-*@
-
 
 <form method="get" class="form-inline">
 
     <div>
         <dl class="row">
             <dt class="col-sm-3">
-                <h3>Envio de Comandos</h3>
+                <h3>Execução de Comandos</h3>
             </dt>
 
             <dt class="col-sm-2">
@@ -64,6 +45,9 @@ glyphicon-ban-circle
                 Comando
             </th>
             <th>
+                Descrição
+            </th>
+            <th>
                 Data
             </th>
             <th>
@@ -79,10 +63,12 @@ glyphicon-ban-circle
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.Terminal.Codigo)
                 </td>
-               <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+               <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.Comando.Nome)
                 </td>
-               
+                <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    @Html.DisplayFor(modelItem => item.Comando.Descricao)
+                </td>
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.DtAtualizacao)
                 </td>
@@ -102,9 +88,9 @@ glyphicon-ban-circle
 <table>
     <tr>
         <td>
-            <a class="btn btn-outline-info btn-sm" asp-action="EnvioPorLista">Envio Por Lista </a>
-            <a class="btn btn-outline-warning btn-sm" asp-action="EnvioPorLocais">Envio por Localidade</a>
-            <a class="btn btn-outline-danger btn-sm" asp-action="EnvioPorTerminais">Envio por Terminal</a>
+            <a class="btn btn-outline-info btn-sm" asp-action="ComandoPorLista">Comando Por Lista </a>
+            <a class="btn btn-outline-warning btn-sm" asp-action="ComandoPorLocais">Comando por Localidade</a>
+            <a class="btn btn-outline-danger btn-sm" asp-action="ComandoPorTerminais">Comando por Terminal</a>
         </td>
     </tr>
 </table>

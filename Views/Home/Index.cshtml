@@ -31,11 +31,7 @@
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
                 </button>
             </dt>
-            <dt class="col-sm-1">
-                <th class="col-sm-4">
-                    <a class="btn btn-primary " asp-action="Create">Incluir</a>
-                </th>
-            </dt>
+            
             <dt class="col-sm-2">
                 <h4>Total: @Model.TotalRecordCount</h4>
             </dt>
@@ -65,6 +61,12 @@
                 IP
             </th>
             <th>
+                Versão Distribuida
+            </th>
+            <th>
+                Versão Instalada
+            </th>
+            <th>
                 Atuluzado em:
             </th>
             <th></th>
@@ -73,10 +75,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-
-              
-            </td>
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
 
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 @Html.DisplayFor(modelItem => item.Codigo)
@@ -90,12 +91,16 @@
             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.IP)
             </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                @Html.DisplayFor(modelItem => item.Vrs_Distribuida)
+             </td>
+             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Vrs_Instalada)
+                </td>
+             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.DtAtualizaao)
             </td>
-            <td>
-                <a class="btn btn-outline-info btn-sm" asp-action="Details" asp-route-id="@item.TerminalId">Detalhes</a>
-            </td>
+            
         </tr>
 }
     </tbody>

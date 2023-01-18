@@ -1718,3 +1718,9 @@ C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\refint\OrionTM_Web.dll
 C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.pdb
 C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.genruntimeconfig.cache
 C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\ref\OrionTM_Web.dll
+C:\Boffelli\Orion\OrionTM\bin\Debug\net6.0\Azure.Core.dll
+C:\Boffelli\Orion\OrionTM\bin\Debug\net6.0\Azure.Identity.dll
+C:\Boffelli\Orion\OrionTM\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Boffelli\Orion\OrionTM\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Boffelli\Orion\OrionTM\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Boffelli\Orion\OrionTM\bin\Debug\net6.0\System.Memory.Data.dll

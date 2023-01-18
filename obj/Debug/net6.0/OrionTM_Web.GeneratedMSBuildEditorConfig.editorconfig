@@ -151,6 +151,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Nb2RlbG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Boffelli/Orion/OrionTM/Areas/Admin/Views/AdminPacote/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYWNvdGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Areas/Admin/Views/AdminPacote/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYWNvdGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Areas/Admin/Views/AdminPacote/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYWNvdGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Boffelli/Orion/OrionTM/Areas/Admin/Views/AdminPacote/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QYWNvdGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -215,32 +227,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/EnvioPorLista.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcRW52aW9Qb3JMaXN0YS5jc2h0bWw=
+[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/BuscaPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcQnVzY2FQb3JMaXN0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/EnvioPorLocais.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcRW52aW9Qb3JMb2NhaXMuY3NodG1s
+[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/BuscaPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcQnVzY2FQb3JMb2NhaXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/EnvioPorTerminais.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcRW52aW9Qb3JUZXJtaW5haXMuY3NodG1s
+[C:/Boffelli/Orion/OrionTM/Views/BuscaLog/BuscaPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcQnVzY2FQb3JUZXJtaW5haXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Boffelli/Orion/OrionTM/Views/BuscaLog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzY2FMb2dcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/Comandos/EnvioPorLista.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcRW52aW9Qb3JMaXN0YS5jc2h0bWw=
+[C:/Boffelli/Orion/OrionTM/Views/Comandos/ComandoPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcQ29tYW5kb1Bvckxpc3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/Comandos/EnvioPorLocais.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcRW52aW9Qb3JMb2NhaXMuY3NodG1s
+[C:/Boffelli/Orion/OrionTM/Views/Comandos/ComandoPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcQ29tYW5kb1BvckxvY2Fpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/Comandos/EnvioPorTerminais.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcRW52aW9Qb3JUZXJtaW5haXMuY3NodG1s
+[C:/Boffelli/Orion/OrionTM/Views/Comandos/ComandoPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tYW5kb3NcQ29tYW5kb1BvclRlcm1pbmFpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Boffelli/Orion/OrionTM/Views/Comandos/Index.cshtml]
@@ -251,8 +263,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Boffelli/Orion/OrionTM/Views/Envio/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9cSW5kZXguY3NodG1s
+[C:/Boffelli/Orion/OrionTM/Views/EnvioPacotes/EnvioPacotesPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9QYWNvdGVzXEVudmlvUGFjb3Rlc1Bvckxpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/EnvioPacotes/EnvioPacotesPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9QYWNvdGVzXEVudmlvUGFjb3Rlc1BvckxvY2Fpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/EnvioPacotes/EnvioPacotesPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9QYWNvdGVzXEVudmlvUGFjb3Rlc1BvclRlcm1pbmFpcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/EnvioPacotes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW52aW9QYWNvdGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Boffelli/Orion/OrionTM/Views/Home/Details.cshtml]
@@ -285,6 +309,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Boffelli/Orion/OrionTM/Views/ListaEnvio/Terminais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFFbnZpb1xUZXJtaW5haXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resets/ResetPorLista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRzXFJlc2V0UG9yTGlzdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resets/ResetPorLocais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRzXFJlc2V0UG9yTG9jYWlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Boffelli/Orion/OrionTM/Views/Resets/ResetPorTerminais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRzXFJlc2V0UG9yVGVybWluYWlzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Boffelli/Orion/OrionTM/Views/Shared/Error.cshtml]

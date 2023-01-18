@@ -27,12 +27,12 @@ namespace OrionTM_Web.Controllers
             if (User.Identity.IsAuthenticated)
             {
 
-                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t => t.Tasks);
+                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Log);
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
 
             // somente executar comandos
-            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(4)));
+            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(3)));
 
             if (!string.IsNullOrWhiteSpace(filter))
             {
@@ -47,13 +47,13 @@ namespace OrionTM_Web.Controllers
     }
 
 
-    public IActionResult EnvioPorTerminais()
+    public IActionResult BuscaPorTerminais()
         {
             if (User.Identity.IsAuthenticated)
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
-                ComandosEnvioViewModel.Comandos = _context.Comando;
+                ComandosEnvioViewModel.Log = _context.Log;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");
@@ -61,15 +61,15 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnvioPorTerminais(int? id, IFormCollection form)
+        public async Task<IActionResult> BuscaPorTerminais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
 
             //var DependencyListaEnvioId = Convert.ToInt32(id);
-            List<string> Comandos_from = form["Comandos_from"].ToList();
+            List<string> Logs_from = form["Logs_from"].ToList();
             List<string> terminais_from = form["terminais_from"].ToList();
 
-            foreach (var ComandoId in Comandos_from)
+            foreach (var LogId in Logs_from)
             {
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in terminais_from)
@@ -78,29 +78,37 @@ namespace OrionTM_Web.Controllers
 
                     f.TerminalId = Convert.ToInt32(item);
                     f.DtAtualizacao = DateTime.Now;
-                    f.TasksId = 4;
-                    f.ComandoId = Convert.ToInt32(ComandoId);
+                    f.TasksId = 3;
+                    f.ComandoId = 0;
+                    f.LogId = Convert.ToInt32(LogId); 
+                    f.PacoteId = 0;
                     f.StatusId = 0;
                     _context.FilaTasks.Add(f);
                     _context.SaveChanges();
                 }
             }
 
-            // recarrega os dados
+            _context.LogAuditoria.Add(
+                      new LogAuditoria
+                      {
+                          Usuario = User.Identity.Name,
+                          Modulo = "Busca Logs",
+                          Detalhe = String.Concat("Busca Por Termianal"),
+                          Data = DateTime.UtcNow
+                      });
+            _context.SaveChanges();
 
-            ComandosEnvioViewModel.Terminais = _context.Terminal;
-            ComandosEnvioViewModel.Comandos = _context.Comando;
-            return View(ComandosEnvioViewModel);
+            return RedirectToAction("Index", "BuscaLog");
 
         }
 
-        public IActionResult EnvioPorLocais()
+        public IActionResult BuscaPorLocais()
         {
             if (User.Identity.IsAuthenticated)
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Locais = _context.Local;
-                ComandosEnvioViewModel.Comandos = _context.Comando;
+                ComandosEnvioViewModel.Log = _context.Log;
                 return View(ComandosEnvioViewModel);
 
             }
@@ -109,15 +117,15 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnvioPorLocais(int? id, IFormCollection form)
+        public async Task<IActionResult> BuscaPorLocais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
 
             //var DependencyListaEnvioId = Convert.ToInt32(id);
-            List<string> Comandos_from = form["Comandos_from"].ToList();
+            List<string> Logs_from = form["Logs_from"].ToList();
             List<string> Locais_from = form["Locais_from"].ToList();
 
-            foreach (var ComandoId in Comandos_from)
+            foreach (var LogId in Logs_from)
             {
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Locais_from)
@@ -131,30 +139,38 @@ namespace OrionTM_Web.Controllers
                         FilaTasks l = new FilaTasks();
                         l.TerminalId = Convert.ToInt32(terminal.TerminalId);
                         l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 4;
-                        l.ComandoId = Convert.ToInt32(ComandoId);
+                        l.TasksId = 3;
+                        l.ComandoId = 0;
+                        l.LogId = Convert.ToInt32(LogId);
+                        l.PacoteId = 0;
                         l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
 
                     }
+                    _context.LogAuditoria.Add(
+                     new LogAuditoria
+                     {
+                         Usuario = User.Identity.Name,
+                         Modulo = "Busca Logs",
+                         Detalhe = String.Concat("Busca Por Termianal"),
+                         Data = DateTime.UtcNow
+                     });
+                    _context.SaveChanges();
+
                 }
             }
 
-            // recarrega os dados
-
-            ComandosEnvioViewModel.Comandos = _context.Comando;
-            ComandosEnvioViewModel.Locais = _context.Local;
-            return View(ComandosEnvioViewModel);
+            return RedirectToAction("Index", "BuscaLog");
         }
 
-        public IActionResult EnvioPorLista()
+        public IActionResult BuscaPorLista()
         {
             if (User.Identity.IsAuthenticated)
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.ListaEnvio = _context.ListaEnvio;
-                ComandosEnvioViewModel.Comandos = _context.Comando;
+                ComandosEnvioViewModel.Log = _context.Log;
                 return View(ComandosEnvioViewModel);
 
             }
@@ -163,15 +179,15 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnvioPorLista(int? id, IFormCollection form)
+        public async Task<IActionResult> BuscaPorLista(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
 
             //var DependencyListaEnvioId = Convert.ToInt32(id);
-            List<string> Comandos_from = form["Comandos_from"].ToList();
+            List<string> Logs_from = form["Logs_from"].ToList();
             List<string> Lista_from = form["Lista_from"].ToList();
 
-            foreach (var ComandoId in Comandos_from)
+            foreach (var LogId in Logs_from)
             {
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Lista_from)
@@ -185,22 +201,30 @@ namespace OrionTM_Web.Controllers
                         FilaTasks l = new FilaTasks();
                         l.TerminalId = Convert.ToInt32(lista.TerminalId);
                         l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 4;
-                        l.ComandoId = Convert.ToInt32(ComandoId);
+                        l.TasksId = 3;
+                        l.ComandoId = 0;
+                        l.LogId = Convert.ToInt32(LogId); 
+                        l.PacoteId = 0;
                         l.StatusId = 0;
                         _context.FilaTasks.Add(l);
                         _context.SaveChanges();
 
                     }
+
+                    _context.LogAuditoria.Add(
+                     new LogAuditoria
+                     {
+                         Usuario = User.Identity.Name,
+                         Modulo = "Busca Logs",
+                         Detalhe = String.Concat("Busca Por Termianal"),
+                         Data = DateTime.UtcNow
+                     });
+                    _context.SaveChanges();
+
                 }
             }
 
-            // recarrega os dados
-
-            ComandosEnvioViewModel.Comandos = _context.Comando;
-            ComandosEnvioViewModel.ListaEnvio = _context.ListaEnvio;
-            ;
-            return View(ComandosEnvioViewModel);
+            return RedirectToAction("Index", "BuscaLog");
 
         }
 

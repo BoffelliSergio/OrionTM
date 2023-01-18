@@ -2,18 +2,18 @@
 
 
 <div class="container">
-    <form asp-action="EnvioPorLista">
-        <h3>Envio de Comandos por Lista</h3>
+    <form asp-action="EnvioPacotesPorTerminais">
+         <h3>Envio de Pacote por Equipamento</h3>
         <table class="table">
 
             <tr>
                 <td>
-                    <div><h4>Comandos</h4></div>
+                    <div><h4>Pacotes</h4></div>
                     <div>
-                        <select name="Comandos_from" id="multiselect" class="form-control" size="5">
-                            @foreach (var item in Model.Comandos)
+                        <select name="Pacotes_from" id="multiselect" class="form-control" size="5">
+                            @foreach (var item in Model.Pacote)
                             {
-                                <option value="@item.ComandoId">@item.Nome</option>
+                                <option value="@item.PacoteId">@item.Nome</option>
                             }
                         </select>
                     </div>
@@ -22,12 +22,12 @@
 
             <tr>
                 <td>
-                    <div><h4>Listas de Envio</h4></div>
+                    <div><h4>Terminais</h4></div>
                     <div>
-                        <select name="Lista_from" id="multiselect" class="form-control" size="10" multiple="multiple">
-                            @foreach (var item in Model.ListaEnvio)
+                        <select name="terminais_from" id="multiselect" class="form-control" size="10" multiple="multiple">
+                            @foreach (var item in Model.Terminais)
                             {
-                                <option value="@item.ListaEnvioId">@item.Nome</option>
+                                <option value="@item.TerminalId">@item.Codigo</option>
                             }
                         </select>
                     </div>
@@ -37,7 +37,7 @@
         <table>
             <div class="row">
                 <div class="col-md-2 offset-md-10">
-                    <button type="submit" class="btn btn-warning  btn-sm">Salvar</button>
+                    <button type="submit" class="btn btn-warning  btn-sm">Executar</button>
                     <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
                 </div>
             </div>

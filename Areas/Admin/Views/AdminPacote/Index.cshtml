@@ -5,7 +5,6 @@
 }
 
 
-
 <form method="get" class="form-inline">
 
     <div>
@@ -52,7 +51,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Caminho)
             </th>
-
+            <th>
+                @Html.DisplayNameFor(model => model.Versao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prod)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -69,10 +73,13 @@
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.Caminho)
                 </td>
-
-
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Versao)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Prod)
+                </td>
                 <td>
-                    <a class="btn btn-outline-info btn-sm" asp-action="Details" asp-route-id="@item.PacoteId">Detalhes</a>
                     <a class="btn btn-outline-warning btn-sm" asp-action="Edit" asp-route-id="@item.PacoteId">Editar</a>
                     <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@item.PacoteId">Excluir</a>
                 </td>

@@ -1,0 +1,46 @@
+﻿@model ComandosEnvioViewModel
+
+
+<div class="container">
+    <form asp-action="BuscaPorLocais">
+        <h3>Busca de Logs por Locais</h3>
+        <table class="table">
+
+            <tr>
+                <td>
+                    <div><h4>Logs</h4></div>
+                    <div>
+                        <select name="Logs_from" id="multiselect" class="form-control" size="5">
+                            @foreach (var item in Model.Log)
+                            {
+                                <option value="@item.LogId">@item.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div><h4>Locais</h4></div>
+                    <div>
+                        <select name="Locais_from" id="multiselect" class="form-control" size="10" multiple="multiple">
+                            @foreach (var item in Model.Locais)
+                            {
+                                <option value="@item.LocalId">@item.Nome</option>
+                            }
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <div class="row">
+                <div class="col-md-2 offset-md-10">
+                    <button type="submit" class="btn btn-warning  btn-sm">Executar</button>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+                </div>
+            </div>
+        </table>
+    </form>
+</div>

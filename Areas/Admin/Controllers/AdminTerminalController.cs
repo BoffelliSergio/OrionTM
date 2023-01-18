@@ -77,7 +77,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TerminalId,ModeloId,Codigo,LocalId,IP,DNS,DefaultGateway,DtAtualizaao")] Terminal terminal)
+        public async Task<IActionResult> Create([Bind("TerminalId,ModeloId,Codigo,LocalId,IP,DNS,DefaultGateway,DtAtualizaao,Vrs_Distribuida,Vrs_Instalada,Status")] Terminal terminal)
         {
             if (ModelState.IsValid)
             {
@@ -97,6 +97,9 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                 }
                 else
                 {
+                    terminal.Vrs_Distribuida = 0;
+                    terminal.Vrs_Instalada = 0;
+                    terminal.Status = 0;
                     _context.Add(terminal);
                     await _context.SaveChangesAsync();
 
@@ -144,7 +147,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("TerminalId,ModeloId,Codigo,LocalId,IP,DNS,DefaultGateway,DtAtualizaao")] Terminal terminal)
+        public async Task<IActionResult> Edit(int id, [Bind("TerminalId,ModeloId,Codigo,LocalId,IP,DNS,DefaultGateway,DtAtualizaao,Vrs_Distribuida,Vrs_Instalada,Status")] Terminal terminal)
         {
             if (id != terminal.TerminalId)
             {

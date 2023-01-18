@@ -41,7 +41,19 @@ namespace OrionTM_Web.Models
         [Required(ErrorMessage = "Data Atualização")]
         [Display(Name = "Data Ultima Atualização")]
         public DateTime DtAtualizaao { get; set; }
-        
+
+        [Required(ErrorMessage = "Versão Distribuida")]
+        [Display(Name = "Versão Distribuida")]
+        public int Vrs_Distribuida { get; set; }
+
+        [Required(ErrorMessage = "Versão Instalada")]
+        [Display(Name = "Versão Instalada")]
+        public int Vrs_Instalada { get; set; }
+
+        [Required(ErrorMessage = "Status")]
+        [Display(Name = "Status")]
+        public int Status { get; set; }
+
         public virtual Local Local { get; set; }
 
         public virtual Modelo Modelo { get; set; }

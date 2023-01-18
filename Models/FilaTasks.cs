@@ -17,6 +17,10 @@ namespace OrionTM_Web.Models
         public int TasksId { get; set; }
 
         public int ComandoId { get; set; }
+        
+        public int LogId { get; set; }
+
+        public int PacoteId { get; set; }
 
         public int StatusId { get; set; }
 
@@ -25,6 +29,10 @@ namespace OrionTM_Web.Models
         public virtual Status Status { get; set; }
 
         public virtual Comando Comando { get; set; }
+
+        public virtual Log Log { get; set; }
+
+        public virtual Pacote Pacote { get; set; }
 
         public virtual Tasks Tasks { get; set; }
     }

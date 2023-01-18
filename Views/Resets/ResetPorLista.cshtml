@@ -2,24 +2,9 @@
 
 
 <div class="container">
-    <form asp-action="EnvioPorLista">
-        <h3>Envio de Comandos por Lista</h3>
+    <form asp-action="ResetPorLista">
+        <h3>Resetar por Lista</h3>
         <table class="table">
-
-            <tr>
-                <td>
-                    <div><h4>Comandos</h4></div>
-                    <div>
-                        <select name="Comandos_from" id="multiselect" class="form-control" size="5">
-                            @foreach (var item in Model.Comandos)
-                            {
-                                <option value="@item.ComandoId">@item.Nome</option>
-                            }
-                        </select>
-                    </div>
-                </td>
-            </tr>
-
             <tr>
                 <td>
                     <div><h4>Listas de Envio</h4></div>
@@ -37,7 +22,7 @@
         <table>
             <div class="row">
                 <div class="col-md-2 offset-md-10">
-                    <button type="submit" class="btn btn-warning  btn-sm">Salvar</button>
+                    <button type="submit" class="btn btn-warning  btn-sm">Executar</button>
                     <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
                 </div>
             </div>

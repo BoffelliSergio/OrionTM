@@ -47,7 +47,7 @@ namespace OrionTM_Web.Controllers
 
 
 
-        public IActionResult EnvioPorTerminais()
+        public IActionResult ComandoPorTerminais()
         {
             if (User.Identity.IsAuthenticated)
             {
@@ -61,7 +61,7 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnvioPorTerminais(int? id, IFormCollection form)
+        public async Task<IActionResult> ComandoPorTerminais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
 
@@ -80,6 +80,8 @@ namespace OrionTM_Web.Controllers
                     f.DtAtualizacao = DateTime.Now;
                     f.TasksId = 5;
                     f.ComandoId = Convert.ToInt32(ComandoId);
+                    f.LogId = 0;
+                    f.PacoteId = 0;
                     f.StatusId = 0;
                     _context.FilaTasks.Add(f);
                     _context.SaveChanges();
@@ -97,14 +99,11 @@ namespace OrionTM_Web.Controllers
 
             }
 
-            // recarrega os dados
-            ComandosEnvioViewModel.Terminais = _context.Terminal;
-            ComandosEnvioViewModel.Comandos = _context.Comando;
-            return View(ComandosEnvioViewModel);
+            return RedirectToAction("Index", "Comandos");
         }
 
 
-        public IActionResult EnvioPorLocais()
+        public IActionResult ComandoPorLocais()
         {
             if (User.Identity.IsAuthenticated)
             {
@@ -120,7 +119,7 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnvioPorLocais(int? id, IFormCollection form)
+        public async Task<IActionResult> ComandoPorLocais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
 
@@ -161,15 +160,11 @@ namespace OrionTM_Web.Controllers
                 }
             }
 
-            // recarrega os dados
-
-            ComandosEnvioViewModel.Comandos = _context.Comando;
-            ComandosEnvioViewModel.Locais = _context.Local;
-            return View(ComandosEnvioViewModel);
+            return RedirectToAction("Index", "Comandos");
         }
 
 
-        public IActionResult EnvioPorLista()
+        public IActionResult ComandoPorLista()
         {
             if (User.Identity.IsAuthenticated)
             {
@@ -186,7 +181,7 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EnvioPorLista(int? id, IFormCollection form)
+        public async Task<IActionResult> ComandoPorLista(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
 
@@ -228,13 +223,7 @@ namespace OrionTM_Web.Controllers
 
                 }
             }
-
-            // recarrega os dados
-
-            ComandosEnvioViewModel.Comandos = _context.Comando;
-            ComandosEnvioViewModel.ListaEnvio = _context.ListaEnvio;
-                ;
-            return View(ComandosEnvioViewModel);
+            return RedirectToAction("Index", "Comandos");
 
         }
 

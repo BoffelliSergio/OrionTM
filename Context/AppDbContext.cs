@@ -12,8 +12,7 @@ namespace OrionTM_Web.Context
         public AppDbContext(DbContextOptions<AppDbContext> options  ) : base( options )
         {
         }
-
-      
+             
         public DbSet<Modelo> Modelo { get; set; }
         public DbSet<Link> Link { get; set; }
         public DbSet<Local> Local { get; set; }
@@ -28,7 +27,7 @@ namespace OrionTM_Web.Context
         public DbSet<FilaTasks> FilaTasks { get; set; }
         public DbSet<Status> Status { get; set; }
         public DbSet<Tasks> Tasks { get; set; }
-        public DbSet<tst_SP> tst_SP { get; set; }
+        
 
 
     }
