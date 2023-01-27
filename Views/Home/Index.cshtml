@@ -1,16 +1,12 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Terminal>
 
-              
-            @*
-            glyphicon-ok-circle
-            glyphicon-ban-circle
-                   
-            *@
-
-  
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+         
+      
 @{    ViewData["Title"] = "Terminais";}
-
-
 
 
 <form method="get" class="form-inline">
@@ -18,10 +14,10 @@
     <div>
         <dl class="row">
 
-             <dt class="col-sm-2">
+            <dt class="col-sm-2">
                 <h3>Terminais</h3>
-             </dt>
-                   
+            </dt>
+
             <dt class="col-sm-2">
                 <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
             </dt>
@@ -32,15 +28,11 @@
                 </button>
             </dt>
             
-            <dt class="col-sm-2">
-                <h4>Total: @Model.TotalRecordCount</h4>
-            </dt>
         </dl>
     </div>
 
 </form>
 
-<hr />
 
 <table class="table table-striped">
     <thead>
@@ -75,9 +67,23 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+
+               
                 <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                    @Html.DisplayFor(modelItem => item.Status)
-                </td>
+                                    
+                      
+                    @if ( item.Status == 1)
+                    {
+                         <span class="glyphicon glyphicon-ok" style="color:green;"></span>
+                    }
+                    else
+                    {
+                       <span class="glyphicon glyphicon-remove" style="color:red;"></span>
+                    }
+
+
+
+                 </td>
 
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 @Html.DisplayFor(modelItem => item.Codigo)
@@ -108,3 +114,13 @@
 <div>
      <vc:pager paging-list="@Model"></vc:pager>
 </div>
+
+<script language='javascript'>
+   
+function teste(){
+     window.location.reload();
+}
+
+setTimeout(teste,10000);
+
+</script>

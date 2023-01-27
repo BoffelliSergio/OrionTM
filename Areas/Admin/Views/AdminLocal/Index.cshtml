@@ -28,9 +28,7 @@
                     <a class="btn btn-primary " asp-action="Create">Incluir</a>
                 </th>
             </dt>
-            <dt class="col-sm-2">
-                <h4>Total: @Model.TotalRecordCount</h4>
-            </dt>
+            
         </dl>
     </div>
 
@@ -76,6 +74,10 @@
     </tbody>
 </table>
 
-<div>
-    <vc:pager paging-list="@Model"></vc:pager>
-</div>
+<table class="table ">
+    <tr>
+        <td class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> <vc:pager paging-list="@Model"></vc:pager> </td>
+        <td> <h5>Total: @Model.TotalRecordCount</h5> </td>
+    </tr>
+
+</table>

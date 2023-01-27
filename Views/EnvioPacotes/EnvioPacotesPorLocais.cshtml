@@ -3,7 +3,7 @@
 
 <div class="container">
     <form asp-action="EnvioPacotesPorLocais">
-        <h3>Envio de Pacotes por Localidade</h3>
+        <h3>Download de Pacotes por Localidade</h3>
         <table class="table">
 
             <tr>
@@ -22,7 +22,7 @@
 
             <tr>
                 <td>
-                    <div><h4>Locais</h4></div>
+                    <div><h4>Localidades</h4></div>
                     <div>
                         <select name="Locais_from" id="multiselect" class="form-control" size="10" multiple="multiple">
                             @foreach (var item in Model.Locais)
