@@ -1,6 +1,5 @@
 ﻿@model OrionTM_Web.Models.Comando
 
-
 @{
     ViewData["Title"] = "Comandos";
 }
@@ -11,15 +10,14 @@
     <h3 style="color: red;">@Html.ValidationMessage("Aviso")</h3>
 </div>
 
-
 <hr />
-<div class="col-md-6">
+<div class="col-md-12">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <table class="table">
-            <tr>
-                <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <table class="table" >
+            <tr >
+                <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
                     <div class="form-group">
                             <label asp-for="Nome" class="control-label"></label>:
                             <input asp-for="Nome" class="form-control" />
@@ -30,22 +28,30 @@
                             <input asp-for="Descricao" class="form-control" />
                             <span asp-validation-for="Descricao" class="text-danger"></span>
                     </div>
-                                            
-
-                    <div class="form-group">
-                        <label asp-for="Caminho" class="control-label"></label>:
-                        <input asp-for="Caminho" class="form-control" />
-                        <span asp-validation-for="Caminho" class="text-danger"></span>
+                                       
+                </th>
+                <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <label for="file">Arquivo:</label>
+                    <input type="file" style="visibility:initial;" id="file" onchange="previewFile()" asp-for="Caminho" class="form-control" />
+                    
+                    <br />  <br />
+                    <div style="height: 250px; overflow: auto" >
+                        <table style="width:80%;">
+                            <tr valign="top">
+                            <th >
+                                <div>
+                                <p class="content"></p>
+                                </div>
+                            </th>
+                        </tr>
+                        </table>
                     </div>
-                   
 
+                    
                 </th>
             </tr>
-
         </table>
               
-
-
         <br />
         <div class="form-group">
             <input type="submit" value="Incluir" class="btn btn-primary btn-sm" />
@@ -53,6 +59,24 @@
         </div>
         </form>
  </div>
+
+<script language='javascript'>
+
+    function previewFile() {
+        const content = document.querySelector('.content');
+        const [file] = document.querySelector('input[type=file]').files;
+        const reader = new FileReader();
+
+        reader.addEventListener("load", () => {
+            content.innerText = reader.result;
+        }, false);
+
+        if (file) {
+            reader.readAsText(file);
+        }
+    }
+
+</script>
 
 
 

@@ -9,7 +9,7 @@
     <div>
         <dl class="row">
 
-            <dt class="col-sm-2">
+            <dt class="col-sm-3">
                 <h3>Comandos</h3>
             </dt>
 
@@ -68,9 +68,9 @@
 
 
                 <td>
-                    <a class="btn btn-outline-info btn-sm" asp-action="Details" asp-route-id="@item.ComandoId">Detalhes</a>
-                    <a class="btn btn-outline-warning btn-sm" asp-action="Edit" asp-route-id="@item.ComandoId">Editar</a>
-                    <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@item.ComandoId">Excluir</a>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.ComandoId">Detalhes</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.ComandoId">Editar</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ComandoId">Excluir</a>
                 </td>
             </tr>
         }

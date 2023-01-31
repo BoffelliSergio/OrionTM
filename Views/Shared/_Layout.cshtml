@@ -11,9 +11,11 @@
 </head>
 <body>
     <header>
+        
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  bg-dark border-bottom box-shadow mb-3 ">
-
-            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                       
+            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png"></a>
+            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Status">Status Tarminais</a>
             <a class="nav-link text-white" asp-area="" asp-controller="ListaEnvio" asp-action="Index">Lista de Terminais</a>
             <a class="nav-link text-white" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">Download Pacotes</a>
             <a class="nav-link text-white" asp-area="" asp-controller="BuscaLog" asp-action="Index">Upload Arquivos</a>
@@ -22,7 +24,7 @@
                    
            @if(User.IsInRole("Admin"))
                 {
-                <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index">Administraçao</a>
+                <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index">Administração</a>
                 }
 
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">

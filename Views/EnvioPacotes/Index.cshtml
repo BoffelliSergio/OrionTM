@@ -1,13 +1,7 @@
 ﻿@using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
 @model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.FilaTasks>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+
 
 @{
     ViewData["Title"] = "Envio Pacotes";
@@ -24,6 +18,21 @@
             <dt class="col-sm-2">
                 <input name="filter" class="form-control" placeholder="TerminalId" value="@Model.RouteValue["filter"]" />
             </dt>
+
+            <div class="col-sm-1">
+                <img src="~/images/Offline.png" />
+                <input type="checkbox" checked />
+            </div>
+
+            <div class="col-sm-1">
+                <img src="~/images/Online.png" />
+                <input type="checkbox" checked />
+            </div>
+
+            <div class="col-sm-1">
+                <img src="~/images/Novo Lote.png" />
+                <input type="checkbox" checked />
+            </div>
 
             <dt class="col-sm-1">
                 <button type="submit" class="btn btn-info ">
@@ -98,22 +107,22 @@
                    
                     @if (item.StatusId == 0)
                     {
-                        <span class="glyphicon glyphicon-play" style="color:blue;"></span>
+                        <img src="~/images/Novo Lote.png">
                     }
 
                     @if (item.StatusId == 2)
                     {
-                        <span class="glyphicon glyphicon-download" style="color:grey;"></span>
+                        <img src="~/images/Novo Lote.png">
                     }
 
                      @if (item.StatusId == 5)
                     {
-                        <span class="glyphicon glyphicon-remove" style="color:red;"></span>
+                        <img src="~/images/Offline.png" >
                     }
 
                     @if (item.StatusId == 6)
                     {
-                        <span class="glyphicon glyphicon-ok" style="color:green;"></span>
+                        <img src="~/images/Online.png" >
                     }
 
                 </td>

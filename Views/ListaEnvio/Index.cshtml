@@ -2,6 +2,7 @@
 @addTagHelper *, ReflectionIT.Mvc.Paging
 @model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.ListaEnvio>
 
+
 @{
     ViewData["Title"] = "Lista Envio";
 }
@@ -11,7 +12,7 @@
 
     <div>
         <dl class="row">
-            <dt class="col-sm-2">
+            <dt class="col-sm-3">
                 <h4>Lista de Terminais</h4>
             </dt>
 
@@ -62,9 +63,9 @@
 
                 <td>
 
-                    <a class="btn btn-outline-info btn-sm" asp-action="Terminais" asp-route-id="@item.ListaEnvioId">Terminais</a>
-                    <a class="btn btn-outline-warning btn-sm" asp-action="Edit" asp-route-id="@item.ListaEnvioId">Editar</a>
-                    <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@item.ListaEnvioId">Excluir</a>
+                    <a class="btn btn-info btn-sm" asp-action="Terminais" asp-route-id="@item.ListaEnvioId">Terminais</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.ListaEnvioId">Editar</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ListaEnvioId">Excluir</a>
                 </td>
             </tr>
         }

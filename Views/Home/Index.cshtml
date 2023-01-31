@@ -1,126 +1,80 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Terminal>
 
+
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+
+        google.charts.load('current', { 'packages': ['corechart'] });
+
+        function desenharPizza() {
+
+            var tabela = new google.visualization.DataTable();
+            tabela.addColumn('string', 'categorias');
+            tabela.addColumn('number', 'valores');
+            tabela.addRows([
+
+                ['Terminais On Line', 2000],
+                ['Terminais Off Line', 500],
+            
+            ]);
+
+            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
+            grafico.draw(tabela);
+        }
+
+        function desenharPizza1() {
+
+            var tabela = new google.visualization.DataTable();
+            tabela.addColumn('string', 'categorias');
+            tabela.addColumn('number', 'valores');
+            tabela.addRows([
+
+                ['Upload Finalizados OK', 2000],
+                ['Upload em andameto', 2000],
+                ['Upload com Erro', 2000],
+            ]);
+
+            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza1'));
+            grafico.draw(tabela);
+        }
+
+        function desenharPizza2() {
+
+            var tabela = new google.visualization.DataTable();
+            tabela.addColumn('string', 'categorias');
+            tabela.addColumn('number', 'valores');
+            tabela.addRows([
+
+                ['Download Finalizados OK', 2000],
+                ['Download em andameto', 2000],
+                ['Download com Erro', 2000],
+            ]);
+
+            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza2'));
+            grafico.draw(tabela);
+        }
+
+        google.charts.setOnLoadCallback(desenharPizza);
+        google.charts.setOnLoadCallback(desenharPizza1);
+        google.charts.setOnLoadCallback(desenharPizza2);
+
+
+
+    </script>
 </head>
-         
-      
-@{    ViewData["Title"] = "Terminais";}
+<body>
 
 
-<form method="get" class="form-inline">
+    <div>Status Terminais</div>
+    <div id="graficoPizza"></div>
 
-    <div>
-        <dl class="row">
+    <div>Upload de Arquivos</div>
+    <div id="graficoPizza1"></div>
 
-            <dt class="col-sm-2">
-                <h3>Terminais</h3>
-            </dt>
+    <div>DownLOad de Arquivos</div>
+    <div id="graficoPizza2"></div>
 
-            <dt class="col-sm-2">
-                <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
-            </dt>
-
-            <dt class="col-sm-1">
-                <button type="submit" class="btn btn-info ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
-                </button>
-            </dt>
-            
-        </dl>
-    </div>
-
-</form>
-
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>
-                Status
-            </th>
-            <th>
-                Terminal
-            </th>
-            <th>
-               Local
-            </th>
-            <th>
-                Modelo
-            </th>
-            <th>
-                IP
-            </th>
-            <th>
-                Vrs Distribuida
-            </th>
-            <th>
-                Vrs Instalada
-            </th>
-            <th>
-                Atualizado
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-
-               
-                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                                    
-                      
-                    @if ( item.Status == 1)
-                    {
-                         <span class="glyphicon glyphicon-ok" style="color:green;"></span>
-                    }
-                    else
-                    {
-                       <span class="glyphicon glyphicon-remove" style="color:red;"></span>
-                    }
-
-
-
-                 </td>
-
-            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                @Html.DisplayFor(modelItem => item.Codigo)
-            </td>
-            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                @Html.DisplayFor(modelItem => item.Local.Nome)
-            </td>
-            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                @Html.DisplayFor(modelItem => item.Modelo.Descricao)
-            </td>
-            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                @Html.DisplayFor(modelItem => item.IP)
-            </td>
-             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                @Html.DisplayFor(modelItem => item.Vrs_Distribuida)
-             </td>
-             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                    @Html.DisplayFor(modelItem => item.Vrs_Instalada)
-                </td>
-             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                @Html.DisplayFor(modelItem => item.DtAtualizaao)
-            </td>
-            
-        </tr>
-}
-    </tbody>
-</table>
-<div>
-     <vc:pager paging-list="@Model"></vc:pager>
-</div>
-
-<script language='javascript'>
-   
-function teste(){
-     window.location.reload();
-}
-
-setTimeout(teste,10000);
-
-</script>
+</body>

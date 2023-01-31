@@ -19,7 +19,15 @@ namespace OrionTM_Web.Controllers
             _context = context;
         }
         // GET: Admin/AdminTerminal
-        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Codigo")
+
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+
+        public async Task<IActionResult> Status(string filter, int pageindex = 1, string sort = "Codigo")
         {
             if (User.Identity.IsAuthenticated)
             {
