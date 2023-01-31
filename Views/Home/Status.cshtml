@@ -7,40 +7,40 @@
 <form method="get" class="form-inline">
 
     <div>
-        <dl class="row">
 
-            <dt class="col-sm-3">
-              
-                <h3>Status Terminais</h3>
-            </dt>
+        <table class="Table">
+            <tr>
+                <td class="col-sm-3">
+                    <h3>Status Terminais</h3>
+                </td>
+                <td class="col-sm-3">
+                    <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
+                </td>
+                <td class="col-sm-1">
 
-            <dt class="col-sm-2">
-                <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
-            </dt>
+                </td>
+                <td class="col-sm-2">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" name="IsOnLine" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOnLine"]">
+                        <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />Terminal Online</label>
+                    </div>
+                </td>
+                <td class="col-sm-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" name="IsOffLine" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOffLine"]">
+                        <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />Terminal Offline</label>
+                    </div>
+                </td>
+                <td class="col-sm-3">
+                    <button type="submit" class="btn btn-info ">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                    </button>
+                </td>
+            </tr>
+        </table>
 
-            <div class="col-sm-1">
-                <img src="~/images/Offline.png" />
-                <input type="checkbox" checked />
-            </div>
-
-            <div class="col-sm-1">
-                <img src="~/images/Online.png" />
-                <input type="checkbox" checked />
-            </div>
-
-            <dt class="col-sm-1">
-                <button type="submit" class="btn btn-info ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
-                </button>
-            </dt>
-            
-            
-
-        </dl>
-    </div>
 
 </form>
-
 
 
 <table class="table table-striped">
@@ -125,6 +125,6 @@ function teste(){
      window.location.reload();
 }
 
-setTimeout(teste,10000);
+setTimeout(teste,20000);
 
 </script>
