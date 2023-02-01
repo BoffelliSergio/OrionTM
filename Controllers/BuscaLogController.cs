@@ -20,7 +20,7 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "DtAtualizacao")
+        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "DtAtualizacao")
 
 
         {
@@ -36,12 +36,53 @@ namespace OrionTM_Web.Controllers
 
             if (!string.IsNullOrWhiteSpace(filter))
             {
-                    resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
+                resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
+            }
 
-                }
+            // exec ok err
+            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+            }
+
+            //ok err
+            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5));
+            }
+
+            //exec err
+            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+            }
+
+            //exec ok
+            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+            }
+
+            //exec
+            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2));
+            }
+
+            //ok
+            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(6));
+            }
+
+            //err
+            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+            {
+                resultado = resultado.Where(p => p.StatusId.Equals(5));
+            }
 
             var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
-            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
+            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
             return View(model);
         }
          return RedirectToAction("Login", "Account");

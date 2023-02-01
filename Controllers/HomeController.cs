@@ -41,18 +41,25 @@ namespace OrionTM_Web.Controllers
                 resultado = resultado.Where(p => p.Codigo.ToUpper().Contains(filter.ToUpper())).OrderBy(l => l.Codigo);
             }
 
-            if( !string.IsNullOrWhiteSpace(IsOnLine) )
+
+            //  ok err
+            if ((!string.IsNullOrWhiteSpace(IsOnLine)) && (!string.IsNullOrWhiteSpace(IsOffLine)) )
+                {
+                    resultado = resultado.Where(p => p.Status.Equals(1) || p.Status.Equals(0) );
+                }
+
+            if ((string.IsNullOrWhiteSpace(IsOnLine)) && (!string.IsNullOrWhiteSpace(IsOffLine)))
+                {
+                    resultado = resultado.Where(p => p.Status.Equals(0) );
+                }
+                
+                
+            if ((!string.IsNullOrWhiteSpace(IsOnLine)) && (string.IsNullOrWhiteSpace(IsOffLine)))
                 {
                     resultado = resultado.Where(p => p.Status.Equals(1));
                 }
 
-            if (!string.IsNullOrWhiteSpace(IsOffLine))
-                {
-                    resultado = resultado.Where(p => p.Status.Equals(0));
-                }
-            
-
-            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
+                var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } , { "IsOnLine",IsOnLine }  , { "IsOffLine", IsOffLine } };
             return View(model);
             }

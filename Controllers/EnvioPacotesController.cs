@@ -85,26 +85,7 @@ namespace OrionTM_Web.Controllers
                 }
 
 
-                //    if (!string.IsNullOrWhiteSpace(IsOk))
-                //        {
-                //    resultado = resultado.Where(p => p.StatusId.Equals(6));
-                //        }
-
-
-                //    if (!string.IsNullOrWhiteSpace(IsErro))
-                //    {
-                //        resultado = resultado.Where(p => p.StatusId.Equals(5));
-                //    }
-
-                //if (!string.IsNullOrWhiteSpace(IsExecutando))
-                //    {
-
-                //        resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2));
-                //    }
-
-
-
-                var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
+            var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
             model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
             return View(model);
             }

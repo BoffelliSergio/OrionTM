@@ -10,24 +10,45 @@
 
 <form method="get" class="form-inline">
 
-    <div>
-        <dl class="row">
-            <dt class="col-sm-3">
+    <table class="Table">
+        <tr>
+            <td class="col-sm-2">
                 <h4>Upload de Arquivos</h4>
-            </dt>
-
-            <dt class="col-sm-2">
+            </td>
+            <td class="col-sm-2">
                 <input name="filter" class="form-control" placeholder="TerminalId" value="@Model.RouteValue["filter"]" />
-            </dt>
+            </td>
+            <td class="col-sm-1">
+            </td>
 
-            <dt class="col-sm-1">
+            <td class="col-sm-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="IsExecutando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isExecutando"]">
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Novo Lote.png" />&nbsp;Executando</label>
+                </div>
+            </td>
+
+            <td class="col-sm-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="IsOk" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOk"]">
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;Upload OK</label>
+                </div>
+            </td>
+            <td class="col-sm-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="IsErro" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsErro"]">
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Upload Erro</label>
+                </div>
+            </td>
+
+            <td class="col-sm-3">
                 <button type="submit" class="btn btn-info ">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
                 </button>
-            </dt>
-           
-        </dl>
-    </div>
+            </td>
+        </tr>
+    </table>
+
 
 </form>
 
@@ -127,6 +148,6 @@ function teste(){
      window.location.reload();
 }
 
-setTimeout(teste,10000);
+setTimeout(teste,5000);
 
 </script>
