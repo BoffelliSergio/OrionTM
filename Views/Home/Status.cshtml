@@ -6,12 +6,12 @@
 
 <form method="get" class="form-inline">
 
-    <div>
+    
 
         <table class="Table">
             <tr>
                 <td class="col-sm-3">
-                    <h3>Status Terminais</h3>
+                    <h4>Status Terminais</h4>
                 </td>
                 <td class="col-sm-3">
                     <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
@@ -19,16 +19,16 @@
                 <td class="col-sm-1">
 
                 </td>
-                <td class="col-sm-2">
+                <td class="col-sm-3">
                     <div class="form-check form-switch">
                         <input class="form-check-input" name="IsOnLine" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOnLine"]">
-                        <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />Terminal Online</label>
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;Terminal Online</label>
                     </div>
                 </td>
                 <td class="col-sm-3">
                     <div class="form-check form-switch">
                         <input class="form-check-input" name="IsOffLine" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOffLine"]">
-                        <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />Terminal Offline</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Terminal Offline</label>
                     </div>
                 </td>
                 <td class="col-sm-3">

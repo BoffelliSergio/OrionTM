@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Context;
 using OrionTM_Web.Models;
-using OrionTM_Web.ViewModels;
 using ReflectionIT.Mvc.Paging;
 using System.Diagnostics;
 
