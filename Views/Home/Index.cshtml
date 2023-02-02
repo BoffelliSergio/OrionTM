@@ -1,80 +1,25 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Terminal>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
+<div id="graficoPizza" style="width: 600px; height: 300px;"></div>
 
-<head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <script>
+   
 
+<script>
         google.charts.load('current', { 'packages': ['corechart'] });
 
         function desenharPizza() {
-
             var tabela = new google.visualization.DataTable();
             tabela.addColumn('string', 'categorias');
             tabela.addColumn('number', 'valores');
             tabela.addRows([
-
-                ['Terminais On Line', 2000],
-                ['Terminais Off Line', 500],
-            
+                ['Terminais On Line', @Model.Count(x => x.Status == 1)],
+                ['Terminais Off Line', @Model.Count(x => x.Status == 0)],
             ]);
-
             var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
             grafico.draw(tabela);
         }
-
-        function desenharPizza1() {
-
-            var tabela = new google.visualization.DataTable();
-            tabela.addColumn('string', 'categorias');
-            tabela.addColumn('number', 'valores');
-            tabela.addRows([
-
-                ['Upload Finalizados OK', 2000],
-                ['Upload em andameto', 2000],
-                ['Upload com Erro', 2000],
-            ]);
-
-            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza1'));
-            grafico.draw(tabela);
-        }
-
-        function desenharPizza2() {
-
-            var tabela = new google.visualization.DataTable();
-            tabela.addColumn('string', 'categorias');
-            tabela.addColumn('number', 'valores');
-            tabela.addRows([
-
-                ['Download Finalizados OK', 2000],
-                ['Download em andameto', 2000],
-                ['Download com Erro', 2000],
-            ]);
-
-            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza2'));
-            grafico.draw(tabela);
-        }
-
         google.charts.setOnLoadCallback(desenharPizza);
-        google.charts.setOnLoadCallback(desenharPizza1);
-        google.charts.setOnLoadCallback(desenharPizza2);
-
-
-
     </script>
-</head>
-<body>
-
-
-    <div>Status Terminais</div>
-    <div id="graficoPizza"></div>
-
-    <div>Upload de Arquivos</div>
-    <div id="graficoPizza1"></div>
-
-    <div>DownLOad de Arquivos</div>
-    <div id="graficoPizza2"></div>
-
-</body>

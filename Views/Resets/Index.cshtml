@@ -56,9 +56,9 @@
 <table>
     <tr>
         <td>
-            <a class="btn btn-primary btn-sm" asp-action="ResetPorLista">Reset Por Lista </a>
-            <a class="btn btn-warning btn-sm" asp-action="ResetPorLocais">Reset por Localidade</a>
-            <a class="btn btn-danger btn-sm" asp-action="ResetPorTerminais">Reset por Terminal</a>
+            <a class="btn btn-primary btn-sm" asp-action="ResetPorLista">Por Lista </a>
+            <a class="btn btn-warning btn-sm" asp-action="ResetPorLocais">Por Localidade</a>
+            <a class="btn btn-danger btn-sm" asp-action="ResetPorTerminais">Por Terminal</a>
 
     </tr>
 </table>
@@ -68,16 +68,16 @@
 <table class="table table-striped ">
     <thead>
         <tr>
-
+            <th>
+                Status
+            </th>
             <th>
                 Terminal
             </th>
             <th>
                 Data
             </th>
-            <th>
-                Status
-            </th>
+           
 
         </tr>
     </thead>
@@ -85,13 +85,7 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Terminal.Codigo)
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @if (item.StatusId == 0)
                     {
                         <img src="~/images/Novo Lote.png">
@@ -112,6 +106,14 @@
                         <img src="~/images/Online.png">
                     }
                 </td>
+
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.Terminal.Codigo)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
+                </td>
+               
 
             </tr>
 

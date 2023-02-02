@@ -4,7 +4,6 @@ namespace OrionTM_Web.ViewModels
 {
     public class ComandosEnvioViewModel
     {
-
         public IEnumerable<ListaEnvio> ListaEnvio { get; set; }
 
         public IEnumerable<Terminal> Terminais { get; set; }
@@ -19,7 +18,6 @@ namespace OrionTM_Web.ViewModels
         public IEnumerable<FilaTasks> FilaTasks { get; set; }
 
         public IEnumerable<DetalheListaEnvio> DetalheListaEnvio { get; set; }
-
 
     }
 }

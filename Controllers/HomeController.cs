@@ -20,17 +20,22 @@ namespace OrionTM_Web.Controllers
         // GET: Admin/AdminTerminal
 
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Codigo")
         {
-            return View();
+            var appDbContext = _context.Terminal.Include(t => t.Local).Include(t => t.Modelo);
+
+            var resultado = appDbContext.AsNoTracking().AsQueryable();
+            
+            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
+
+            return View(model);
+
         }
 
 
         public async Task<IActionResult> Status(string filter, string IsOnLine, string IsOffLine , int pageindex = 1, string sort = "Codigo")
         {
            
-
-
             if (User.Identity.IsAuthenticated)
             {
              var appDbContext = _context.Terminal.Include(t => t.Local).Include(t => t.Modelo);
@@ -59,7 +64,7 @@ namespace OrionTM_Web.Controllers
                     resultado = resultado.Where(p => p.Status.Equals(1));
                 }
 
-                var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
+            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } , { "IsOnLine",IsOnLine }  , { "IsOffLine", IsOffLine } };
             return View(model);
             }

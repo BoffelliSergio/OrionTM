@@ -25,7 +25,6 @@ namespace OrionTM_Web.Controllers
 
             if (User.Identity.IsAuthenticated)
             {
-
                 var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
