@@ -20,7 +20,7 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "DtAtualizacao")
+        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DtAtualizacao")
 
 
         {

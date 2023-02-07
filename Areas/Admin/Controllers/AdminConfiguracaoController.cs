@@ -24,7 +24,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
         }
 
         // GET: Admin/AdminConfiguracao
-        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Campo")
+        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Detalhe")
         {
             var resultado = _context.Configuracao.AsNoTracking().AsQueryable();
             if (!string.IsNullOrWhiteSpace(filter))
@@ -32,7 +32,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                 resultado = resultado.Where(p => p.Campo.ToUpper().Contains(filter.ToUpper()));
             }
 
-            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Caampo");
+            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Campo");
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
             return View(model);
         }

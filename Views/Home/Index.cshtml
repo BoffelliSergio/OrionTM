@@ -1,25 +1,190 @@
-﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Terminal>
+﻿@model ComandosEnvioViewModel
  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
-<div id="graficoPizza" style="width: 600px; height: 300px;"></div>
-
+<body>
 
    
+    <table class="table">
 
-<script>
+        <tr>
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <div>
+                    <a class="nav-link text-black" asp-area="" asp-controller="Comandos" asp-action="Index">
+                    <h5>Execução de Comandos - Tot: @Model.FilaTasks.Count(x => (x.TasksId.Equals(5) ) )</h5> 
+                    </a>
+                 </div>
+                <div id="Comandos" style="width: 500px; height: 250px;"></div>
+            </td>
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                 <div>
+                    <a class="nav-link text-black" asp-area="" asp-controller="Resets" asp-action="Index">
+                        <h5>Execução de Resets - Tot: @Model.FilaTasks.Count(x => (x.TasksId.Equals(6) ) )</h5>
+                    </a>
+                </div>
+                <div id="Resets" style="width: 500px; height: 250px;"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <div> 
+                    <a class="nav-link text-black" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">
+                    <h5>Download Pacotes - Tot: @Model.FilaTasks.Count(x => (x.TasksId.Equals(7) ) )</h5>
+                    </a>
+                    </div>
+                <div id="Download" style="width: 500px; height: 250px;"></div>
+            </td>
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                <div>
+                    <a class="nav-link text-black" asp-area="" asp-controller="BuscaLog" asp-action="Index">
+                    <h5>Upload Arquivos - Tot: @Model.FilaTasks.Count(x => (x.TasksId.Equals(3) ) )</h5>
+                    </a>
+
+                    </div>
+                <div id="Upload" style="width: 500px; height: 250px;"></div>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Status">
+                        <h5>Status Terminais - Tot: @Model.Terminais.Count()</h5>
+                    </a>
+                </div>
+                <div id="Terminais" style="width: 500px; height: 250px;"></div>
+            </td>
+
+        </tr>
+
+
+
+
+
+</table>
+      
+
+
+</body>
+
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
         google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart_Upload);
+        google.charts.setOnLoadCallback(drawChart_Download);
+        google.charts.setOnLoadCallback(drawChart_Comandos);
+        google.charts.setOnLoadCallback(drawChart_Resets);
+        google.charts.setOnLoadCallback(drawChart_Terminais);
 
-        function desenharPizza() {
-            var tabela = new google.visualization.DataTable();
-            tabela.addColumn('string', 'categorias');
-            tabela.addColumn('number', 'valores');
-            tabela.addRows([
-                ['Terminais On Line', @Model.Count(x => x.Status == 1)],
-                ['Terminais Off Line', @Model.Count(x => x.Status == 0)],
-            ]);
-            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
-            grafico.draw(tabela);
+
+        function drawChart_Upload() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Iniciando', @Model.FilaTasks.Count(x => (x.TasksId.Equals(3) && x.StatusId.Equals(0)))],
+                ['Executando', @Model.FilaTasks.Count(x => x.TasksId.Equals(3) && x.StatusId.Equals(2))],
+                ['Ok', @Model.FilaTasks.Count(x => x.TasksId.Equals(3) && x.StatusId.Equals(6))],
+                ['Erro', @Model.FilaTasks.Count(x => x.TasksId.Equals(3) && x.StatusId.Equals(5))],
+               
+                ]);
+            var options = {   
+                      
+                        colors: ['orange', 'blue', 'green', 'red'],
+                        is3D: true
+            };
+
+
+            var chart = new google.visualization.PieChart(document.getElementById('Upload'));
+            chart.draw(data, options);
         }
-        google.charts.setOnLoadCallback(desenharPizza);
+
+        function drawChart_Download() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Iniciando', @Model.FilaTasks.Count(x => x.TasksId.Equals(7) && x.StatusId.Equals(0))],
+                ['Executando', @Model.FilaTasks.Count(x => x.TasksId.Equals(7) && x.StatusId.Equals(2))],
+                ['Ok', @Model.FilaTasks.Count(x => x.TasksId.Equals(7) && x.StatusId.Equals(6))],
+                ['Erro', @Model.FilaTasks.Count(x => x.TasksId.Equals(7) && x.StatusId.Equals(5))],
+            ]);
+            var options = {
+                colors: ['orange', 'blue', 'green', 'red'],
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('Download'));
+            chart.draw(data, options);
+        }
+
+        function drawChart_Comandos() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Iniciando', @Model.FilaTasks.Count(x => x.TasksId.Equals(5) && x.StatusId.Equals(0))],
+                ['Executando', @Model.FilaTasks.Count(x => x.TasksId.Equals(5) && x.StatusId.Equals(2))],
+                ['Ok', @Model.FilaTasks.Count(x => x.TasksId.Equals(5) && x.StatusId.Equals(6))],
+                ['Erro', @Model.FilaTasks.Count(x => x.TasksId.Equals(5) && x.StatusId.Equals(5))],
+            ]);
+            var options = {
+                colors: ['orange', 'blue', 'green', 'red'],
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('Comandos'));
+            chart.draw(data, options);
+        }
+
+        function drawChart_Resets() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Iniciando', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(0))],
+                ['Executando', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(2))],
+                ['Ok', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(6))],
+                ['Erro', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(5))],
+            ]);
+            var options = {
+                colors: ['orange', 'blue', 'green', 'red'],
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('Resets'));
+            chart.draw(data, options);
+        }
+
+
+        function drawChart_Terminais() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Online', @Model.Terminais.Count(x => x.Status.Equals(1) )],
+                ['Offline', @Model.Terminais.Count(x => x.Status.Equals(0) )],
+               
+            ]);
+            var options = {
+                colors: ['green', 'red'],
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('Terminais'));
+            chart.draw(data, options);
+        }
+
+
+
+
+
+
+
+
+        function teste() {
+            window.location.reload();
+        }
+
+        setTimeout(teste, 15000);
+
     </script>
+</head>
+
+

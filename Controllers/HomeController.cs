@@ -5,6 +5,7 @@ using OrionTM_Web.Context;
 using OrionTM_Web.Models;
 using ReflectionIT.Mvc.Paging;
 using System.Diagnostics;
+using OrionTM_Web.ViewModels;
 
 namespace OrionTM_Web.Controllers
 {
@@ -20,16 +21,17 @@ namespace OrionTM_Web.Controllers
         // GET: Admin/AdminTerminal
 
 
-        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Codigo")
+        public IActionResult Index()
         {
-            var appDbContext = _context.Terminal.Include(t => t.Local).Include(t => t.Modelo);
+            if (User.Identity.IsAuthenticated)
+            {
+                var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+                ComandosEnvioViewModel.FilaTasks = _context.FilaTasks;
+                ComandosEnvioViewModel.Terminais = _context.Terminal;
 
-            var resultado = appDbContext.AsNoTracking().AsQueryable();
-            
-            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Nome");
-
-            return View(model);
-
+                return View(ComandosEnvioViewModel);
+            }
+            return RedirectToAction("Login", "Account");
         }
 
 
