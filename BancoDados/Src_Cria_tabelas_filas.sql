@@ -13,14 +13,13 @@ CREATE TABLE [dbo].[UpLoadOnLine](
 	[TipoUpload] [varchar](4000) NULL,
 	[DataCadastro] [datetime] NOT NULL,
 	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
  CONSTRAINT [PK_UpoadOnLine] PRIMARY KEY CLUSTERED 
 (
 	[Id_sequencia] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
-
 
 CREATE TABLE [dbo].[Reset](
 	[Id_sequencia][int] identity(1,1) NOT NULL,
@@ -29,14 +28,13 @@ CREATE TABLE [dbo].[Reset](
 	[TipoReset] [int] NOT NULL,
 	[DataCadastro] [datetime] NOT NULL,
 	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
  CONSTRAINT [PK_Reset] PRIMARY KEY CLUSTERED 
 (
 	[Id_sequencia] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
-
 
 CREATE TABLE [dbo].[Script](
 	[Id_sequencia][int] identity(1,1) NOT NULL,
@@ -45,6 +43,7 @@ CREATE TABLE [dbo].[Script](
 	[ScrConteudo] varchar(8000) NOT NULL, 
 	[DataCadastro] [datetime] NOT NULL,
 	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
  CONSTRAINT [PK_Script] PRIMARY KEY CLUSTERED 
 (
 	[Id_sequencia] ASC
@@ -52,22 +51,19 @@ CREATE TABLE [dbo].[Script](
 ) ON [PRIMARY]
 GO
 
-
 CREATE TABLE [dbo].[Download](
 	[Id_sequencia][int] identity(1,1) NOT NULL,
 	[TerminalId] [int] NOT NULL,
 	[StatusId] [int] NOT NULL,
-	[Id_pacote] varchar(8000) NOT NULL, 
+	[PacoteId] varchar(8000) NOT NULL, 
 	[DataInstalacao] [datetime] NOT NULL,
 	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
  CONSTRAINT [PK_Download] PRIMARY KEY CLUSTERED 
 (
 	[Id_sequencia] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
-
-
 
 

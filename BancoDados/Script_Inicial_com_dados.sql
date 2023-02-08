@@ -280,9 +280,11 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Log](
 	[LogId] [int] IDENTITY(1,1) NOT NULL,
-	[Nome] [nvarchar](10) NOT NULL,
-	[Descricao] [nvarchar](50) NOT NULL,
+	[Nome] [nvarchar](100)  NULL,
+	[Descricao] [nvarchar](100) NOT NULL,
 	[Caminho] [nvarchar](200) NOT NULL,
+	[TipoArquivo] [nvarchar](20) NOT NULL,
+	[DataMascara] [nvarchar](100)  NULL,
  CONSTRAINT [PK_Log] PRIMARY KEY CLUSTERED 
 (
 	[LogId] ASC

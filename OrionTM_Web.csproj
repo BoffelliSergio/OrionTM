@@ -41,6 +41,7 @@
     <Compile Remove="Models\Locais.cs" />
     <Compile Remove="Models\Pedido.cs" />
     <Compile Remove="Models\PedidoDetalhe.cs" />
+    <Compile Remove="Models\TipoLogs.cs" />
     <Compile Remove="ViewModels\EnvioViewModel.cs" />
   </ItemGroup>
 

@@ -32,6 +32,5 @@ namespace OrionTM_Web.Context
         public DbSet<UpLoadOnLine> UpLoadOnLine { get; set; }
         public DbSet<Download> Download { get; set; }
 
-
     }
 }

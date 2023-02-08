@@ -95,7 +95,7 @@ namespace OrionTM_Web.Controllers
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
-                ComandosEnvioViewModel.Log = _context.Log;
+                ComandosEnvioViewModel.UpLoadOnLine = _context.UpLoadOnLine;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");
@@ -129,6 +129,14 @@ namespace OrionTM_Web.Controllers
                     _context.SaveChanges();
                 }
             }
+
+
+
+
+
+
+
+
 
             _context.LogAuditoria.Add(
                       new LogAuditoria

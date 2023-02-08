@@ -40,15 +40,22 @@
     <thead>
         <tr>
             <th >
-                @Html.DisplayNameFor(model => model.Nome)
+                Nome
             </th>
             <th >
-                @Html.DisplayNameFor(model => model.Descricao)
+                Descricao
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Caminho)
+                Caminho
             </th>
-        
+            <th>
+                Tipo Arquivo
+            </th>
+            <th>
+                Mascara Data
+            </th>
+
+
             <th></th>
         </tr>
     </thead>
@@ -61,10 +68,20 @@
             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
-                    <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.Caminho)
             </td>
-             
+
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.TipoArquivo)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DataMascara)
+                </td>
+
+
+
+
 
                 <td  >
                     <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.LogId">Detalhes</a>

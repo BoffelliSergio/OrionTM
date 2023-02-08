@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Context;
 using OrionTM_Web.Models;
@@ -20,7 +21,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
     }
 
         // GET: Admin/AdminModelo
-        public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Nome")
+        public async Task<IActionResult> Index(string filter,  int pageindex = 1, string sort = "Nome")
         {
 
             var resultado = _context.Log.AsNoTracking().AsQueryable();
@@ -38,16 +39,19 @@ namespace OrionTM_Web.Areas.Admin.Controllers
         // GET: Admin/AdminModelo/Create
         public IActionResult Create()
         {
-            return View();
+
+                      return View();
         }
 
        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("LogId,Nome,Descricao,Caminho")] Log log)
+        public async Task<IActionResult> Create([Bind("LogId,Nome,Descricao,Caminho,TipoArquivo,DataMascara")] Log log)
         {
             if (ModelState.IsValid)
             {
+
+
                 var resultado = _context.Log.AsNoTracking().AsQueryable();
                 resultado = resultado.Where(p => p.Nome.ToUpper().Equals(log.Nome.ToUpper()));
 
@@ -118,7 +122,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("LogId,Nome,Descricao,Caminho")] Log log)
+        public async Task<IActionResult> Edit(int id, [Bind("LogId,Nome,Descricao,Caminho,TipoArquivo,DataMascara")] Log log)
         {
             if (id != log.LogId)
             {
