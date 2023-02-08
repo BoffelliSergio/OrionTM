@@ -20,71 +20,98 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DtAtualizacao")
+        public async Task<IActionResult> Index(string filter, string isIniciando, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DataAtualizacao")
         {
-
             if (User.Identity.IsAuthenticated)
-            {
-
-                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status);
-
-            var resultado = appDbContext.AsNoTracking().AsQueryable();
-
-            // somente executar comandos
-            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(6)));
-
-            if (!string.IsNullOrWhiteSpace(filter))
-            {
-                resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
-            }
-
-                //ok err
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5));
+                    var appDbContext = _context.Reset.Include(t => t.Terminal).Include(t => t.Status);
+
+                    var resultado = appDbContext.AsNoTracking().AsQueryable();
+
+
+                if (!string.IsNullOrWhiteSpace(filter))
+                {
+                    resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
                 }
 
-                //exec err
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+                    resultado = resultado.Where(p => p.StatusId.Equals(0));
                 }
 
-                //exec ok
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+                    resultado = resultado.Where(p => p.StatusId.Equals(1));
                 }
 
-                //exec
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(2));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
                     resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2));
                 }
 
-                //ok
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6));
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
                 }
 
-                //err
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(5));
+                    resultado = resultado.Where(p => p.StatusId.Equals(1) || p.StatusId.Equals(2));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(1) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+            
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+                
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(2) );
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1)  || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0)  || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
                 }
 
 
-
-
-
-                var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
-            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
-            return View(model);
+                var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "Terminal");
+                    model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "isIniciando", isIniciando }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
+                    return View(model);
+                }
+                return RedirectToAction("Login", "Account");
             }
-            return RedirectToAction("Login", "Account");
-        }
-
+        
 
 
         public IActionResult ResetPorTerminais()
@@ -93,7 +120,7 @@ namespace OrionTM_Web.Controllers
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
-                ComandosEnvioViewModel.Comandos = _context.Comando;
+                ComandosEnvioViewModel.Reset = _context.Reset;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");
@@ -104,24 +131,24 @@ namespace OrionTM_Web.Controllers
         public async Task<IActionResult> ResetPorTerminais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
-
-            //var DependencyListaEnvioId = Convert.ToInt32(id);
+                       
             List<string> terminais_from = form["terminais_from"].ToList();
+            List<string> Resets_from = form["Resets_from"].ToList();
 
-        
-                  //ADICIONA NOVOS ITENS A LISTA
+
+            foreach (var TipoReset in Resets_from)
+            {
+
+                //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in terminais_from)
                 {
-                    FilaTasks f = new FilaTasks();
-
+                    Reset f = new Reset();
                     f.TerminalId = Convert.ToInt32(item);
-                    f.DtAtualizacao = DateTime.Now;
-                    f.TasksId = 6;
-                    f.ComandoId = 0;
-                    f.LogId = 0;
-                    f.PacoteId = 0;
                     f.StatusId = 0;
-                    _context.FilaTasks.Add(f);
+                    f.TipoReset = Convert.ToInt32(TipoReset);
+                    f.DataCadastro = DateTime.Now;
+                    f.DataAtualizacao = DateTime.Now;
+                    _context.Reset.Add(f);
                     _context.SaveChanges();
                 }
 
@@ -130,10 +157,11 @@ namespace OrionTM_Web.Controllers
                         {
                             Usuario = User.Identity.Name,
                             Modulo = "Reset",
-                            Detalhe = String.Concat("Reset Por Termianal" ),
+                            Detalhe = String.Concat("Reset Por Termianal"),
                             Data = DateTime.UtcNow
                         });
                 _context.SaveChanges();
+            }
 
 
             return RedirectToAction("Index", "Resets");
@@ -164,8 +192,10 @@ namespace OrionTM_Web.Controllers
             //var DependencyListaEnvioId = Convert.ToInt32(id);
          
             List<string> Locais_from = form["Locais_from"].ToList();
+            List<string> Resets_from = form["Resets_from"].ToList();
 
-           
+            foreach (var TipoReset in Resets_from)
+            {
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Locais_from)
                 {
@@ -175,16 +205,15 @@ namespace OrionTM_Web.Controllers
                     foreach (var terminal in ComandosEnvioViewModel.Terminais)
                     {
 
-                        FilaTasks l = new FilaTasks();
-                        l.TerminalId = Convert.ToInt32(terminal.TerminalId);
-                        l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 6;
-                        l.ComandoId = 0;
-                        l.LogId = 0;
-                        l.PacoteId = 0;
-                        l.StatusId = 0;
-                        _context.FilaTasks.Add(l);
+                        Reset f = new Reset();
+                        f.TerminalId = Convert.ToInt32(terminal.TerminalId);
+                        f.StatusId = 0;
+                        f.TipoReset = Convert.ToInt32(TipoReset);
+                        f.DataCadastro = DateTime.Now;
+                        f.DataAtualizacao = DateTime.Now;
+                        _context.Reset.Add(f);
                         _context.SaveChanges();
+
                     }
                     _context.LogAuditoria.Add(
                        new LogAuditoria
@@ -197,7 +226,7 @@ namespace OrionTM_Web.Controllers
                     _context.SaveChanges();
 
                 }
-
+            }
 
             return RedirectToAction("Index", "Resets");
         }
@@ -226,39 +255,44 @@ namespace OrionTM_Web.Controllers
 
             //var DependencyListaEnvioId = Convert.ToInt32(id);
             List<string> Lista_from = form["Lista_from"].ToList();
+            List<string> Resets_from = form["Resets_from"].ToList();
 
-                //ADICIONA NOVOS ITENS A LISTA
-                foreach (var item in Lista_from)
+            {
+                foreach (var TipoReset in Resets_from)
                 {
-                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio;
-                    ComandosEnvioViewModel.DetalheListaEnvio = ComandosEnvioViewModel.DetalheListaEnvio.Where(p => p.ListaEnvioId == Convert.ToInt32(item)).ToList();
 
-                    foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
+                    //ADICIONA NOVOS ITENS A LISTA
+                    foreach (var item in Lista_from)
                     {
+                        ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio;
+                        ComandosEnvioViewModel.DetalheListaEnvio = ComandosEnvioViewModel.DetalheListaEnvio.Where(p => p.ListaEnvioId == Convert.ToInt32(item)).ToList();
 
-                        FilaTasks l = new FilaTasks();
-                        l.TerminalId = Convert.ToInt32(lista.TerminalId);
-                        l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 6;
-                        l.ComandoId = 0;
-                        l.LogId = 0;
-                        l.PacoteId = 0;
-                        l.StatusId = 0;
-                        _context.FilaTasks.Add(l);
+                        foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
+                        {
+
+                            Reset f = new Reset();
+                            f.TerminalId = Convert.ToInt32(lista.TerminalId);
+                            f.StatusId = 0;
+                            f.TipoReset = Convert.ToInt32(TipoReset);
+                            f.DataCadastro = DateTime.Now;
+                            f.DataAtualizacao = DateTime.Now;
+                            _context.Reset.Add(f);
+                            _context.SaveChanges();
+
+                        }
+                        _context.LogAuditoria.Add(
+                           new LogAuditoria
+                           {
+                               Usuario = User.Identity.Name,
+                               Modulo = "Reset",
+                               Detalhe = String.Concat("Reset Por Lista"),
+                               Data = DateTime.UtcNow
+                           });
                         _context.SaveChanges();
 
                     }
-                    _context.LogAuditoria.Add(
-                       new LogAuditoria
-                       {
-                           Usuario = User.Identity.Name,
-                           Modulo = "Comandos",
-                           Detalhe = String.Concat("Reset Por Lista"),
-                           Data = DateTime.UtcNow
-                       });
-                    _context.SaveChanges();
-                    
                 }
+            }
 
             return RedirectToAction("Index", "Resets");
 

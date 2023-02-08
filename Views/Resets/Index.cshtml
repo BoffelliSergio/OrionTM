@@ -1,6 +1,6 @@
 ﻿@using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
-@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.FilaTasks>
+@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Reset>
 
 @{
     ViewData["Title"] = "Resets";
@@ -20,6 +20,15 @@
             <td class="col-sm-1">
             </td>
 
+
+            <td class="col-sm-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="IsIniciando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isIniciando"]">
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/21 Incluir.png" />&nbsp;Iniciando</label>
+                </div>
+            </td>
+
+
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsExecutando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isExecutando"]">
@@ -30,13 +39,13 @@
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsOk" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOk"]">
-                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;Reset OK</label>
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;OK</label>
                 </div>
             </td>
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsErro" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsErro"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Reset Erro</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Erro</label>
                 </div>
             </td>
 
@@ -75,9 +84,14 @@
                 Terminal
             </th>
             <th>
-                Data
+                Tipo Reset
             </th>
-           
+            <th>
+                Criação
+            </th>
+            <th>
+                Atualização
+            </th>
 
         </tr>
     </thead>
@@ -88,30 +102,53 @@
                 <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @if (item.StatusId == 0)
                     {
-                        <img src="~/images/Novo Lote.png">
+                         <img src="~/images/21 Incluir.png">
                     }
 
+                    @if (item.StatusId == 1)
+                    {
+                       <img src="~/images/Novo Lote.png">
+                    }
                     @if (item.StatusId == 2)
                     {
-                        <img src="~/images/Novo Lote.png">
+                       <img src="~/images/Online.png">
                     }
 
-                    @if (item.StatusId == 5)
+                    @if (item.StatusId == 3)
+                    {
+                       <img src="~/images/Offline.png">
+                    }
+
+                    @if (item.StatusId == 4)
                     {
                         <img src="~/images/Offline.png">
                     }
+                   
+                </td>
+                               
 
-                    @if (item.StatusId == 6)
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.Terminal.Codigo)
+                </td>
+
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @if (item.TipoReset == 0)
                     {
-                        <img src="~/images/Online.png">
+                        <a>Shutdown</a>
+                    }
+
+                    @if (item.TipoReset == 1)
+                    {
+                        <a>Por Aplicativo</a>
                     }
                 </td>
 
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Terminal.Codigo)
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.DataCadastro)
                 </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
+
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>
                
 

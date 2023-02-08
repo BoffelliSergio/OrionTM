@@ -28,6 +28,7 @@ namespace OrionTM_Web.Controllers
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.FilaTasks = _context.FilaTasks;
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
+                ComandosEnvioViewModel.Reset = _context.Reset;
 
                 return View(ComandosEnvioViewModel);
             }

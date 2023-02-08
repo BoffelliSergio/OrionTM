@@ -81,7 +81,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var dt = DateTime.UtcNow;
+                var dt = DateTime.Now;
                 terminal.DtAtualizaao = dt;
 
                 var appDbContext = _context.Terminal.Include(t => t.Local).Include(t => t.Modelo);
@@ -109,7 +109,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                         Usuario = User.Identity.Name,
                         Modulo = "Terminais",
                         Detalhe = String.Concat("Criou -> ", terminal.Codigo),
-                        Data = DateTime.UtcNow
+                        Data = DateTime.Now
                     });
                     _context.SaveChanges();
 
@@ -156,7 +156,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                    var dt = DateTime.UtcNow;
+                    var dt = DateTime.Now;
                     terminal.DtAtualizaao = dt;
 
 
@@ -169,7 +169,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                                Usuario = User.Identity.Name,
                                Modulo = "Terminais",
                                Detalhe = String.Concat("Editou -> ", terminal.Codigo),
-                               Data = DateTime.UtcNow
+                               Data = DateTime.Now
                            });
                         _context.SaveChanges();
                     return RedirectToAction(nameof(Index));
@@ -223,7 +223,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                    Usuario = User.Identity.Name,
                    Modulo = "Terminais",
                    Detalhe = String.Concat("Excluiu -> ", terminal.Codigo),
-                   Data = DateTime.UtcNow
+                   Data = DateTime.Now
                });
             _context.SaveChanges();
 

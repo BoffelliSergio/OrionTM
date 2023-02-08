@@ -1008,25 +1008,19 @@ INSERT [dbo].[Pacote] ([PacoteId], [Nome], [Descricao], [Caminho], [Versao], [Pr
 GO
 SET IDENTITY_INSERT [dbo].[Pacote] OFF
 GO
+
+
 SET IDENTITY_INSERT [dbo].[Status] ON 
 GO
 INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (0, N'Start')
 GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (1, N'Starting')
+INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (1, N'Send')
 GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (2, N'Executing')
+INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (2, N'ExecuteOk')
 GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (3, N'ExecuteOk')
+INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (3, N'ExecuteError')
 GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (4, N'ExecuteError')
-GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (5, N'FinishError')
-GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (6, N'FinishOk')
-GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (7, N'DBError')
-GO
-INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (8, N'InvalidToken')
+INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (4, N'ExecuteCRCError')
 GO
 SET IDENTITY_INSERT [dbo].[Status] OFF
 GO

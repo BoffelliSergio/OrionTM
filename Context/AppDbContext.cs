@@ -27,7 +27,10 @@ namespace OrionTM_Web.Context
         public DbSet<FilaTasks> FilaTasks { get; set; }
         public DbSet<Status> Status { get; set; }
         public DbSet<Tasks> Tasks { get; set; }
-        
+        public DbSet<Reset> Reset { get; set; }
+        public DbSet<Script> Script { get; set; }
+        public DbSet<UpLoadOnLine> UpLoadOnLine { get; set; }
+        public DbSet<Download> Download { get; set; }
 
 
     }

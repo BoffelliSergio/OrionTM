@@ -20,12 +20,13 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
+
         public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DtAtualizacao")
         {
 
             if (User.Identity.IsAuthenticated)
             {
-                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
+            var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
 

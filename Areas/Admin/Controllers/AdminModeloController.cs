@@ -91,7 +91,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                         Usuario = User.Identity.Name,
                         Modulo = "Modelos",
                         Detalhe = String.Concat("Criou -> ", modelo.Nome),
-                        Data = DateTime.UtcNow
+                        Data = DateTime.Now
                     });
                     _context.SaveChanges();
 
@@ -142,7 +142,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                       Usuario = User.Identity.Name,
                       Modulo = "Modelos",
                       Detalhe = String.Concat("Editou -> ", modelo.Nome),
-                      Data = DateTime.UtcNow
+                      Data = DateTime.Now
                   });
                     _context.SaveChanges();
 
@@ -204,7 +204,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                       Usuario = User.Identity.Name,
                       Modulo = "Modelos",
                       Detalhe = String.Concat("Excluiu -> ", modelo.Nome),
-                      Data = DateTime.UtcNow
+                      Data = DateTime.Now
                   });
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));

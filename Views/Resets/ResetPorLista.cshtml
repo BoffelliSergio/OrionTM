@@ -5,6 +5,21 @@
     <form asp-action="ResetPorLista">
         <h3>Resetar por Lista</h3>
         <table class="table">
+
+            <tr>
+                <td>
+                    <div><h4>Tipo do Reset</h4></div>
+                    <div>
+                        <select name="Resets_from" id="multiselect" class="form-control" size="2">
+
+                            <option value="0">Shutdown</option>
+                            <option value="1">Por Aplicativo</option>
+
+                        </select>
+                    </div>
+                </td>
+            <tr>
+
             <tr>
                 <td>
                     <div><h4>Listas</h4></div>

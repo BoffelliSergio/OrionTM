@@ -22,7 +22,8 @@ namespace OrionTM_Web.Controllers
             if (User.Identity.IsAuthenticated)
             {
 
-                var resultado = _context.ListaEnvio.AsNoTracking().AsQueryable();
+            var resultado = _context.ListaEnvio.AsNoTracking().AsQueryable();
+
             if (!string.IsNullOrWhiteSpace(filter))
             {
                 resultado = resultado.Where(p => p.Nome.ToUpper().Contains(filter.ToUpper()));

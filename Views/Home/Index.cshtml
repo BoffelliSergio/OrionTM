@@ -19,7 +19,7 @@
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                  <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="Resets" asp-action="Index">
-                        <h5>Execução de Resets - Tot: @Model.FilaTasks.Count(x => (x.TasksId.Equals(6) ) )</h5>
+                        <h5>Execução de Resets - Tot: @Model.Reset.Count()</h5>
                     </a>
                 </div>
                 <div id="Resets" style="width: 500px; height: 250px;"></div>
@@ -139,10 +139,10 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Iniciando', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(0))],
-                ['Executando', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(2))],
-                ['Ok', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(6))],
-                ['Erro', @Model.FilaTasks.Count(x => x.TasksId.Equals(6) && x.StatusId.Equals(5))],
+                ['Iniciando', @Model.Reset.Count(x => x.StatusId.Equals(0))],
+                ['Executando', @Model.Reset.Count(x => x.StatusId.Equals(1))],
+                ['Ok', @Model.Reset.Count(x => x.StatusId.Equals(2))],
+                ['Erro', @Model.Reset.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
             ]);
             var options = {
                 colors: ['orange', 'blue', 'green', 'red'],

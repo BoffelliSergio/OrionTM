@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7+xzaWyDLiNCqxrNa5McF7NyzJidFa9TGgOcPBrcSIg=",
+  "Hash": "wisyvqZ5cXnzpzF4JBMTE0wRjK2AMW7ekkRSt0gxHGQ=",
   "Source": "OrionTM_Web",
   "BasePath": "_content/OrionTM_Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\21 Incluir.png",
+      "SourceId": "OrionTM_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\",
+      "BasePath": "_content/OrionTM_Web",
+      "RelativePath": "images/21 Incluir.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\21 Incluir.png"
     },
     {
       "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\adminarea.jpg",
