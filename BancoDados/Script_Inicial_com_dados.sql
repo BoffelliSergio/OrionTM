@@ -1,6 +1,6 @@
 USE [OtmDataBase]
 GO
-/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[__EFMigrationsHistory](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetRoleClaims]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetRoleClaims]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -30,7 +30,7 @@ CREATE TABLE [dbo].[AspNetRoleClaims](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetRoles]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetRoles]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -46,7 +46,7 @@ CREATE TABLE [dbo].[AspNetRoles](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetUserClaims]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetUserClaims]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -62,7 +62,7 @@ CREATE TABLE [dbo].[AspNetUserClaims](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetUserLogins]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetUserLogins]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -79,7 +79,7 @@ CREATE TABLE [dbo].[AspNetUserLogins](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetUserRoles]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetUserRoles]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -94,7 +94,7 @@ CREATE TABLE [dbo].[AspNetUserRoles](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetUsers]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetUsers]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -121,7 +121,7 @@ CREATE TABLE [dbo].[AspNetUsers](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AspNetUserTokens]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[AspNetUserTokens]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -139,7 +139,7 @@ CREATE TABLE [dbo].[AspNetUserTokens](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Categorias]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Categorias]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -154,7 +154,7 @@ CREATE TABLE [dbo].[Categorias](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Comando]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Comando]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -170,7 +170,7 @@ CREATE TABLE [dbo].[Comando](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Configuracao]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Configuracao]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -185,7 +185,7 @@ CREATE TABLE [dbo].[Configuracao](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DetalheListaEnvio]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[DetalheListaEnvio]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -200,7 +200,28 @@ CREATE TABLE [dbo].[DetalheListaEnvio](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[FilaTasks]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Download]    Script Date: 10/02/2023 11:32:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Download](
+	[Id_sequencia] [int] IDENTITY(1,1) NOT NULL,
+	[TerminalId] [int] NOT NULL,
+	[StatusId] [int] NOT NULL,
+	[PacoteId] [int] NOT NULL,
+	[DataInstalacao] [varchar](50) NULL,
+	[HoraInstalacao] [varchar](50) NOT NULL,
+	[DataCadastro] [datetime] NOT NULL,
+	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
+ CONSTRAINT [PK_Download] PRIMARY KEY CLUSTERED 
+(
+	[Id_sequencia] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[FilaTasks]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -220,7 +241,7 @@ CREATE TABLE [dbo].[FilaTasks](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Link]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Link]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -235,7 +256,7 @@ CREATE TABLE [dbo].[Link](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ListaEnvio]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[ListaEnvio]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -250,7 +271,7 @@ CREATE TABLE [dbo].[ListaEnvio](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Local]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Local]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -273,25 +294,25 @@ CREATE TABLE [dbo].[Local](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Log]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Log]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Log](
 	[LogId] [int] IDENTITY(1,1) NOT NULL,
-	[Nome] [nvarchar](100)  NULL,
+	[Nome] [nvarchar](100) NULL,
 	[Descricao] [nvarchar](100) NOT NULL,
 	[Caminho] [nvarchar](200) NOT NULL,
 	[TipoArquivo] [nvarchar](20) NOT NULL,
-	[DataMascara] [nvarchar](100)  NULL,
+	[DataMascara] [nvarchar](100) NULL,
  CONSTRAINT [PK_Log] PRIMARY KEY CLUSTERED 
 (
 	[LogId] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LogAuditoria]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[LogAuditoria]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -308,7 +329,7 @@ CREATE TABLE [dbo].[LogAuditoria](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Modelo]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Modelo]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -325,7 +346,7 @@ CREATE TABLE [dbo].[Modelo](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Pacote]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Pacote]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -343,7 +364,46 @@ CREATE TABLE [dbo].[Pacote](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Status]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Reset]    Script Date: 10/02/2023 11:32:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Reset](
+	[Id_sequencia] [int] IDENTITY(1,1) NOT NULL,
+	[TerminalId] [int] NOT NULL,
+	[StatusId] [int] NOT NULL,
+	[TipoReset] [int] NOT NULL,
+	[DataCadastro] [datetime] NOT NULL,
+	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
+ CONSTRAINT [PK_Reset] PRIMARY KEY CLUSTERED 
+(
+	[Id_sequencia] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Script]    Script Date: 10/02/2023 11:32:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Script](
+	[Id_sequencia] [int] IDENTITY(1,1) NOT NULL,
+	[NomeComando] [varchar](50) NULL,
+	[TerminalId] [int] NOT NULL,
+	[StatusId] [int] NOT NULL,
+	[ScrConteudo] [varchar](8000) NOT NULL,
+	[DataCadastro] [datetime] NOT NULL,
+	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
+ CONSTRAINT [PK_Script] PRIMARY KEY CLUSTERED 
+(
+	[Id_sequencia] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Status]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -357,7 +417,7 @@ CREATE TABLE [dbo].[Status](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Tasks]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Tasks]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -371,7 +431,7 @@ CREATE TABLE [dbo].[Tasks](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Terminal]    Script Date: 21/01/2023 15:18:21 ******/
+/****** Object:  Table [dbo].[Terminal]    Script Date: 10/02/2023 11:32:04 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -394,6 +454,30 @@ CREATE TABLE [dbo].[Terminal](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+/****** Object:  Table [dbo].[UpLoadOnLine]    Script Date: 10/02/2023 11:32:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[UpLoadOnLine](
+	[Id_sequencia] [int] IDENTITY(1,1) NOT NULL,
+	[TerminalId] [int] NOT NULL,
+	[StatusId] [int] NOT NULL,
+	[NomeArquivo] [varchar](4000) NULL,
+	[PathArquivo] [varchar](4000) NULL,
+	[TipoArquivo] [varchar](4000) NULL,
+	[DataArquivo] [varchar](4000) NULL,
+	[MascaraArquivo] [varchar](4000) NULL,
+	[TipoUpload] [varchar](4000) NULL,
+	[DataCadastro] [datetime] NOT NULL,
+	[DataAtualizacao] [datetime] NOT NULL,
+	[StrLog] [varchar](500) NULL,
+ CONSTRAINT [PK_UpoadOnLine] PRIMARY KEY CLUSTERED 
+(
+	[Id_sequencia] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
 INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20221021210531_init-sql', N'6.0.9')
 GO
 INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20221021213741_ListaEnvio', N'6.0.9')
@@ -410,11 +494,11 @@ INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) 
 GO
 INSERT [dbo].[AspNetRoles] ([Id], [Name], [NormalizedName], [ConcurrencyStamp]) VALUES (N'e35d005e-eb70-410e-bba6-81175b87793d', N'Admin', N'ADMIN', N'dd63f698-b798-4ba4-a313-4a5a0588f556')
 GO
+INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'1248c976-1452-4693-a4ae-39701f0ac498', N'e35d005e-eb70-410e-bba6-81175b87793d')
+GO
 INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'14622ef4-7181-4ffa-bce5-9890a7121c8f', N'934993ab-e229-4ca8-9565-d3744c8017f3')
 GO
 INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'21159f10-5398-43da-97ed-128ffd8be9f8', N'934993ab-e229-4ca8-9565-d3744c8017f3')
-GO
-INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'1248c976-1452-4693-a4ae-39701f0ac498', N'e35d005e-eb70-410e-bba6-81175b87793d')
 GO
 INSERT [dbo].[AspNetUserRoles] ([UserId], [RoleId]) VALUES (N'3ac8be8b-d7d4-4206-b3d9-2d7bb34fc69e', N'e35d005e-eb70-410e-bba6-81175b87793d')
 GO
@@ -436,9 +520,19 @@ INSERT [dbo].[AspNetUsers] ([Id], [UserName], [NormalizedUserName], [Email], [No
 GO
 SET IDENTITY_INSERT [dbo].[Comando] ON 
 GO
-INSERT [dbo].[Comando] ([ComandoId], [Nome], [Descricao], [Caminho]) VALUES (3, N'LimpaLog', N'Limpar a pasta de logs', N'c:\aplic\LimpaLog.bat')
+INSERT [dbo].[Comando] ([ComandoId], [Nome], [Descricao], [Caminho]) VALUES (9, N'teste1', N'testa abc', N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
+
+
+
+
+')
 GO
-INSERT [dbo].[Comando] ([ComandoId], [Nome], [Descricao], [Caminho]) VALUES (4, N'teste', N'tesr', N'sssss')
+INSERT [dbo].[Comando] ([ComandoId], [Nome], [Descricao], [Caminho]) VALUES (10, N'script2', N'script2', N'cls
+dir c:\aplic
+')
 GO
 SET IDENTITY_INSERT [dbo].[Comando] OFF
 GO
@@ -474,55 +568,37 @@ INSERT [dbo].[DetalheListaEnvio] ([DetalheListaEnvioId], [ListaEnvioId], [Termin
 GO
 SET IDENTITY_INSERT [dbo].[DetalheListaEnvio] OFF
 GO
+SET IDENTITY_INSERT [dbo].[Download] ON 
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (1, 12, 0, 1, N'IMED', N'IMED', CAST(N'2023-02-10T11:03:53.740' AS DateTime), CAST(N'2023-02-10T11:03:53.740' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (2, 12, 0, 1, N'IMED', N'IMED', CAST(N'2023-02-10T11:04:05.440' AS DateTime), CAST(N'2023-02-10T11:04:05.440' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (3, 11, 0, 3, N'21/02/2023', N'11:06', CAST(N'2023-02-10T11:04:16.347' AS DateTime), CAST(N'2023-02-10T11:04:16.347' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (4, 11, 0, 1, N'IMED', N'IMED', CAST(N'2023-02-10T11:04:38.743' AS DateTime), CAST(N'2023-02-10T11:04:38.743' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (5, 12, 0, 1, N'IMED', N'IMED', CAST(N'2023-02-10T11:04:38.757' AS DateTime), CAST(N'2023-02-10T11:04:38.757' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (6, 14, 0, 1, N'IMED', N'IMED', CAST(N'2023-02-10T11:04:38.760' AS DateTime), CAST(N'2023-02-10T11:04:38.760' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (7, 13, 0, 1, N'28/02/2023', N'15:08', CAST(N'2023-02-10T11:05:05.073' AS DateTime), CAST(N'2023-02-10T11:05:05.073' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (8, 11, 0, 1, N'21/02/2023', N'14:08', CAST(N'2023-02-10T11:05:30.293' AS DateTime), CAST(N'2023-02-10T11:05:30.293' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (9, 13, 0, 1, N'21/02/2023', N'14:08', CAST(N'2023-02-10T11:05:30.300' AS DateTime), CAST(N'2023-02-10T11:05:30.300' AS DateTime), N'')
+GO
+INSERT [dbo].[Download] ([Id_sequencia], [TerminalId], [StatusId], [PacoteId], [DataInstalacao], [HoraInstalacao], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (10, 14, 0, 1, N'21/02/2023', N'14:08', CAST(N'2023-02-10T11:05:30.303' AS DateTime), CAST(N'2023-02-10T11:05:30.303' AS DateTime), N'')
+GO
+SET IDENTITY_INSERT [dbo].[Download] OFF
+GO
 SET IDENTITY_INSERT [dbo].[FilaTasks] ON 
 GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (114, 11, CAST(N'2023-01-11T19:10:08.4785616' AS DateTime2), 6, 0, 0, 0, 0)
+INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (157, 11, CAST(N'2023-02-10T01:12:08.0539209' AS DateTime2), 5, 10, 0, 0, 0)
 GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (115, 13, CAST(N'2023-01-11T19:10:09.1370162' AS DateTime2), 6, 0, 0, 0, 0)
+INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (158, 13, CAST(N'2023-02-10T01:12:08.4403174' AS DateTime2), 5, 10, 0, 0, 0)
 GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (116, 15, CAST(N'2023-01-11T19:10:20.3437338' AS DateTime2), 5, 3, 0, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (117, 11, CAST(N'2023-01-11T19:10:37.4082772' AS DateTime2), 3, 0, 1, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (118, 11, CAST(N'2023-01-11T19:10:44.3786591' AS DateTime2), 3, 0, 1, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (119, 11, CAST(N'2023-01-11T19:10:51.5016604' AS DateTime2), 3, 0, 3, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (120, 12, CAST(N'2023-01-11T19:10:51.5077947' AS DateTime2), 3, 0, 3, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (121, 14, CAST(N'2023-01-11T19:10:51.5123634' AS DateTime2), 3, 0, 3, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (133, 13, CAST(N'2023-01-18T15:11:35.1592670' AS DateTime2), 7, 0, 0, 1, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (134, 11, CAST(N'2023-01-18T15:13:48.8013461' AS DateTime2), 7, 0, 0, 3, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (135, 15, CAST(N'2023-01-18T15:13:48.8211595' AS DateTime2), 7, 0, 0, 3, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (138, 11, CAST(N'2023-01-18T15:17:14.6007348' AS DateTime2), 7, 0, 0, 1, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (139, 12, CAST(N'2023-01-18T15:17:16.0518733' AS DateTime2), 7, 0, 0, 1, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (140, 14, CAST(N'2023-01-18T15:17:17.0945667' AS DateTime2), 7, 0, 0, 1, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (141, 13, CAST(N'2023-01-18T15:49:22.0666366' AS DateTime2), 7, 0, 0, 1, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (142, 13, CAST(N'2023-01-18T15:51:06.8994845' AS DateTime2), 7, 0, 0, 1, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (143, 11, CAST(N'2023-01-18T15:51:22.1337837' AS DateTime2), 7, 0, 0, 3, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (144, 12, CAST(N'2023-01-18T15:51:22.1522623' AS DateTime2), 7, 0, 0, 3, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (145, 13, CAST(N'2023-01-18T15:51:22.1586349' AS DateTime2), 7, 0, 0, 3, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (146, 12, CAST(N'2023-01-18T15:55:29.2393721' AS DateTime2), 3, 0, 3, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (147, 11, CAST(N'2023-01-18T15:55:50.7516106' AS DateTime2), 3, 0, 1, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (148, 12, CAST(N'2023-01-18T15:55:50.7594270' AS DateTime2), 3, 0, 1, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (149, 14, CAST(N'2023-01-18T15:55:50.7663656' AS DateTime2), 3, 0, 1, 0, 0)
-GO
-INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (150, 13, CAST(N'2023-01-18T16:26:44.5499793' AS DateTime2), 5, 3, 0, 0, 0)
+INSERT [dbo].[FilaTasks] ([FilaTasksId], [TerminalId], [DtAtualizacao], [TasksId], [ComandoId], [LogId], [PacoteId], [StatusId]) VALUES (159, 14, CAST(N'2023-02-10T01:12:08.4477951' AS DateTime2), 5, 10, 0, 0, 0)
 GO
 SET IDENTITY_INSERT [dbo].[FilaTasks] OFF
 GO
@@ -556,9 +632,11 @@ SET IDENTITY_INSERT [dbo].[Local] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Log] ON 
 GO
-INSERT [dbo].[Log] ([LogId], [Nome], [Descricao], [Caminho]) VALUES (1, N'Atm', N'log aplicação atm', N'c:\aplic\atm.txt')
+INSERT [dbo].[Log] ([LogId], [Nome], [Descricao], [Caminho], [TipoArquivo], [DataMascara]) VALUES (14, N'c:\log', N'conteudo da pasta log', N'c:\log\', N'Pasta', NULL)
 GO
-INSERT [dbo].[Log] ([LogId], [Nome], [Descricao], [Caminho]) VALUES (3, N'atmInter', N'kjhjkhkjhkj', N'C:\interface\dsa.txt')
+INSERT [dbo].[Log] ([LogId], [Nome], [Descricao], [Caminho], [TipoArquivo], [DataMascara]) VALUES (15, N'atm_[]', N'log da ATM', N'c:\log\', N'Log', N'yyyy_mm_dd')
+GO
+INSERT [dbo].[Log] ([LogId], [Nome], [Descricao], [Caminho], [TipoArquivo], [DataMascara]) VALUES (16, N'teste01', N'log de teste ', N'C:\temp\', N'Xml', NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Log] OFF
 GO
@@ -990,6 +1068,338 @@ INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usu
 GO
 INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (213, N'Comandos', N'Envio Comando Por Lista', CAST(N'2023-01-18T19:26:44.5588071' AS DateTime2), N'Boffelli')
 GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (214, N'Reset', N'Reset Por Termianal', CAST(N'2023-02-08T13:17:48.4099585' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (215, N'Reset', N'Reset Por Termianal', CAST(N'2023-02-08T13:17:53.4714596' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (216, N'Reset', N'Reset Por Local', CAST(N'2023-02-08T13:26:48.1604083' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (217, N'Reset', N'Reset Por Lista', CAST(N'2023-02-08T13:26:54.6879634' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (218, N'Logs', N'Criou -> teste1', CAST(N'2023-02-08T11:57:13.6329194' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (219, N'Logs', N'Criou -> teste01_[]', CAST(N'2023-02-08T11:58:22.5762328' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (220, N'Logs', N'Criou -> aplic', CAST(N'2023-02-08T14:29:39.3762987' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (221, N'Logs', N'Criou -> c', CAST(N'2023-02-08T14:34:42.4310647' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (222, N'Logs', N'Excluiu -> c', CAST(N'2023-02-08T14:34:58.0666966' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (223, N'Logs', N'Criou -> ATM FULL', CAST(N'2023-02-08T17:02:28.0818042' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (224, N'Logs', N'Criou -> ATM FULL44', CAST(N'2023-02-08T17:22:03.9641693' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (225, N'Logs', N'Criou -> fff', CAST(N'2023-02-08T17:45:37.2025172' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (226, N'Logs', N'Criou -> Agencia Ceasa', CAST(N'2023-02-08T18:03:07.4761381' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (227, N'Logs', N'Excluiu -> Agencia Ceasa', CAST(N'2023-02-08T18:03:13.2524146' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (228, N'Logs', N'Excluiu -> aplic', CAST(N'2023-02-09T09:57:40.3732984' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (229, N'Logs', N'Excluiu -> ATM FULL', CAST(N'2023-02-09T09:57:42.8139678' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (230, N'Logs', N'Excluiu -> ATM FULL44', CAST(N'2023-02-09T09:57:45.2482710' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (231, N'Logs', N'Excluiu -> fff', CAST(N'2023-02-09T09:57:47.5767101' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (232, N'Logs', N'Excluiu -> teste01_[]', CAST(N'2023-02-09T09:57:50.8701627' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (233, N'Logs', N'Excluiu -> teste1', CAST(N'2023-02-09T09:57:53.1135376' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (234, N'Logs', N'Criou -> Atm_[]', CAST(N'2023-02-09T10:00:44.7217073' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (235, N'Logs', N'Criou -> ATM FULL44', CAST(N'2023-02-09T10:45:27.3557591' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (236, N'Logs', N'Excluiu -> ATM FULL44', CAST(N'2023-02-09T10:45:44.3958925' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (237, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T14:35:14.8994535' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (238, N'Logs', N'Criou -> ATM FULL44', CAST(N'2023-02-09T11:38:19.9592269' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (239, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T14:44:36.9464397' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (240, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T14:45:24.2211647' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (241, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T14:46:52.2810355' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (242, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:13:19.1155598' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (243, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:21:50.1265842' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (244, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:23:55.2479339' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (245, N'Logs', N'Criou -> ATM FULL', CAST(N'2023-02-09T12:24:44.8832106' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (246, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:24:52.3251221' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (247, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:25:49.5514571' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (248, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:25:50.7155917' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (249, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:25:59.6946059' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (250, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:28:43.8214610' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (251, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:33:02.1178776' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (252, N'Logs', N'Excluiu -> ATM FULL', CAST(N'2023-02-09T12:33:45.3603997' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (253, N'Logs', N'Excluiu -> ATM FULL44', CAST(N'2023-02-09T12:33:47.4044276' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (254, N'Logs', N'Excluiu -> Atm_[]', CAST(N'2023-02-09T12:33:49.4520934' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (255, N'Logs', N'Criou -> c:\log', CAST(N'2023-02-09T12:34:24.7996936' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (256, N'Logs', N'Criou -> atm_[]', CAST(N'2023-02-09T12:35:02.9966507' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (257, N'Logs', N'Criou -> teste01', CAST(N'2023-02-09T12:35:58.1832959' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (258, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:40:43.2629700' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (259, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:42:17.1429641' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (260, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:43:31.6382275' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (261, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T15:56:54.0905769' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (262, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T16:47:19.8281201' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (263, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T16:51:25.6258852' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (264, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T16:53:27.4372672' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (265, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T16:54:01.5298340' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (266, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T16:56:50.8109070' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (267, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:03:17.7018864' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (268, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:04:44.2959825' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (269, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:41:05.0681915' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (270, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:42:47.7576458' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (271, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:43:02.6859468' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (272, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:43:45.6751258' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (273, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:44:04.6202038' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (274, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:44:24.8358945' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (275, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:47:41.8711041' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (276, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:48:30.2782034' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (277, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T17:49:04.2565850' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (278, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:00:36.4325775' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (279, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:00:59.5978627' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (280, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:01:31.3774365' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (281, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:02:32.8770041' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (282, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:03:29.4592551' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (283, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:08:38.2246054' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (284, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:08:59.4511932' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (285, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:09:25.4298923' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (286, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:10:44.8074473' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (287, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:11:23.6815174' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (288, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:12:29.8138619' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (289, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:25:07.5257199' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (290, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:27:00.3637856' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (291, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:27:25.0046112' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (292, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:39:24.1204410' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (293, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:39:43.0630498' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (294, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:41:41.1156418' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (295, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:42:04.7819567' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (296, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:42:44.6482917' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (297, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:42:58.3067288' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (298, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:43:28.4931767' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (299, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:43:49.7478413' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (300, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:44:23.5870234' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (301, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:45:02.6561626' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (302, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:45:31.7621060' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (303, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:45:56.7142934' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (304, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:46:24.3440402' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (305, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:46:50.1997992' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (306, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:47:13.5558345' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (307, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:53:27.1885843' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (308, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:54:30.1272028' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (309, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:56:15.4986549' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (310, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:56:22.8611772' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (311, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:56:32.3254334' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (312, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T19:56:43.4274022' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (313, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-09T20:36:01.7000224' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (314, N'Reset', N'Reset Por Termianal', CAST(N'2023-02-10T00:47:47.4327630' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (315, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T00:48:26.4542368' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (316, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T00:48:36.0083780' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (317, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T00:48:46.5860818' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (318, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T00:55:26.3930363' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (319, N'Links', N'Criou -> Link', CAST(N'2023-02-09T22:39:44.0930118' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (320, N'Links', N'Excluiu -> Link', CAST(N'2023-02-09T22:39:54.2653566' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (321, N'Logs', N'Editou -> teste01', CAST(N'2023-02-09T22:43:20.1423730' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (322, N'Logs', N'Editou -> teste01', CAST(N'2023-02-09T22:43:33.9993826' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (323, N'Logs', N'Editou -> teste01', CAST(N'2023-02-09T22:43:41.1982195' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (324, N'Logs', N'Editou -> atm_[]', CAST(N'2023-02-09T22:43:51.4710714' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (325, N'Logs', N'Editou -> atm_[]', CAST(N'2023-02-09T22:43:58.6383008' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (326, N'Logs', N'Editou -> c:\log', CAST(N'2023-02-09T22:44:04.8276625' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (327, N'Logs', N'Editou -> c:\log', CAST(N'2023-02-09T22:44:10.7163876' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (328, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T01:44:49.2026853' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (329, N'Comando', N'Criou -> aaa', CAST(N'2023-02-09T23:14:15.4040693' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (330, N'Comandos', N'Excluiu -> aaa', CAST(N'2023-02-09T23:14:21.0429661' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (331, N'Comando', N'Criou -> fff', CAST(N'2023-02-09T23:14:39.8671897' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (332, N'Comando', N'Criou -> d', CAST(N'2023-02-09T23:20:08.0395777' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (333, N'Comandos', N'Editou -> d', CAST(N'2023-02-09T23:29:49.5501380' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (334, N'Comandos', N'Editou -> d', CAST(N'2023-02-09T23:30:48.9684033' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (335, N'Comandos', N'Excluiu -> d', CAST(N'2023-02-09T23:31:09.7802955' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (336, N'Comandos', N'Editou -> fff', CAST(N'2023-02-09T23:32:29.6026450' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (337, N'Comandos', N'Excluiu -> fff', CAST(N'2023-02-09T23:32:43.6565233' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (338, N'Comandos', N'Excluiu -> LimpaLog', CAST(N'2023-02-10T00:34:14.3234706' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (339, N'Comandos', N'Excluiu -> teste', CAST(N'2023-02-10T00:34:16.6739652' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (340, N'Comando', N'Criou -> teste1', CAST(N'2023-02-10T00:36:28.6349701' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (341, N'Comandos', N'Editou -> teste1', CAST(N'2023-02-10T00:37:39.5984043' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (342, N'Comandos', N'Editou -> teste1', CAST(N'2023-02-10T00:37:50.4132289' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (343, N'Comandos', N'Envio Comando Por Termianal', CAST(N'2023-02-10T04:02:26.9844854' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (344, N'Comandos', N'Envio Comando Por Termianal', CAST(N'2023-02-10T04:02:51.7145477' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (345, N'Comando', N'Criou -> script2', CAST(N'2023-02-10T01:03:30.7195892' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (346, N'Comandos', N'Envio Comando Por Termianal', CAST(N'2023-02-10T04:03:42.9387418' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (347, N'Comandos', N'Envio Comando Por Local', CAST(N'2023-02-10T04:08:56.3592054' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (348, N'Comandos', N'Envio Comando Por Local', CAST(N'2023-02-10T04:09:34.8218830' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (349, N'Comandos', N'Envio Comando Por Local', CAST(N'2023-02-10T04:09:56.1017759' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (350, N'Comandos', N'Envio Comando Por Lista', CAST(N'2023-02-10T04:12:08.4529535' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (351, N'Comandos', N'Envio Comando Por Lista', CAST(N'2023-02-10T04:12:55.9996505' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (352, N'Comandos', N'Envio Comando Por Lista', CAST(N'2023-02-10T04:14:04.5489753' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (353, N'Comandos', N'Envio Comando Por Termianal', CAST(N'2023-02-10T04:39:11.9928356' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (354, N'Comandos', N'Envio Comando Por Local', CAST(N'2023-02-10T04:39:21.0783855' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (355, N'Comandos', N'Envio Comando Por Lista', CAST(N'2023-02-10T04:39:27.9147038' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (356, N'Comandos', N'Envio Comando Por Lista', CAST(N'2023-02-10T04:42:04.9505733' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (357, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T11:54:17.7155032' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (358, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T11:56:11.2820653' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (359, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T11:56:30.9551509' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (360, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T12:07:16.6854991' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (361, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T12:11:12.7285462' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (362, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T12:12:03.1532301' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (363, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T12:12:19.0509889' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (364, N'Busca Logs', N'Busca Por Termianal', CAST(N'2023-02-10T12:12:40.0864023' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (365, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T12:44:11.6612394' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (366, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:03:54.0663462' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (367, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:29:09.7600912' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (368, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:40:12.1123812' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (369, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:40:32.8601034' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (370, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:40:56.6287986' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (371, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:54:39.2574390' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (372, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:55:59.9919262' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (373, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T13:56:30.2513020' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (374, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T14:03:54.1507025' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (375, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T14:04:05.4470321' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (376, N'Pacotes', N'Envio Pacotes Por Termianal', CAST(N'2023-02-10T14:04:16.3505677' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (377, N'Pacotes', N'Envio Pacotes Por Local', CAST(N'2023-02-10T14:04:38.7635949' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (378, N'Pacotes', N'Envio Pacotes Por Local', CAST(N'2023-02-10T14:05:05.0803042' AS DateTime2), N'Boffelli')
+GO
+INSERT [dbo].[LogAuditoria] ([LogAuditoriaId], [Modulo], [Detalhe], [Data], [Usuario]) VALUES (379, N'Comandos', N'Envio Pacotes Por Lista', CAST(N'2023-02-10T14:05:30.3099699' AS DateTime2), N'Boffelli')
+GO
 SET IDENTITY_INSERT [dbo].[LogAuditoria] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Modelo] ON 
@@ -1010,8 +1420,112 @@ INSERT [dbo].[Pacote] ([PacoteId], [Nome], [Descricao], [Caminho], [Versao], [Pr
 GO
 SET IDENTITY_INSERT [dbo].[Pacote] OFF
 GO
+SET IDENTITY_INSERT [dbo].[Reset] ON 
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (1, 11, 1, 1, CAST(N'2023-02-08T10:17:48.167' AS DateTime), CAST(N'2023-02-08T10:17:48.167' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (2, 12, 2, 0, CAST(N'2023-02-08T10:17:53.463' AS DateTime), CAST(N'2023-02-08T10:17:53.463' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (3, 13, 3, 1, CAST(N'2023-02-08T10:26:48.150' AS DateTime), CAST(N'2023-02-08T10:26:48.150' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (4, 11, 4, 0, CAST(N'2023-02-08T10:26:54.670' AS DateTime), CAST(N'2023-02-08T10:26:54.670' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (5, 12, 0, 0, CAST(N'2023-02-08T10:26:54.673' AS DateTime), CAST(N'2023-02-08T10:26:54.673' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (6, 13, 0, 0, CAST(N'2023-02-08T10:26:54.677' AS DateTime), CAST(N'2023-02-08T10:26:54.677' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (7, 14, 0, 0, CAST(N'2023-02-08T10:26:54.680' AS DateTime), CAST(N'2023-02-08T10:26:54.680' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (8, 15, 0, 0, CAST(N'2023-02-08T10:26:54.683' AS DateTime), CAST(N'2023-02-08T10:26:54.683' AS DateTime), NULL)
+GO
+INSERT [dbo].[Reset] ([Id_sequencia], [TerminalId], [StatusId], [TipoReset], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (9, 11, 0, 0, CAST(N'2023-02-09T21:47:47.110' AS DateTime), CAST(N'2023-02-09T21:47:47.110' AS DateTime), NULL)
+GO
+SET IDENTITY_INSERT [dbo].[Reset] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Script] ON 
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (1, N'script2', 11, 1, N'cls
+dir c:\aplic
+', CAST(N'2023-02-10T01:39:11.607' AS DateTime), CAST(N'2023-02-10T01:39:11.607' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (2, N'script2', 12, 2, N'cls
+dir c:\aplic
+', CAST(N'2023-02-10T01:39:11.987' AS DateTime), CAST(N'2023-02-10T01:39:11.987' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (3, N'teste1', 11, 3, N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
 
 
+
+
+', CAST(N'2023-02-10T01:39:21.053' AS DateTime), CAST(N'2023-02-10T01:39:21.053' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (4, N'teste1', 12, 4, N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
+
+
+
+
+', CAST(N'2023-02-10T01:39:21.070' AS DateTime), CAST(N'2023-02-10T01:39:21.070' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (5, N'teste1', 14, 0, N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
+
+
+
+
+', CAST(N'2023-02-10T01:39:21.077' AS DateTime), CAST(N'2023-02-10T01:39:21.077' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (6, N'teste1', 11, 0, N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
+
+
+
+
+', CAST(N'2023-02-10T01:39:27.900' AS DateTime), CAST(N'2023-02-10T01:39:27.900' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (7, N'teste1', 13, 0, N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
+
+
+
+
+', CAST(N'2023-02-10T01:39:27.907' AS DateTime), CAST(N'2023-02-10T01:39:27.907' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (8, N'teste1', 14, 0, N'dir c:\aplic
+cd\aplic
+start aplic.exe
+exit
+
+
+
+
+', CAST(N'2023-02-10T01:39:27.910' AS DateTime), CAST(N'2023-02-10T01:39:27.910' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (9, N'script2', 11, 0, N'cls
+dir c:\aplic
+', CAST(N'2023-02-10T01:42:04.937' AS DateTime), CAST(N'2023-02-10T01:42:04.937' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (10, N'script2', 13, 0, N'cls
+dir c:\aplic
+', CAST(N'2023-02-10T01:42:04.943' AS DateTime), CAST(N'2023-02-10T01:42:04.943' AS DateTime), N'')
+GO
+INSERT [dbo].[Script] ([Id_sequencia], [NomeComando], [TerminalId], [StatusId], [ScrConteudo], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (11, N'script2', 14, 0, N'cls
+dir c:\aplic
+', CAST(N'2023-02-10T01:42:04.947' AS DateTime), CAST(N'2023-02-10T01:42:04.947' AS DateTime), N'')
+GO
+SET IDENTITY_INSERT [dbo].[Script] OFF
+GO
 SET IDENTITY_INSERT [dbo].[Status] ON 
 GO
 INSERT [dbo].[Status] ([StatusId], [StsDescricao]) VALUES (0, N'Start')
@@ -1059,6 +1573,16 @@ GO
 INSERT [dbo].[Terminal] ([TerminalId], [ModeloId], [Codigo], [LocalId], [IP], [DNS], [DefaultGateway], [DtAtualizaao], [Vrs_Distribuida], [Vrs_Instalada], [Status]) VALUES (15, 1, N'50005777', 4, N'100.100.100.333', N'100.100.100.100', N'100.100.100.101', CAST(N'2023-01-11T22:04:01.4789558' AS DateTime2), 0, 0, 1)
 GO
 SET IDENTITY_INSERT [dbo].[Terminal] OFF
+GO
+SET IDENTITY_INSERT [dbo].[UpLoadOnLine] ON 
+GO
+INSERT [dbo].[UpLoadOnLine] ([Id_sequencia], [TerminalId], [StatusId], [NomeArquivo], [PathArquivo], [TipoArquivo], [DataArquivo], [MascaraArquivo], [TipoUpload], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (92, 11, 0, N'atm_[]', N'c:\log\', N'Log', N'10/02/2023', N'yyyy_mm_dd', N'ByDate', CAST(N'2023-02-10T09:12:03.150' AS DateTime), CAST(N'2023-02-10T09:12:03.150' AS DateTime), N'')
+GO
+INSERT [dbo].[UpLoadOnLine] ([Id_sequencia], [TerminalId], [StatusId], [NomeArquivo], [PathArquivo], [TipoArquivo], [DataArquivo], [MascaraArquivo], [TipoUpload], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (93, 12, 0, N'atm_[]', N'c:\log\', N'Log', N'17/02/2023', N'yyyy_mm_dd', N'ByDate', CAST(N'2023-02-10T09:12:19.043' AS DateTime), CAST(N'2023-02-10T09:12:19.043' AS DateTime), N'')
+GO
+INSERT [dbo].[UpLoadOnLine] ([Id_sequencia], [TerminalId], [StatusId], [NomeArquivo], [PathArquivo], [TipoArquivo], [DataArquivo], [MascaraArquivo], [TipoUpload], [DataCadastro], [DataAtualizacao], [StrLog]) VALUES (94, 13, 0, N'atm_[]', N'c:\log\', N'Log', N'10/02/2023|22/02/2023', N'yyyy_mm_dd', N'ByRangeDate', CAST(N'2023-02-10T09:12:40.080' AS DateTime), CAST(N'2023-02-10T09:12:40.080' AS DateTime), N'')
+GO
+SET IDENTITY_INSERT [dbo].[UpLoadOnLine] OFF
 GO
 ALTER TABLE [dbo].[DetalheListaEnvio] ADD  DEFAULT ((0)) FOR [TerminalId]
 GO

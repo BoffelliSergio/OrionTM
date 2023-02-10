@@ -56,8 +56,10 @@ CREATE TABLE [dbo].[Download](
 	[Id_sequencia][int] identity(1,1) NOT NULL,
 	[TerminalId] [int] NOT NULL,
 	[StatusId] [int] NOT NULL,
-	[PacoteId] varchar(8000) NOT NULL, 
-	[DataInstalacao] [datetime] NOT NULL,
+	[PacoteId] [int] NOT NULL, 
+	[DataInstalacao] [varchar](50) NULL,
+	[HotaInstalacao] [varchar](50) NULL,
+	[DataCadastro] [datetime] NOT NULL,
 	[DataAtualizacao] [datetime] NOT NULL,
 	[StrLog] [varchar](500) NULL,
  CONSTRAINT [PK_Download] PRIMARY KEY CLUSTERED 

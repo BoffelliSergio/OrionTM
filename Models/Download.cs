@@ -12,7 +12,10 @@ namespace OrionTM_Web.Models
         public int TerminalId { get; set; }
         public int StatusId { get; set; }
         public int PacoteId { get; set; }
-        public DateTime DataInstalacao { get; set; }
+        public string DataInstalacao { get; set; }
+        public string HoraInstalacao { get; set; }
+
+        public DateTime DataCadastro { get; set; }
         public DateTime DataAtualizacao { get; set; }
         public string StrLog { get; set; }
         public virtual Terminal Terminal { get; set; }

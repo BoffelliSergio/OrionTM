@@ -85,10 +85,17 @@
             </th>
             
             <th>
-                Data
+                Data Cadastro
             </th>
-           
-           
+           <th>
+                Data Atualização
+            </th>
+            <th>
+                Log
+            </th>
+
+
+
         </tr>
     </thead>
     <tbody>
@@ -124,11 +131,18 @@
                     @Html.DisplayFor(modelItem => item.NomeComando)
                 </td>
 
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.DataCadastro)
+                </td>
 
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>
-               
+
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.StrLog)
+                </td>
+
             </tr>
 
         }

@@ -92,6 +92,9 @@
             <th>
                 Atualização
             </th>
+             <th>
+                Log
+            </th>
 
         </tr>
     </thead>
@@ -150,8 +153,10 @@
                 <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>
-               
 
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.StrLog)
+                </td>
             </tr>
 
         }

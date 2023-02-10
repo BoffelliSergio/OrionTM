@@ -24,7 +24,7 @@
                 <td>
                     <div><h4>Terminais</h4></div>
                     <div>
-                        <select name="terminais_from" id="multiselect" class="form-control" size="10" multiple="multiple">
+                        <select name="terminais_from" id="multiselect" class="form-control" size="8" multiple="multiple">
                             @foreach (var item in Model.Terminais)
                             {
                                 <option value="@item.TerminalId">@item.Codigo</option>
@@ -33,6 +33,28 @@
                     </div>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <div class="form-check form-switch">
+
+                        <label>Data Instalação:</label>
+                        <input type="date" id="birthday" name="DataInstalacao" placeholder="dd/mm/yyyy">
+
+                        <label>Hora Instalaçao:</label>
+                        <input type="time" id="birthday" name="HoraInstalacao" placeholder="hh:mm">
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <h5>Para instalação imediata não configurar Data e Hora Instalação!!</h5>
+                    </div>
+                </td>
+            </tr>
+
+
         </table>
         <table>
             <div class="row">

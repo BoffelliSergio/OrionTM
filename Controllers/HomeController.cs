@@ -29,7 +29,7 @@ namespace OrionTM_Web.Controllers
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
                 ComandosEnvioViewModel.Reset = _context.Reset;
                 ComandosEnvioViewModel.UpLoadOnLine = _context.UpLoadOnLine;
-               ComandosEnvioViewModel.Download= _context.Download;
+                ComandosEnvioViewModel.Download= _context.Download;
                 ComandosEnvioViewModel.Script = _context.Script;
                 return View(ComandosEnvioViewModel);
             }

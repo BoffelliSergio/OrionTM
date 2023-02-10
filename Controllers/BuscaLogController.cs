@@ -177,11 +177,19 @@ namespace OrionTM_Web.Controllers
                             if (DataInicio is null)
                             {
                                 var dt = DateTime.Now;
-                                DataInicio = dt.ToString("yyyy-MM-dd");
-                            }
-
-                            if (DataFim is not null) 
+                                DataInicio = dt.ToString("dd/MM/yyyy");
+                            }else
                             {
+                                var dtDataInicio = DateTime.Parse(DataInicio);
+                                DataInicio = dtDataInicio.ToString("dd/MM/yyyy");
+                            }
+                                                       
+                           
+
+                            if (DataFim is not null)
+                            {
+                                var dtDataFin = DateTime.Parse(DataFim);
+                                DataFim = dtDataFin.ToString("dd/MM/yyyy");
                                 MascaraArquivo = l.DataMascara;
                                 TipoArquivo = l.TipoArquivo;
                                 DataArquivo = DataInicio + "|" + DataFim;

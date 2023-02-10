@@ -39,6 +39,16 @@
                 </div>
                 <div id="Comandos" style="width: 500px; height: 250px;"></div>
             </td>
+
+            <td>
+                <div>
+                    <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Status">
+                        <h5>Execução de Downloads - Tot: @Model.Download.Count()</h5>
+                    </a>
+                </div>
+                <div id="Downloads" style="width: 500px; height: 250px;"></div>
+            </td>
+
         </tr>
 
 
@@ -73,7 +83,7 @@
         google.charts.setOnLoadCallback(drawChart_Terminais);
         google.charts.setOnLoadCallback(drawChart_Upload);
         google.charts.setOnLoadCallback(drawChart_Comandos);
-
+        google.charts.setOnLoadCallback(drawChart_Downloads);
 
 
         function drawChart_Upload() {
@@ -134,7 +144,23 @@
             chart.draw(data, options);
         }
 
+        function drawChart_Downloads() {
 
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Iniciando', @Model.Download.Count(x => x.StatusId.Equals(0))],
+                ['Executando', @Model.Download.Count(x => x.StatusId.Equals(1))],
+                ['Ok', @Model.Download.Count(x => x.StatusId.Equals(2))],
+                ['Erro', @Model.Download.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
+            ]);
+            var options = {
+                colors: ['orange', 'blue', 'green', 'red'],
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('Downloads'));
+            chart.draw(data, options);
+        }
 
         function drawChart_Terminais() {
 

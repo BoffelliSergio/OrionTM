@@ -86,15 +86,17 @@
                 Pacote
             </th>
             <th>
-                Descrição
+                Dt Instalação
             </th>
             <th>
-                Versão
+                Hr Instalação
             </th>
             <th>
-                Data
+                Atualização
             </th>
-           
+            <th>
+                Log
+            </th>
            
         </tr>
     </thead>
@@ -106,41 +108,43 @@
 
                     @if (item.StatusId == 0)
                     {
-                        <img src="~/images/Novo Lote.png">
+                        <img src="~/images/21 Incluir.png" >
                     }
 
-                    @if (item.StatusId == 2)
+                    @if (item.StatusId == 1)
                     {
                         <img src="~/images/Novo Lote.png">
                     }
 
-                    @if (item.StatusId == 5)
+                    @if (item.StatusId == 3 || item.StatusId == 4)
                     {
                         <img src="~/images/Offline.png">
                     }
 
-                    @if (item.StatusId == 6)
+                    @if (item.StatusId == 2)
                     {
                         <img src="~/images/Online.png">
                     }
 
                 </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @Html.DisplayFor(modelItem => item.Terminal.Codigo)
                 </td>
                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Pacote.Nome)
+                    @Html.DisplayFor(modelItem => item.Pacote)
                 </td>
-                <td class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                    @Html.DisplayFor(modelItem => item.Pacote.Descricao)
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DataInstalacao)
                 </td>
-                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                    @Html.DisplayFor(modelItem => item.Pacote.Versao)
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.HoraInstalacao)
                 </td>
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>
- 
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.StrLog)
+                </td>
 
             </tr>
 
