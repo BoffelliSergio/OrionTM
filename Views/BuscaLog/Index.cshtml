@@ -1,6 +1,6 @@
 ﻿@using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
-@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.FilaTasks>
+@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.UpLoadOnLine>
  
 @{
     ViewData["Title"] = "Busca Logs";
@@ -21,6 +21,13 @@
 
             <td class="col-sm-2">
                 <div class="form-check form-switch">
+                    <input class="form-check-input" name="IsIniciando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isIniciando"]">
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/21 Incluir.png" />&nbsp;Iniciando</label>
+                </div>
+            </td>
+
+            <td class="col-sm-2">
+                <div class="form-check form-switch">
                     <input class="form-check-input" name="IsExecutando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isExecutando"]">
                     <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Novo Lote.png" />&nbsp;Executando</label>
                 </div>
@@ -29,13 +36,13 @@
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsOk" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOk"]">
-                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;Upload OK</label>
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;OK</label>
                 </div>
             </td>
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsErro" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsErro"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Upload Erro</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Erro</label>
                 </div>
             </td>
 
@@ -77,13 +84,23 @@
                 Log
             </th>
             <th>
-                Descrição
+                Tipo Log
+            </th>
+            <th>
+                Caminho
+            </th>
+
+
+            <th>
+                Data Solicitada
             </th>
            
             <th>
-                Data
+                Solicitação
             </th>
-           
+            <th>
+                Atualização
+            </th>
 
             <th></th>
         </tr>
@@ -95,38 +112,53 @@
                 <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @if (item.StatusId == 0)
                     {
-                        <img src="~/images/Novo Lote.png">
+                        <img src="~/images/21 Incluir.png">
                     }
 
-                    @if (item.StatusId == 2)
+                    @if (item.StatusId == 1)
                     {
                         <img src="~/images/Novo Lote.png">
                     }
 
-                    @if (item.StatusId == 5)
+                    @if (item.StatusId == 3 || item.StatusId == 4)
                     {
                         <img src="~/images/Offline.png">
                     }
 
-                    @if (item.StatusId == 6)
+                    @if (item.StatusId == 2)
                     {
                         <img src="~/images/Online.png">
                     }
                 </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @Html.DisplayFor(modelItem => item.Terminal.Codigo)
                 </td>
-               <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Log.Nome)
+              <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.NomeArquivo)
                 </td>
-                <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    @Html.DisplayFor(modelItem => item.Log.Descricao)
+
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.TipoArquivo)
                 </td>
-                
+
+                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.PathArquivo)
+                </td>
+
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
+                    @Html.DisplayFor(modelItem => item.DataArquivo)
                 </td>
-               
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DataCadastro)
+                </td>
+                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    @Html.DisplayFor(modelItem => item.DataAtualizacao)
+                </td>
+
+
+
+
+
             </tr>
 
         }

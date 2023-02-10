@@ -9,6 +9,7 @@ namespace OrionTM_Web.Models
     {
         [Key]
         public int Id_sequencia { get; set; }
+        public string NomeComando { get; set; }
         public int TerminalId { get; set; }
         public int StatusId { get; set; }
         public string ScrConteudo { get; set; }

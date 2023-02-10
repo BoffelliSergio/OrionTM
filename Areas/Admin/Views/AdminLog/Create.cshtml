@@ -23,7 +23,7 @@
                 <th class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 
                 <div class="form-group">
-                     <label asp-for="Nome" class="control-label"></label>:
+                     <label asp-for="Nome" class="control-label"></label>
                      <input asp-for="Nome" class="form-control" />
                      <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
@@ -31,7 +31,7 @@
                 <br />
 
                 <div class="form-group">
-                        <label asp-for="Descricao" class="control-label"></label>:
+                        <label asp-for="Descricao" class="control-label"></label>
                      <input asp-for="Descricao" class="form-control" />
                      <span asp-validation-for="Descricao" class="text-danger"></span>
                    
@@ -40,7 +40,7 @@
                     <br />
 
                 <div class="form-group">
-                        <label asp-for="Caminho" class="control-label"></label>:
+                        <label asp-for="Caminho" class="control-label"></label>
                         <input asp-for="Caminho" class="form-control" />
                         <span asp-validation-for="Caminho" class="text-danger"></span>
                     </div>
@@ -49,9 +49,9 @@
 
 
                     <div class="form-group">
-                        <div> <label asp-for="TipoArquivo" class="control-label"></label>:</div>
+                        <div> <label asp-for="TipoArquivo" class="control-label"></label></div>
                        
-                        <select name="TipoArquivo" asp-for="TipoArquivo" size="7">
+                        <select name="TipoArquivo" asp-for="TipoArquivo" size="6" style="width:200px;">
                             <option value="Log">Arquivo .log</option>
                             <option value="Txt">Arquivo .Txt</option>
                             <option value="Ini">Arquivo .Ini</option>
@@ -66,7 +66,7 @@
                     <br />
 
                     <div class="form-group">
-                        <label asp-for="DataMascara" class="control-label"></label>:
+                        <label asp-for="DataMascara" class="control-label"></label>
                         <input asp-for="DataMascara" class="form-control" />
                         <span asp-validation-for="DataMascara" class="text-danger"></span>
                     </div>

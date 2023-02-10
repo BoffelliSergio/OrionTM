@@ -26,10 +26,11 @@ namespace OrionTM_Web.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
-                ComandosEnvioViewModel.FilaTasks = _context.FilaTasks;
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
                 ComandosEnvioViewModel.Reset = _context.Reset;
-
+                ComandosEnvioViewModel.UpLoadOnLine = _context.UpLoadOnLine;
+               ComandosEnvioViewModel.Download= _context.Download;
+                ComandosEnvioViewModel.Script = _context.Script;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");
@@ -48,7 +49,6 @@ namespace OrionTM_Web.Controllers
             {
                 resultado = resultado.Where(p => p.Codigo.ToUpper().Contains(filter.ToUpper())).OrderBy(l => l.Codigo);
             }
-
 
             //  ok err
             if ((!string.IsNullOrWhiteSpace(IsOnLine)) && (!string.IsNullOrWhiteSpace(IsOffLine)) )
@@ -74,28 +74,6 @@ namespace OrionTM_Web.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-
-        // GET: Admin/AdminTerminal/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Terminal == null)
-            {
-                return NotFound();
-            }
-
-            var terminal = await _context.Terminal
-                .Include(t => t.Local)
-                .Include(t => t.Modelo)
-                .FirstOrDefaultAsync(m => m.TerminalId == id);
-            if (terminal == null)
-            {
-                return NotFound();
-            }
-            ViewData["LocalId"] = new SelectList(_context.Local, "LocalId", "Nome", terminal.LocalId);
-            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Descricao", terminal.ModeloId);
-
-            return View(terminal);
-        }
 
 
 

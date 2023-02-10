@@ -31,29 +31,16 @@
 
                     <div class="form-group">
                         <label asp-for="Caminho" class="control-label"></label>:
-                        <input asp-for="Caminho" class="form-control" />
+                        <textarea asp-for="Caminho" id="w3review" name="Caminho" rows="10" cols="170">
+                       </textarea>
                         <span asp-validation-for="Caminho" class="text-danger"></span>
                     </div>
-                </th>
-               @* <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <label for="file">Arquivo:</label>
-                    <input type="file" style="visibility:initial;" id="file" onchange="previewFile()" asp-for="Caminho" class="form-control" />
-                    
-                    <br />  <br />
-                    <div style="height: 250px; overflow: auto" >
-                        <table style="width:80%;">
-                            <tr valign="top">
-                            <th >
-                                <div>
-                                <p class="content"></p>
-                                </div>
-                            </th>
-                        </tr>
-                        </table>
-                    </div>
 
-                    
-                </th>*@
+
+                </th>
+
+               
+ 
             </tr>
         </table>
               
@@ -65,23 +52,7 @@
         </form>
  </div>
 
-<script language='javascript'>
 
-    function previewFile() {
-        const content = document.querySelector('.content');
-        const [file] = document.querySelector('input[type=file]').files;
-        const reader = new FileReader();
-
-        reader.addEventListener("load", () => {
-            content.innerText = reader.result;
-        }, false);
-
-        if (file) {
-            reader.readAsText(file);
-        }
-    }
-
-</script>
 
 
 

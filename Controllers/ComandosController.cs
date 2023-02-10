@@ -21,63 +21,97 @@ namespace OrionTM_Web.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DtAtualizacao")
+        public async Task<IActionResult> Index(string filter, string isIniciando, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DataAtualizacao")
         {
 
             if (User.Identity.IsAuthenticated)
             {
-            var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Comando).Include(t=> t.Tasks);
+            var appDbContext = _context.Script.Include(t => t.Terminal).Include(t => t.Status);
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
-
-            // somente executar comandos
-            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(5)));
 
             if (!string.IsNullOrWhiteSpace(filter))
             {
                 resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
             }
+                //// incluir os filtros
+                ///
 
-                //ok err
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5));
-                }
-                //exec err
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+                    resultado = resultado.Where(p => p.StatusId.Equals(0));
                 }
 
-                //exec ok
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
+                    resultado = resultado.Where(p => p.StatusId.Equals(1));
                 }
 
-                //exec
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(2));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
                     resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2));
                 }
 
-                //ok
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6));
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
                 }
 
-                //err
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
                 {
-                    resultado = resultado.Where(p => p.StatusId.Equals(5));
+                    resultado = resultado.Where(p => p.StatusId.Equals(1) || p.StatusId.Equals(2));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(1) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(2));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
                 }
 
 
 
 
                 var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
-            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
+            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "isIniciando", isIniciando }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
             return View(model);
             }
             return RedirectToAction("Login", "Account");
@@ -92,6 +126,7 @@ namespace OrionTM_Web.Controllers
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
                 ComandosEnvioViewModel.Comandos = _context.Comando;
+                ComandosEnvioViewModel.Script = _context.Script;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");
@@ -102,26 +137,38 @@ namespace OrionTM_Web.Controllers
         public async Task<IActionResult> ComandoPorTerminais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+            ComandosEnvioViewModel.Comandos = _context.Comando;
 
-            //var DependencyListaEnvioId = Convert.ToInt32(id);
+                       
             List<string> Comandos_from = form["Comandos_from"].ToList();
             List<string> terminais_from = form["terminais_from"].ToList();
 
             foreach (var ComandoId in Comandos_from)
             {
-                  //ADICIONA NOVOS ITENS A LISTA
-                foreach (var item in terminais_from)
-                {
-                    FilaTasks f = new FilaTasks();
+                var resultScript = ComandosEnvioViewModel.Comandos.Where(p => p.ComandoId.Equals(Convert.ToInt32(ComandoId)));
 
-                    f.TerminalId = Convert.ToInt32(item);
-                    f.DtAtualizacao = DateTime.Now;
-                    f.TasksId = 5;
-                    f.ComandoId = Convert.ToInt32(ComandoId);
-                    f.LogId = 0;
-                    f.PacoteId = 0;
-                    f.StatusId = 0;
-                    _context.FilaTasks.Add(f);
+                var strConteuto = "";
+                var NomeComando = "";
+
+                foreach (var l in resultScript)
+                {
+                    strConteuto = l.Caminho;
+                    NomeComando = l.Nome;
+                }
+
+                    //ADICIONA NOVOS ITENS A LISTA
+                    foreach (var item in terminais_from)
+                {
+                    Script s = new Script();
+
+                    s.TerminalId = Convert.ToInt32(item);
+                    s.NomeComando = NomeComando;
+                    s.StatusId = 0;
+                    s.ScrConteudo = strConteuto;
+                    s.DataCadastro = DateTime.Now;
+                    s.DataAtualizacao = DateTime.Now;
+                    s.StrLog = "";
+                    _context.Script.Add(s);
                     _context.SaveChanges();
                 }
 
@@ -160,13 +207,27 @@ namespace OrionTM_Web.Controllers
         public async Task<IActionResult> ComandoPorLocais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
-
-            //var DependencyListaEnvioId = Convert.ToInt32(id);
+            ComandosEnvioViewModel.Comandos = _context.Comando;
+                        
             List<string> Comandos_from = form["Comandos_from"].ToList();
             List<string> Locais_from = form["Locais_from"].ToList();
 
+            var strConteuto = "";
+            var NomeComando = "";
+
             foreach (var ComandoId in Comandos_from)
             {
+
+                var resultScript = ComandosEnvioViewModel.Comandos.Where(p => p.ComandoId.Equals(Convert.ToInt32(ComandoId)));
+
+
+                foreach (var l in resultScript)
+                {
+                    strConteuto = l.Caminho;
+                    NomeComando = l.Nome;
+                }
+
+
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Locais_from)
                 {
@@ -175,15 +236,17 @@ namespace OrionTM_Web.Controllers
 
                     foreach (var terminal in ComandosEnvioViewModel.Terminais)
                     {
-
-                        FilaTasks l = new FilaTasks();
-                        l.TerminalId = Convert.ToInt32(terminal.TerminalId);
-                        l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 5;
-                        l.ComandoId = Convert.ToInt32(ComandoId);
-                        l.StatusId = 0;
-                        _context.FilaTasks.Add(l);
+                        Script s = new Script();
+                        s.TerminalId = Convert.ToInt32(terminal.TerminalId);
+                        s.NomeComando = NomeComando;
+                        s.StatusId = 0;
+                        s.ScrConteudo = strConteuto;
+                        s.DataCadastro = DateTime.Now;
+                        s.DataAtualizacao = DateTime.Now;
+                        s.StrLog = "";
+                        _context.Script.Add(s);
                         _context.SaveChanges();
+
                     }
                     _context.LogAuditoria.Add(
                        new LogAuditoria
@@ -222,13 +285,28 @@ namespace OrionTM_Web.Controllers
         public async Task<IActionResult> ComandoPorLista(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+            ComandosEnvioViewModel.Comandos = _context.Comando;
 
-            //var DependencyListaEnvioId = Convert.ToInt32(id);
+            
             List<string> Comandos_from = form["Comandos_from"].ToList();
             List<string> Lista_from = form["Lista_from"].ToList();
 
+            var strConteuto = "";
+            var NomeComando = "";
+
             foreach (var ComandoId in Comandos_from)
             {
+
+                var resultScript = ComandosEnvioViewModel.Comandos.Where(p => p.ComandoId.Equals(Convert.ToInt32(ComandoId)));
+
+
+                foreach (var l in resultScript)
+                {
+                    strConteuto = l.Caminho;
+                    NomeComando = l.Nome;
+                }
+
+
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Lista_from)
                 {
@@ -238,13 +316,15 @@ namespace OrionTM_Web.Controllers
                     foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
                     {
 
-                        FilaTasks l = new FilaTasks();
-                        l.TerminalId = Convert.ToInt32(lista.TerminalId);
-                        l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 5;
-                        l.ComandoId = Convert.ToInt32(ComandoId);
-                        l.StatusId = 0;
-                        _context.FilaTasks.Add(l);
+                        Script s = new Script();
+                        s.TerminalId = Convert.ToInt32(lista.TerminalId);
+                        s.NomeComando = NomeComando;
+                        s.StatusId = 0;
+                        s.ScrConteudo = strConteuto;
+                        s.DataCadastro = DateTime.Now;
+                        s.DataAtualizacao = DateTime.Now;
+                        s.StrLog = "";
+                        _context.Script.Add(s);
                         _context.SaveChanges();
 
                     }

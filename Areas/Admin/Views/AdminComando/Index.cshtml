@@ -40,14 +40,12 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                Nome
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Descricao)
+               Descrição
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Caminho)
-            </th>
+           
 
             <th></th>
         </tr>
@@ -62,13 +60,10 @@
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.Descricao)
                 </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Caminho)
-                </td>
-
+               
 
                 <td>
-                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.ComandoId">Detalhes</a>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.ComandoId">Detales</a>
                     <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.ComandoId">Editar</a>
                     <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ComandoId">Excluir</a>
                 </td>

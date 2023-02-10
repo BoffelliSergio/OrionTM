@@ -13,7 +13,8 @@
                         <select name="Logs_from" id="multiselect" class="form-control" size="5">
                             @foreach (var item in Model.Log)
                             {
-                                <option value="@item.LogId">@item.Nome</option>
+                                <option value="@item.LogId">@item.Nome     -    Tipo =  @item.TipoArquivo / Mascara = @item.DataMascara </option>
+
                             }
                         </select>
                     </div>
@@ -30,6 +31,19 @@
                                 <option value="@item.ListaEnvioId">@item.Nome</option>
                             }
                         </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-check form-switch">
+
+                        <label>Data Inicio:</label>
+                        <input type="date" id="birthday" name="DataInicio" placeholder="dd/mm/yyyy">
+
+                        <label>Data Fim:</label>
+                        <input type="date" id="birthday" name="DataFim" placeholder="dd/mm/yyyy">
+
                     </div>
                 </td>
             </tr>

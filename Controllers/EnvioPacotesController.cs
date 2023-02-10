@@ -22,71 +22,30 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DtAtualizacao")
+        public async Task<IActionResult> Index(string filter, string isIniciando, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DataAtualizacao")
         {
            
 
             if (User.Identity.IsAuthenticated)
             {
 
-                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Pacote).Include(t=> t.Tasks);
+                var appDbContext = _context.Download.Include(t => t.Terminal);
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
-
-            // somente executar comandos
-            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(7)));
-
 
             if (!string.IsNullOrWhiteSpace(filter))
                 {
                      resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()) );
                 }
 
-            // exec ok err
-            if ( (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)) )
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
-                }
+            //// incluir os filtros
 
-            //ok err
-            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5) );
-                }
 
-            //exec err
-            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
-                }
 
-                //exec ok
-            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
-                }
-
-            //exec
-                if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2) );
-                }
-
-                //ok
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(6) );
-                }
-
-                //err
-                if ((string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-                {
-                    resultado = resultado.Where(p => p.StatusId.Equals(5) );
-                }
 
 
             var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
-            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
+            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "isIniciando", isIniciando }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
             return View(model);
             }
             return RedirectToAction("Login", "Account");
@@ -101,6 +60,7 @@ namespace OrionTM_Web.Controllers
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
                 ComandosEnvioViewModel.Pacote = _context.Pacote;
+                ComandosEnvioViewModel.Download = _context.Download;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");

@@ -38,6 +38,7 @@ GO
 
 CREATE TABLE [dbo].[Script](
 	[Id_sequencia][int] identity(1,1) NOT NULL,
+	[NomeComando] [varchar](50) NULL,
 	[TerminalId] [int] NOT NULL,
 	[StatusId] [int] NOT NULL,
 	[ScrConteudo] varchar(8000) NOT NULL, 

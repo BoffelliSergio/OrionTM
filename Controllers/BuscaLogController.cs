@@ -20,82 +20,118 @@ namespace OrionTM_Web.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(string filter, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DtAtualizacao")
+        public async Task<IActionResult> Index(string filter, string isIniciando, string IsExecutando, string IsOk, string IsErro, int pageindex = 1, string sort = "-DataAtualizacao")
 
 
         {
             if (User.Identity.IsAuthenticated)
             {
 
-                var appDbContext = _context.FilaTasks.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Log);
+                var appDbContext = _context.UpLoadOnLine.Include(t => t.Terminal).Include(t => t.Status);
 
-            var resultado = appDbContext.AsNoTracking().AsQueryable();
+                var resultado = appDbContext.AsNoTracking().AsQueryable();
 
-            // somente executar comandos
-            resultado = resultado.Where(p => p.TasksId.Equals(Convert.ToInt32(3)));
 
-            if (!string.IsNullOrWhiteSpace(filter))
-            {
-                resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
+                if (!string.IsNullOrWhiteSpace(filter))
+                {
+                    resultado = resultado.Where(p => p.Terminal.Codigo.ToUpper().Contains(filter.ToUpper()));
+                }
+
+                //// incluir os filtros
+                ///
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(1));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(2));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(1) || p.StatusId.Equals(2));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(1) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(2));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(1) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+                if ((!string.IsNullOrWhiteSpace(isIniciando)) && (string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
+                {
+                    resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
+                }
+
+
+
+
+
+
+
+                var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "Terminal");
+                model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "isIniciando", isIniciando }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
+                return View(model);
             }
-
-            // exec ok err
-            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
-            }
-
-            //ok err
-            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(5));
-            }
-
-            //exec err
-            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(5) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
-            }
-
-            //exec ok
-            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(6) || p.StatusId.Equals(0) || p.StatusId.Equals(2));
-            }
-
-            //exec
-            if ((!string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2));
-            }
-
-            //ok
-            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (!string.IsNullOrWhiteSpace(IsOk)) && (string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(6));
-            }
-
-            //err
-            if ((string.IsNullOrWhiteSpace(IsExecutando)) && (string.IsNullOrWhiteSpace(IsOk)) && (!string.IsNullOrWhiteSpace(IsErro)))
-            {
-                resultado = resultado.Where(p => p.StatusId.Equals(5));
-            }
-
-            var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
-            model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
-            return View(model);
+            return RedirectToAction("Login", "Account");
         }
-         return RedirectToAction("Login", "Account");
-    }
 
 
-    public IActionResult BuscaPorTerminais()
+        public IActionResult BuscaPorTerminais()
         {
             if (User.Identity.IsAuthenticated)
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
                 ComandosEnvioViewModel.Terminais = _context.Terminal;
                 ComandosEnvioViewModel.UpLoadOnLine = _context.UpLoadOnLine;
+                ComandosEnvioViewModel.Log = _context.Log;
                 return View(ComandosEnvioViewModel);
             }
             return RedirectToAction("Login", "Account");
@@ -103,40 +139,92 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BuscaPorTerminais(int? id, IFormCollection form)
+        public async Task<IActionResult> BuscaPorTerminais(int? id , string DataInicio , string DataFim, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+            ComandosEnvioViewModel.Log = _context.Log;
 
-            //var DependencyListaEnvioId = Convert.ToInt32(id);
             List<string> Logs_from = form["Logs_from"].ToList();
             List<string> terminais_from = form["terminais_from"].ToList();
 
+            var NomeArquivo  = "";
+            var PathArquivo = "";
+            var TipoArquivo = "";
+            var DataArquivo = "";
+            var MascaraArquivo = "";
+            var TipoUpload = "";
+
             foreach (var LogId in Logs_from)
             {
-                //ADICIONA NOVOS ITENS A LISTA
-                foreach (var item in terminais_from)
+                              
+             var   resultLog = ComandosEnvioViewModel.Log.Where(p => p.LogId.Equals(Convert.ToInt32(LogId)));
+ 
+              foreach (var l in resultLog)
                 {
-                    FilaTasks f = new FilaTasks();
+                    NomeArquivo = l.Nome;
+                    PathArquivo = l.Caminho;
 
-                    f.TerminalId = Convert.ToInt32(item);
-                    f.DtAtualizacao = DateTime.Now;
-                    f.TasksId = 3;
-                    f.ComandoId = 0;
-                    f.LogId = Convert.ToInt32(LogId); 
-                    f.PacoteId = 0;
-                    f.StatusId = 0;
-                    _context.FilaTasks.Add(f);
+                    if (l.TipoArquivo == "Pasta")
+                    {
+                        TipoArquivo = l.TipoArquivo;
+                        TipoUpload = "ByFolder";
+                    }
+                    else
+                    {
+                        // bydate or byrange
+                        if (l.TipoArquivo != "Pasta" && l.DataMascara is not null)
+                        {
+                            if (DataInicio is null)
+                            {
+                                var dt = DateTime.Now;
+                                DataInicio = dt.ToString("yyyy-MM-dd");
+                            }
+
+                            if (DataFim is not null) 
+                            {
+                                MascaraArquivo = l.DataMascara;
+                                TipoArquivo = l.TipoArquivo;
+                                DataArquivo = DataInicio + "|" + DataFim;
+                                TipoUpload = "ByRangeDate";
+                            }
+                            else
+                            {
+                                MascaraArquivo = l.DataMascara;
+                                TipoArquivo = l.TipoArquivo;
+                                DataArquivo = DataInicio;
+                                TipoUpload = "ByDate";
+                            }
+                        }
+                        else
+                        {
+                            TipoUpload = "ByName";
+                            TipoArquivo = l.TipoArquivo;
+                        }
+
+                    }
+                       
+                }
+
+                    //ADICIONA NOVOS ITENS A LISTA
+                    foreach (var item in terminais_from)
+                    {
+                    //utilizando tabelas UpLoadOnline
+                    UpLoadOnLine u = new UpLoadOnLine();
+                    u.TerminalId = Convert.ToInt32(item); 
+                    u.StatusId = 0;
+                    u.NomeArquivo = NomeArquivo;
+                    u.PathArquivo = PathArquivo;
+                    u.TipoArquivo = TipoArquivo;
+                    u.DataArquivo = DataArquivo;
+                    u.MascaraArquivo = MascaraArquivo;
+                    u.TipoUpload = TipoUpload;
+                    u.DataCadastro = DateTime.Now;
+                    u.DataAtualizacao = DateTime.Now;
+                    u.StrLog = "";
+                    _context.UpLoadOnLine.Add(u);
                     _context.SaveChanges();
                 }
             }
-
-
-
-
-
-
-
-
 
             _context.LogAuditoria.Add(
                       new LogAuditoria
@@ -157,26 +245,85 @@ namespace OrionTM_Web.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+                ComandosEnvioViewModel.UpLoadOnLine = _context.UpLoadOnLine;
                 ComandosEnvioViewModel.Locais = _context.Local;
                 ComandosEnvioViewModel.Log = _context.Log;
                 return View(ComandosEnvioViewModel);
-
+               
             }
             return RedirectToAction("Login", "Account");
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BuscaPorLocais(int? id, IFormCollection form)
+        public async Task<IActionResult> BuscaPorLocais(int? id, string DataInicio, string DataFim, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+            ComandosEnvioViewModel.Log = _context.Log;
 
             //var DependencyListaEnvioId = Convert.ToInt32(id);
             List<string> Logs_from = form["Logs_from"].ToList();
             List<string> Locais_from = form["Locais_from"].ToList();
 
+            var NomeArquivo = "";
+            var PathArquivo = "";
+            var TipoArquivo = "";
+            var DataArquivo = "";
+            var MascaraArquivo = "";
+            var TipoUpload = "";
+
+
             foreach (var LogId in Logs_from)
             {
+
+                var resultLog = ComandosEnvioViewModel.Log.Where(p => p.LogId.Equals(Convert.ToInt32(LogId)));
+
+                foreach (var l in resultLog)
+                {
+                    NomeArquivo = l.Nome;
+                    PathArquivo = l.Caminho;
+
+                    if (l.TipoArquivo == "Pasta")
+                    {
+                        TipoArquivo = l.TipoArquivo;
+                        TipoUpload = "ByFolder";
+                    }
+                    else
+                    {
+                        // bydate or byrange
+                        if (l.TipoArquivo != "Pasta" && l.DataMascara is not null)
+                        {
+                            if (DataInicio is null)
+                            {
+                                var dt = DateTime.Now;
+                                DataInicio = dt.ToString("yyyy-MM-dd");
+                            }
+
+                            if (DataFim is not null)
+                            {
+                                MascaraArquivo = l.DataMascara;
+                                TipoArquivo = l.TipoArquivo;
+                                DataArquivo = DataInicio + "|" + DataFim;
+                                TipoUpload = "ByRangeDate";
+                            }
+                            else
+                            {
+                                MascaraArquivo = l.DataMascara;
+                                TipoArquivo = l.TipoArquivo;
+                                DataArquivo = DataInicio;
+                                TipoUpload = "ByDate";
+                            }
+                        }
+                        else
+                        {
+                            TipoUpload = "ByName";
+                            TipoArquivo = l.TipoArquivo;
+                        }
+
+                    }
+
+                }
+
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Locais_from)
                 {
@@ -186,15 +333,19 @@ namespace OrionTM_Web.Controllers
                     foreach (var terminal in ComandosEnvioViewModel.Terminais)
                     {
 
-                        FilaTasks l = new FilaTasks();
-                        l.TerminalId = Convert.ToInt32(terminal.TerminalId);
-                        l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 3;
-                        l.ComandoId = 0;
-                        l.LogId = Convert.ToInt32(LogId);
-                        l.PacoteId = 0;
-                        l.StatusId = 0;
-                        _context.FilaTasks.Add(l);
+                        UpLoadOnLine u = new UpLoadOnLine();
+                        u.TerminalId = Convert.ToInt32(terminal.TerminalId);
+                        u.StatusId = 0;
+                        u.NomeArquivo = NomeArquivo;
+                        u.PathArquivo = PathArquivo;
+                        u.TipoArquivo = TipoArquivo;
+                        u.DataArquivo = DataArquivo;
+                        u.MascaraArquivo = MascaraArquivo;
+                        u.TipoUpload = TipoUpload;
+                        u.DataCadastro = DateTime.Now;
+                        u.DataAtualizacao = DateTime.Now;
+                        u.StrLog = "";
+                        _context.UpLoadOnLine.Add(u);
                         _context.SaveChanges();
 
                     }
@@ -229,16 +380,80 @@ namespace OrionTM_Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BuscaPorLista(int? id, IFormCollection form)
+        public async Task<IActionResult> BuscaPorLista(int? id, string DataInicio, string DataFim, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
+            ComandosEnvioViewModel.Log = _context.Log;
 
-            //var DependencyListaEnvioId = Convert.ToInt32(id);
+
+           
             List<string> Logs_from = form["Logs_from"].ToList();
             List<string> Lista_from = form["Lista_from"].ToList();
 
+            var NomeArquivo = "";
+            var PathArquivo = "";
+            var TipoArquivo = "";
+            var DataArquivo = "";
+            var MascaraArquivo = "";
+            var TipoUpload = "";
+
+
             foreach (var LogId in Logs_from)
             {
+
+                var resultLog = ComandosEnvioViewModel.Log.Where(p => p.LogId.Equals(Convert.ToInt32(LogId)));
+
+                foreach (var l in resultLog)
+                {
+                    NomeArquivo = l.Nome;
+                    PathArquivo = l.Caminho;
+
+                    if (l.TipoArquivo == "Pasta")
+                    {
+                        TipoArquivo = l.TipoArquivo;
+                        TipoUpload = "ByFolder";
+                    }
+                    else
+                    {
+                        // bydate or byrange
+                        if (l.TipoArquivo != "Pasta" && l.DataMascara is not null)
+                        {
+                            if (DataInicio is null)
+                            {
+                                var dt = DateTime.Now;
+                                DataInicio = dt.ToString("yyyy-MM-dd");
+                            }
+
+                            if (DataFim is not null)
+                            {
+                                MascaraArquivo = l.DataMascara;
+                                TipoArquivo = l.TipoArquivo;
+                                DataArquivo = DataInicio + "|" + DataFim;
+                                TipoUpload = "ByRangeDate";
+                            }
+                            else
+                            {
+                                MascaraArquivo = l.DataMascara;
+                                TipoArquivo = l.TipoArquivo;
+                                DataArquivo = DataInicio;
+                                TipoUpload = "ByDate";
+                            }
+                        }
+                        else
+                        {
+                            TipoUpload = "ByName";
+                            TipoArquivo = l.TipoArquivo;
+                        }
+
+                    }
+
+                }
+
+
+
+
+
+
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Lista_from)
                 {
@@ -247,17 +462,21 @@ namespace OrionTM_Web.Controllers
 
                     foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
                     {
-
-                        FilaTasks l = new FilaTasks();
-                        l.TerminalId = Convert.ToInt32(lista.TerminalId);
-                        l.DtAtualizacao = DateTime.Now;
-                        l.TasksId = 3;
-                        l.ComandoId = 0;
-                        l.LogId = Convert.ToInt32(LogId); 
-                        l.PacoteId = 0;
-                        l.StatusId = 0;
-                        _context.FilaTasks.Add(l);
+                        UpLoadOnLine u = new UpLoadOnLine();
+                        u.TerminalId = Convert.ToInt32(lista.TerminalId);
+                        u.StatusId = 0;
+                        u.NomeArquivo = NomeArquivo;
+                        u.PathArquivo = PathArquivo;
+                        u.TipoArquivo = TipoArquivo;
+                        u.DataArquivo = DataArquivo;
+                        u.MascaraArquivo = MascaraArquivo;
+                        u.TipoUpload = TipoUpload;
+                        u.DataCadastro = DateTime.Now;
+                        u.DataAtualizacao = DateTime.Now;
+                        u.StrLog = "";
+                        _context.UpLoadOnLine.Add(u);
                         _context.SaveChanges();
+
 
                     }
 

@@ -34,7 +34,33 @@
                             <input asp-for="Caminho" class="form-control" />
                             <span asp-validation-for="Caminho" class="text-danger"></span>
                         </div>
-                   
+
+                        <br />
+
+                        <div class="form-group">
+                            <div> <label asp-for="TipoArquivo" class="control-label"></label></div>
+
+                            <select name="TipoArquivo" asp-for="TipoArquivo" size="6" style="width:200px;">
+                                <option value="Log">Arquivo .log</option>
+                                <option value="Txt">Arquivo .Txt</option>
+                                <option value="Ini">Arquivo .Ini</option>
+                                <option value="Json">Arquivo .Json</option>
+                                <option value="Xml">Arquivo .Xml</option>
+                                <option value="Pasta">Pasta Completa</option>
+                            </select>
+
+                            <span asp-validation-for="TipoArquivo" class="text-danger"></span>
+                        </div>
+
+                        <br />
+
+                        <div class="form-group">
+                            <label asp-for="DataMascara" class="control-label"></label>
+                            <input asp-for="DataMascara" class="form-control" />
+                            <span asp-validation-for="DataMascara" class="text-danger"></span>
+                        </div>
+
+
 
                     </th>
                 </tr>

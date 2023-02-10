@@ -1,6 +1,6 @@
 ﻿@using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
-@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.FilaTasks>
+@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Download>
 
 
 @{
@@ -20,7 +20,14 @@
              <td class="col-sm-1">
 
              </td>
-           
+
+            <td class="col-sm-2">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="IsIniciando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isIniciando"]">
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/21 Incluir.png" />&nbsp;Iniciando</label>
+                </div>
+            </td>
+
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsExecutando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isExecutando"]">
@@ -31,13 +38,13 @@
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsOk" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOk"]">
-                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;Download OK</label>
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;OK</label>
                 </div>
             </td>
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsErro" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsErro"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Download Erro</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Erro</label>
                 </div>
             </td>
 
@@ -131,7 +138,7 @@
                     @Html.DisplayFor(modelItem => item.Pacote.Versao)
                 </td>
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.DtAtualizacao)
+                    @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>
  
 
