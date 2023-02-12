@@ -131,9 +131,13 @@ namespace OrionTM_Web.Controllers
         public async Task<IActionResult> ResetPorTerminais(int? id, IFormCollection form)
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
-                       
+            ComandosEnvioViewModel.Terminais = _context.Terminal;
+
+
             List<string> terminais_from = form["terminais_from"].ToList();
             List<string> Resets_from = form["Resets_from"].ToList();
+
+            var NomeTerminal = "";
 
 
             foreach (var TipoReset in Resets_from)
@@ -142,6 +146,13 @@ namespace OrionTM_Web.Controllers
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in terminais_from)
                 {
+
+                    var resultTerminal = ComandosEnvioViewModel.Terminais.Where(p => p.TerminalId.Equals(Convert.ToInt32(item)));
+                    foreach (var l in resultTerminal)
+                    {
+                        NomeTerminal = l.Codigo;
+                    }
+
                     Reset f = new Reset();
                     f.TerminalId = Convert.ToInt32(item);
                     f.StatusId = 0;
@@ -150,17 +161,20 @@ namespace OrionTM_Web.Controllers
                     f.DataAtualizacao = DateTime.Now;
                     _context.Reset.Add(f);
                     _context.SaveChanges();
+
+                    _context.LogAuditoria.Add(
+                       new LogAuditoria
+                       {
+                           Usuario = User.Identity.Name,
+                           Modulo = "Reset",
+                           Detalhe = String.Concat("Terminal = " + NomeTerminal),
+                           Data = DateTime.Now
+                       });
+                    _context.SaveChanges();
+
                 }
 
-                _context.LogAuditoria.Add(
-                        new LogAuditoria
-                        {
-                            Usuario = User.Identity.Name,
-                            Modulo = "Reset",
-                            Detalhe = String.Concat("Reset Por Termianal"),
-                            Data = DateTime.UtcNow
-                        });
-                _context.SaveChanges();
+               
             }
 
 
@@ -214,16 +228,18 @@ namespace OrionTM_Web.Controllers
                         _context.Reset.Add(f);
                         _context.SaveChanges();
 
-                    }
-                    _context.LogAuditoria.Add(
+                        _context.LogAuditoria.Add(
                        new LogAuditoria
                        {
                            Usuario = User.Identity.Name,
                            Modulo = "Reset",
-                           Detalhe = String.Concat("Reset Por Local"),
-                           Data = DateTime.UtcNow
+                           Detalhe = String.Concat("Terminal = " + terminal.Codigo),
+                           Data = DateTime.Now
                        });
-                    _context.SaveChanges();
+                        _context.SaveChanges();
+
+                    }
+                    
 
                 }
             }
@@ -264,7 +280,7 @@ namespace OrionTM_Web.Controllers
                     //ADICIONA NOVOS ITENS A LISTA
                     foreach (var item in Lista_from)
                     {
-                        ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio;
+                        ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio.Include(t => t.Terminal);
                         ComandosEnvioViewModel.DetalheListaEnvio = ComandosEnvioViewModel.DetalheListaEnvio.Where(p => p.ListaEnvioId == Convert.ToInt32(item)).ToList();
 
                         foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
@@ -279,17 +295,21 @@ namespace OrionTM_Web.Controllers
                             _context.Reset.Add(f);
                             _context.SaveChanges();
 
-                        }
-                        _context.LogAuditoria.Add(
+
+                            _context.LogAuditoria.Add(
                            new LogAuditoria
                            {
                                Usuario = User.Identity.Name,
                                Modulo = "Reset",
-                               Detalhe = String.Concat("Reset Por Lista"),
-                               Data = DateTime.UtcNow
+                               Detalhe = String.Concat("Terminal = " + lista.Terminal.Codigo),
+                               Data = DateTime.Now
                            });
-                        _context.SaveChanges();
+                            _context.SaveChanges();
 
+
+
+                        }
+                        
                     }
                 }
             }

@@ -6,6 +6,8 @@ using OrionTM_Web.Models;
 using ReflectionIT.Mvc.Paging;
 using System.Diagnostics;
 using OrionTM_Web.ViewModels;
+using System.Net;
+using Microsoft.AspNetCore.Localization;
 
 namespace OrionTM_Web.Controllers
 {
@@ -72,6 +74,23 @@ namespace OrionTM_Web.Controllers
             return View(model);
             }
             return RedirectToAction("Login", "Account");
+        }
+
+
+
+        public IActionResult setlanguage(string culture)
+        
+        {
+            Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions
+                {
+                    Expires = DateTimeOffset.UtcNow.AddMonths(6)
+                });
+
+            return RedirectToActionPreserveMethod("Index");
+                   
+        
         }
 
 

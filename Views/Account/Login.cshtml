@@ -1,25 +1,46 @@
 ﻿@model LoginViewModel
 
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
+<table>
+    <tr>
+        <td class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+        </td>
+          <td>
+            <a asp-route-culture="pt-br" asp-controller="Home" asp-action="setlanguage"><img src="~/images/brasil.png" width="25" height="25"> </a>
+            <a asp-route-culture="en" asp-controller="Home" asp-action="setlanguage"><img src="~/images/estados-unidos.png" width="25" height="25"> </a>
+            <a asp-route-culture="es" asp-controller="Home" asp-action="setlanguage"><img src="~/images/espanha.png" width="25" height="25"> </a>
+        </td>
+    </tr>
+</table>
+
 <table class="table">
     <tr>
         <td><img src="~/images/login_48.png" alt="Fazer o Login" class="center-block" /></td>
         <td>
             <div class="row">
                 <div class="col-10 col-md-10 col-lg-10">
-                    <h4>Login</h4>
+                    <h4>@Localizer["TITULO"]</h4>
                     <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal">
                         <hr />
                         <div asp-validation-summary="All" class="text-danger"></div>
                         <input type="hidden" asp-for="ReturnUrl" />
                         <div class="form-group">
-                            <label asp-for="UserName" class="col-md-2 control-label"></label>
+                            <h6>@Localizer["USUARIO"]</h6>
                             <div class="col-md-6">
                                 <input asp-for="UserName" class="form-control" />
                                 <span asp-validation-for="UserName" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Password" class="col-md-2 control-label"></label>
+                            
+                            <h6>@Localizer["SENHA"]</h6>
+
                             <div class="col-md-6">
                                 <input asp-for="Password" class="form-control" />
                                 <span asp-validation-for="Password" class="text-danger"></span>
@@ -28,7 +49,7 @@
                         <br />
                         <div class="form-gorup">
                             <div class="col-md-8">
-                                <input type="submit" class="btn btn-success" value="Log In" />
+                                <input type="submit" class="btn btn-success" value="@Localizer["BTN_LOGIN"]" />
                             </div>
                         </div>
 
@@ -36,6 +57,6 @@
                 </div>
             </div>
         </td>
-
+               
     </tr>
 </table>

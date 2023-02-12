@@ -294,6 +294,9 @@ C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\refs\WindowsBase.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\OrionTM_Web.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\OrionTM_Web.runtimeconfig.json
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\OrionTM_Web.pdb
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\en\OrionTM_Web.resources.dll
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\es\OrionTM_Web.resources.dll
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\pt\OrionTM_Web.resources.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\Azure.Identity.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\PubTmp\Out\Humanizer.dll

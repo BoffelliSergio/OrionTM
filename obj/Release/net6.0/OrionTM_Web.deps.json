@@ -335,6 +335,17 @@
         "runtime": {
           "OrionTM_Web.dll": {}
         },
+        "resources": {
+          "en/OrionTM_Web.resources.dll": {
+            "locale": "en"
+          },
+          "es/OrionTM_Web.resources.dll": {
+            "locale": "es"
+          },
+          "pt/OrionTM_Web.resources.dll": {
+            "locale": "pt"
+          }
+        },
         "compile": {
           "OrionTM_Web.dll": {}
         }

@@ -10,17 +10,26 @@
     <link rel="stylesheet" href="~/OrionTM_Web.styles.css" asp-append-version="true" />
 </head>
 <body>
+
+    @using Microsoft.AspNetCore.Mvc.Localization
+    @using Microsoft.Extensions.Localization
+
+    @inject IViewLocalizer Localizer
+
+    @*@Localizer["Senha"]*@
+
+
     <header>
         
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  bg-dark border-bottom box-shadow mb-3 ">
      
             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png"></a>
-            <a class="nav-link text-white" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">Download Pacotes</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="BuscaLog" asp-action="Index">Upload Arquivos</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="Comandos" asp-action="Index">Execução de Comandos</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="Resets" asp-action="Index">Resetar Terminais</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="ListaEnvio" asp-action="Index">Lista de Terminais</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Status">Status Terminais</a>
+            <a class="nav-link text-white" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">@Localizer["MNU_DOWNLOAD"]</a>
+            <a class="nav-link text-white" asp-area="" asp-controller="BuscaLog" asp-action="Index">@Localizer["MNU_UPLOAD"]</a>
+            <a class="nav-link text-white" asp-area="" asp-controller="Comandos" asp-action="Index">@Localizer["MNU_COMANDOS"]</a>
+            <a class="nav-link text-white" asp-area="" asp-controller="Resets" asp-action="Index">@Localizer["MNU_RESETS"]</a>
+            <a class="nav-link text-white" asp-area="" asp-controller="ListaEnvio" asp-action="Index">@Localizer["MNU_LISTA"]</a>
+            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Status">@Localizer["MNU_STATUS"]</a>
 
             @if(User.IsInRole("Admin"))
                 {
@@ -36,7 +45,16 @@
             @RenderBody()
         </main>
     </div>
-        
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            
+            
+           
+
+           
+
+        </div>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -44,7 +62,12 @@
     <script src="~/js/multiselect.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
+
 </body>
+
+
+
 
 <script type="text/javascript">
     $(document).ready(function () {

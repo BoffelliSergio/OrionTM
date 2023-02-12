@@ -8,9 +8,9 @@
 
             <tr>
                 <td>
-                    <div><h4>Arquivos</h4></div>
+                    <div><h5>Selecione o Arquivo</h5></div>
                     <div>
-                        <select name="Logs_from" id="multiselect" class="form-control" size="5">
+                        <select name="Logs_from" id="multiselect" class="form-control" size="6">
                             @foreach (var item in Model.Log)
                             {
                                 <option value="@item.LogId">@item.Nome     -    Tipo =  @item.TipoArquivo / Mascara = @item.DataMascara </option>
@@ -23,9 +23,9 @@
 
             <tr>
                 <td>
-                    <div><h4>Listas</h4></div>
+                    <div><h5>Selecione a Lista de Terminais</h5></div>
                     <div>
-                        <select name="Lista_from" id="multiselect" class="form-control" size="10" multiple="multiple">
+                        <select name="Lista_from" id="multiselect" class="form-control" size="6" multiple="multiple">
                             @foreach (var item in Model.ListaEnvio)
                             {
                                 <option value="@item.ListaEnvioId">@item.Nome</option>
@@ -36,14 +36,12 @@
             </tr>
             <tr>
                 <td>
-                    <div class="form-check form-switch">
-
-                        <label>Data Inicio:</label>
+                    <div>
+                        <label><h5>Selecione a Data Inicio:</h5></label>
                         <input type="date" id="birthday" name="DataInicio" placeholder="dd/mm/yyyy">
-
-                        <label>Data Fim:</label>
+                        <label><h5> e a Data Fim:</h5></label>
                         <input type="date" id="birthday" name="DataFim" placeholder="dd/mm/yyyy">
-
+                        <label><h5> do Range de Arquivos.</h5></label>
                     </div>
                 </td>
             </tr>

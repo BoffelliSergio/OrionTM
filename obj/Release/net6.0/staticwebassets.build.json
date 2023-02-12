@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LTwimz5Iv5BhjBKAnzq/jEndPiNhzsTt48gXSwcxtU0=",
+  "Hash": "cjdHUrRl7hs9T8gNSbgsWjmc4xZbY8wY/4b5aRJYKl0=",
   "Source": "OrionTM_Web",
   "BasePath": "_content/OrionTM_Web",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\21 Incluir.png",
+      "SourceId": "OrionTM_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\",
+      "BasePath": "_content/OrionTM_Web",
+      "RelativePath": "images/21 Incluir.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\21 Incluir.png"
+    },
+    {
       "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\adminarea.jpg",
       "SourceId": "OrionTM_Web",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\adminarea.jpg"
+    },
+    {
+      "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\brasil.png",
+      "SourceId": "OrionTM_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\",
+      "BasePath": "_content/OrionTM_Web",
+      "RelativePath": "images/brasil.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\brasil.png"
     },
     {
       "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\carousel11.jpg",
@@ -202,6 +236,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Envelope-icon24.png"
+    },
+    {
+      "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\espanha.png",
+      "SourceId": "OrionTM_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\",
+      "BasePath": "_content/OrionTM_Web",
+      "RelativePath": "images/espanha.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\espanha.png"
+    },
+    {
+      "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\estados-unidos.png",
+      "SourceId": "OrionTM_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\",
+      "BasePath": "_content/OrionTM_Web",
+      "RelativePath": "images/estados-unidos.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\estados-unidos.png"
     },
     {
       "Identity": "C:\\Boffelli\\Orion\\OrionTM\\wwwroot\\images\\faleconosco1.jpg",

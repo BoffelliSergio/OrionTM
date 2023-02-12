@@ -74,6 +74,12 @@ namespace OrionTM_Web.Controllers
 
         }
 
+        public IActionResult ListUsers()
+        {
+            var users = _userManager.Users;
+            return View(users);
+        }
+
     }
 }
 

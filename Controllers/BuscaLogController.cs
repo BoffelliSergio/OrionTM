@@ -143,6 +143,8 @@ namespace OrionTM_Web.Controllers
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
             ComandosEnvioViewModel.Log = _context.Log;
+            ComandosEnvioViewModel.Terminais = _context.Terminal;
+
 
             List<string> Logs_from = form["Logs_from"].ToList();
             List<string> terminais_from = form["terminais_from"].ToList();
@@ -153,6 +155,8 @@ namespace OrionTM_Web.Controllers
             var DataArquivo = "";
             var MascaraArquivo = "";
             var TipoUpload = "";
+            var NomeTerminal = "";
+
 
             foreach (var LogId in Logs_from)
             {
@@ -216,6 +220,12 @@ namespace OrionTM_Web.Controllers
                     //ADICIONA NOVOS ITENS A LISTA
                     foreach (var item in terminais_from)
                     {
+                    var resultTerminal = ComandosEnvioViewModel.Terminais.Where(p => p.TerminalId.Equals(Convert.ToInt32(item)));
+                    foreach (var l in resultTerminal)
+                    {
+                        NomeTerminal = l.Codigo;
+                    }
+
                     //utilizando tabelas UpLoadOnline
                     UpLoadOnLine u = new UpLoadOnLine();
                     u.TerminalId = Convert.ToInt32(item); 
@@ -231,21 +241,23 @@ namespace OrionTM_Web.Controllers
                     u.StrLog = "";
                     _context.UpLoadOnLine.Add(u);
                     _context.SaveChanges();
+
+
+
+                    _context.LogAuditoria.Add(
+                     new LogAuditoria
+                     {
+                         Usuario = User.Identity.Name,
+                         Modulo = "Busca Logs",
+                         Detalhe = String.Concat("Arquivo = " + NomeArquivo + " / Terminal = " + NomeTerminal),
+                         Data = DateTime.Now
+                     });
+                    _context.SaveChanges();
+
                 }
             }
 
-            _context.LogAuditoria.Add(
-                      new LogAuditoria
-                      {
-                          Usuario = User.Identity.Name,
-                          Modulo = "Busca Logs",
-                          Detalhe = String.Concat("Busca Por Termianal"),
-                          Data = DateTime.UtcNow
-                      });
-            _context.SaveChanges();
-
             return RedirectToAction("Index", "BuscaLog");
-
         }
 
         public IActionResult BuscaPorLocais()
@@ -356,16 +368,18 @@ namespace OrionTM_Web.Controllers
                         _context.UpLoadOnLine.Add(u);
                         _context.SaveChanges();
 
+                         _context.LogAuditoria.Add(
+                         new LogAuditoria
+                         {
+                             Usuario = User.Identity.Name,
+                             Modulo = "Busca Logs",
+                             Detalhe = String.Concat("Arquivo = " + NomeArquivo + " / Terminal = " + terminal.Codigo),
+                             Data = DateTime.Now
+                         });
+                            _context.SaveChanges();
+
                     }
-                    _context.LogAuditoria.Add(
-                     new LogAuditoria
-                     {
-                         Usuario = User.Identity.Name,
-                         Modulo = "Busca Logs",
-                         Detalhe = String.Concat("Busca Por Termianal"),
-                         Data = DateTime.UtcNow
-                     });
-                    _context.SaveChanges();
+                    
 
                 }
             }
@@ -454,18 +468,13 @@ namespace OrionTM_Web.Controllers
                         }
 
                     }
-
-                }
-
-
-
-
+ }
 
 
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Lista_from)
                 {
-                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio;
+                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio.Include(t => t.Terminal);
                     ComandosEnvioViewModel.DetalheListaEnvio = ComandosEnvioViewModel.DetalheListaEnvio.Where(p => p.ListaEnvioId == Convert.ToInt32(item)).ToList();
 
                     foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
@@ -485,18 +494,19 @@ namespace OrionTM_Web.Controllers
                         _context.UpLoadOnLine.Add(u);
                         _context.SaveChanges();
 
+                        _context.LogAuditoria.Add(
+                         new LogAuditoria
+                         {
+                             Usuario = User.Identity.Name,
+                             Modulo = "Busca Logs",
+                             Detalhe = String.Concat("Arquivo = " + NomeArquivo + " / Terminal = " + lista.Terminal.Codigo),
+                             Data = DateTime.Now
+                         });
+                        _context.SaveChanges();
 
                     }
 
-                    _context.LogAuditoria.Add(
-                     new LogAuditoria
-                     {
-                         Usuario = User.Identity.Name,
-                         Modulo = "Busca Logs",
-                         Detalhe = String.Concat("Busca Por Termianal"),
-                         Data = DateTime.UtcNow
-                     });
-                    _context.SaveChanges();
+
 
                 }
             }

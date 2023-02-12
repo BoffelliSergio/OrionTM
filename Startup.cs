@@ -1,22 +1,37 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using NuGet.Protocol;
 using OrionTM_Web.Context;
 using OrionTM_Web.Models;
 using OrionTM_Web.Services;
 using ReflectionIT.Mvc.Paging;
 using System;
+using System.Globalization;
 
 namespace OrionTM_Web;
 
 public class Startup
 {
 
+
+    private static readonly List<CultureInfo> _supoetedCultures = new List<CultureInfo>
+    {
+       
+        new CultureInfo("pt-BR"),
+        new CultureInfo("es"),
+         new CultureInfo("en"),
+
+    };
+
+
     public Startup(IConfiguration configuration)
     {
         Configuration = configuration;
     }
+
 
     public IConfiguration Configuration { get; }
 
@@ -60,8 +75,21 @@ public class Startup
         });
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            
-        services.AddControllersWithViews();
+
+
+        services.AddLocalization(opt => opt.ResourcesPath = "Recources");
+        services.AddControllersWithViews().AddViewLocalization(opt => opt.ResourcesPath = "Resources");
+
+        services.Configure<RequestLocalizationOptions>(options =>
+        {
+            options.DefaultRequestCulture = new RequestCulture("pt-BR", "pt-BR");
+            options.SupportedCultures = _supoetedCultures;
+            options.SupportedUICultures = _supoetedCultures;
+
+        });
+
+
+        services.AddControllersWithViews(); 
 
         services.AddPaging(options =>
             {
@@ -73,7 +101,7 @@ public class Startup
         services.AddMemoryCache();
         services.AddSession();
 
-
+       
 
 
     }
@@ -91,7 +119,16 @@ public class Startup
             // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
         }
+
+
         app.UseHttpsRedirection();
+
+        var options = app
+            .ApplicationServices
+            .GetService<IOptions<RequestLocalizationOptions>>()
+            .Value;
+
+        app.UseRequestLocalization();
 
         app.UseStaticFiles();
         app.UseRouting();

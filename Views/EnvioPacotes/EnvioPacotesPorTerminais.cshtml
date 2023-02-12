@@ -3,14 +3,14 @@
 
 <div class="container">
     <form asp-action="EnvioPacotesPorTerminais">
-        <h3>Download de Pacote por Equipamento</h3>
+        <h3>Download de Pacotes por Equipamento</h3>
         <table class="table">
 
             <tr>
                 <td>
-                    <div><h4>Pacotes</h4></div>
+                    <div><h5>Selecione o Pacote</h5></div>
                     <div>
-                        <select name="Pacotes_from" id="multiselect" class="form-control" size="5">
+                        <select name="Pacotes_from" id="multiselect" class="form-control" size="6">
                             @foreach (var item in Model.Pacote)
                             {
                                 <option value="@item.PacoteId">@item.Nome</option>
@@ -22,9 +22,9 @@
 
             <tr>
                 <td>
-                    <div><h4>Terminais</h4></div>
+                    <div><h5>Selecione os Terminais</h5></div>
                     <div>
-                        <select name="terminais_from" id="multiselect" class="form-control" size="8" multiple="multiple">
+                        <select name="terminais_from" id="multiselect" class="form-control" size="6" multiple="multiple">
                             @foreach (var item in Model.Terminais)
                             {
                                 <option value="@item.TerminalId">@item.Codigo</option>
@@ -35,21 +35,18 @@
             </tr>
             <tr>
                 <td>
-                    <div class="form-check form-switch">
-
-                        <label>Data Instalação:</label>
+                    <div>
+                        <label><h5>Selecione a Data Instalação:</h5></label>
                         <input type="date" id="birthday" name="DataInstalacao" placeholder="dd/mm/yyyy">
-
-                        <label>Hora Instalaçao:</label>
+                        <label><h5> e a  Hora Instalação: do Pacote.</h5></label>
                         <input type="time" id="birthday" name="HoraInstalacao" placeholder="hh:mm">
-
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div>
-                        <h5>Para instalação imediata não configurar Data e Hora Instalação!!</h5>
+                        <h6>Para instalação imediata não configurar Data e Hora Instalação!!</h6>
                     </div>
                 </td>
             </tr>

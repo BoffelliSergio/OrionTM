@@ -29,7 +29,7 @@ namespace OrionTM_Web.Controllers
             if (User.Identity.IsAuthenticated)
             {
 
-            var appDbContext = _context.Download.Include(t => t.Terminal).Include(t => t.Status); ;
+            var appDbContext = _context.Download.Include(t => t.Terminal).Include(t => t.Status).Include(t => t.Pacote); 
 
             var resultado = appDbContext.AsNoTracking().AsQueryable();
 
@@ -111,22 +111,12 @@ namespace OrionTM_Web.Controllers
                     resultado = resultado.Where(p => p.StatusId.Equals(0) || p.StatusId.Equals(2) || p.StatusId.Equals(3) || p.StatusId.Equals(4));
                 }
 
-
-
-
-
-
-
-
-
-
-                var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
+            var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
             model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "isIniciando", isIniciando }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
             return View(model);
             }
             return RedirectToAction("Login", "Account");
         }
-
 
 
         public IActionResult EnvioPacotesPorTerminais()
@@ -148,12 +138,14 @@ namespace OrionTM_Web.Controllers
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
             ComandosEnvioViewModel.Pacote = _context.Pacote;
-                      
+            ComandosEnvioViewModel.Terminais = _context.Terminal;
+
             List<string> Pacotes_from = form["Pacotes_from"].ToList();
             List<string> terminais_from = form["terminais_from"].ToList();
 
             var pacoteId = 0;
-
+            var NomePacote = "";
+            var NomeTerminal = "";
 
             foreach (var PacoteId in Pacotes_from)
             {
@@ -163,7 +155,7 @@ namespace OrionTM_Web.Controllers
                 foreach (var l in resultPacote)
                 {
                     pacoteId = l.PacoteId;
-                    
+                    NomePacote = l.Nome;
                 }
                               
 
@@ -181,6 +173,13 @@ namespace OrionTM_Web.Controllers
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in terminais_from)
                 {
+
+                    var resultTerminal = ComandosEnvioViewModel.Terminais.Where(p => p.TerminalId.Equals(Convert.ToInt32(item)));
+                    foreach (var l in resultTerminal)
+                    {
+                        NomeTerminal = l.Codigo;
+                    }
+
                     Download d = new Download();
                     d.TerminalId = Convert.ToInt32(item);
                     d.StatusId = 0;
@@ -192,17 +191,19 @@ namespace OrionTM_Web.Controllers
                     d.StrLog = "";
                     _context.Download.Add(d);
                     _context.SaveChanges();
-                }
 
-                _context.LogAuditoria.Add(
-                        new LogAuditoria
-                        {
-                            Usuario = User.Identity.Name,
-                            Modulo = "Pacotes",
-                            Detalhe = String.Concat("Envio Pacotes Por Termianal" ),
-                            Data = DateTime.UtcNow
-                        });
-                _context.SaveChanges();
+
+                    _context.LogAuditoria.Add(
+                      new LogAuditoria
+                      {
+                          Usuario = User.Identity.Name,
+                          Modulo = "Pacotes",
+                           Detalhe = String.Concat("Pacote = " + NomePacote + " / Terminal =" + NomeTerminal),
+                          Data = DateTime.Now
+                      });
+                    _context.SaveChanges();
+
+                }
 
             }
 
@@ -235,7 +236,7 @@ namespace OrionTM_Web.Controllers
             List<string> Pacotes_from = form["Pacotes_from"].ToList();
             List<string> Locais_from = form["Locais_from"].ToList();
             var pacoteId = 0;
-
+            var NomePacote = "";
 
             foreach (var PacoteId in Pacotes_from)
             {
@@ -245,6 +246,7 @@ namespace OrionTM_Web.Controllers
                 foreach (var l in resultPacote)
                 {
                     pacoteId = l.PacoteId;
+                    NomePacote = l.Nome;
 
                 }
 
@@ -280,16 +282,20 @@ namespace OrionTM_Web.Controllers
                         d.StrLog = "";
                         _context.Download.Add(d);
                         _context.SaveChanges();
-                    }
-                    _context.LogAuditoria.Add(
+
+
+                        _context.LogAuditoria.Add(
                        new LogAuditoria
                        {
                            Usuario = User.Identity.Name,
                            Modulo = "Pacotes",
-                           Detalhe = String.Concat("Envio Pacotes Por Local"),
-                           Data = DateTime.UtcNow
+                           Detalhe = String.Concat("Pacote = " + NomePacote + " / Terminal = " + terminal.Codigo),
+                           Data = DateTime.Now
                        });
-                    _context.SaveChanges();
+                        _context.SaveChanges();
+
+
+                    }
 
                 }
             }
@@ -324,7 +330,7 @@ namespace OrionTM_Web.Controllers
             List<string> Pacotes_from = form["Pacotes_from"].ToList();
             List<string> Lista_from = form["Lista_from"].ToList();
             var pacoteId = 0;
-
+            var NomePacote = "";
 
             foreach (var PacoteId in Pacotes_from)
             {
@@ -333,7 +339,7 @@ namespace OrionTM_Web.Controllers
                 foreach (var l in resultPacote)
                 {
                     pacoteId = l.PacoteId;
-
+                    NomePacote = l.Nome;
                 }
 
 
@@ -353,7 +359,7 @@ namespace OrionTM_Web.Controllers
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Lista_from)
                 {
-                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio;
+                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio.Include(t => t.Terminal);
                     ComandosEnvioViewModel.DetalheListaEnvio = ComandosEnvioViewModel.DetalheListaEnvio.Where(p => p.ListaEnvioId == Convert.ToInt32(item)).ToList();
 
                     foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
@@ -371,16 +377,21 @@ namespace OrionTM_Web.Controllers
                         _context.Download.Add(d);
                         _context.SaveChanges();
 
+
+                      _context.LogAuditoria.Add(
+                      new LogAuditoria
+                      {
+                          Usuario = User.Identity.Name,
+                          Modulo = "Pacotes",
+                          Detalhe = String.Concat("Pacote = " + NomePacote + " / Terminal = " + lista.Terminal.Codigo),
+                          Data = DateTime.Now
+                      });
+                        _context.SaveChanges();
+
+
+
                     }
-                    _context.LogAuditoria.Add(
-                       new LogAuditoria
-                       {
-                           Usuario = User.Identity.Name,
-                           Modulo = "Comandos",
-                           Detalhe = String.Concat("Envio Pacotes Por Lista"),
-                           Data = DateTime.UtcNow
-                       });
-                    _context.SaveChanges();
+                   
 
 
                 }

@@ -1,6 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Identity
 
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
 
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
 @inject SignInManager<IdentityUser> SignInManager
 
 

@@ -8,9 +8,9 @@
 
             <tr>
                 <td>
-                    <div><h4>Comandos</h4></div>
+                    <div><h5>Selecione o Comando</h5></div>
                     <div>
-                        <select name="Comandos_from" id="multiselect" class="form-control" size="5">
+                        <select name="Comandos_from" id="multiselect" class="form-control" size="7">
                             @foreach (var item in Model.Comandos)
                             {
                                 <option value="@item.ComandoId">@item.Nome</option>
@@ -22,9 +22,9 @@
 
             <tr>
                 <td>
-                    <div><h4>Localidades</h4></div>
+                    <div><h5>Selecione a Localidade</h5></div>
                     <div>
-                        <select name="Locais_from" id="multiselect" class="form-control" size="10" multiple="multiple">
+                        <select name="Locais_from" id="multiselect" class="form-control" size="7" multiple="multiple">
                             @foreach (var item in Model.Locais)
                             {
                                 <option value="@item.LocalId">@item.Nome</option>

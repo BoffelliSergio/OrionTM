@@ -73,7 +73,12 @@ namespace OrionTM_Web.Areas.Admin.Controllers
 
         }
 
-
+        [HttpGet]
+        public IActionResult ListUsers()
+        {
+            var users = _userManager.Users;
+            return View(users);
+        }
 
 
 

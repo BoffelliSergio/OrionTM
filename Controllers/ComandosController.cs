@@ -138,8 +138,9 @@ namespace OrionTM_Web.Controllers
         {
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
             ComandosEnvioViewModel.Comandos = _context.Comando;
+            ComandosEnvioViewModel.Terminais = _context.Terminal;
 
-                       
+
             List<string> Comandos_from = form["Comandos_from"].ToList();
             List<string> terminais_from = form["terminais_from"].ToList();
 
@@ -149,6 +150,8 @@ namespace OrionTM_Web.Controllers
 
                 var strConteuto = "";
                 var NomeComando = "";
+                var NomeTerminal = "";
+
 
                 foreach (var l in resultScript)
                 {
@@ -159,6 +162,14 @@ namespace OrionTM_Web.Controllers
                     //ADICIONA NOVOS ITENS A LISTA
                     foreach (var item in terminais_from)
                 {
+
+                    var resultTerminal = ComandosEnvioViewModel.Terminais.Where(p => p.TerminalId.Equals(Convert.ToInt32(item)));
+                    foreach (var l in resultTerminal)
+                    {
+                        NomeTerminal = l.Codigo;
+                    }
+
+
                     Script s = new Script();
 
                     s.TerminalId = Convert.ToInt32(item);
@@ -170,17 +181,23 @@ namespace OrionTM_Web.Controllers
                     s.StrLog = "";
                     _context.Script.Add(s);
                     _context.SaveChanges();
-                }
 
-                _context.LogAuditoria.Add(
+                    _context.LogAuditoria.Add(
                         new LogAuditoria
                         {
                             Usuario = User.Identity.Name,
                             Modulo = "Comandos",
-                            Detalhe = String.Concat("Envio Comando Por Termianal" ),
-                            Data = DateTime.UtcNow
+                            Detalhe = String.Concat("Script = " + NomeComando + " / Terminal = " + NomeTerminal),
+                            Data = DateTime.Now
                         });
-                _context.SaveChanges();
+                    _context.SaveChanges();
+
+
+
+
+                }
+
+                
 
             }
 
@@ -247,16 +264,18 @@ namespace OrionTM_Web.Controllers
                         _context.Script.Add(s);
                         _context.SaveChanges();
 
-                    }
-                    _context.LogAuditoria.Add(
+                        _context.LogAuditoria.Add(
                        new LogAuditoria
                        {
                            Usuario = User.Identity.Name,
                            Modulo = "Comandos",
-                           Detalhe = String.Concat("Envio Comando Por Local"),
-                           Data = DateTime.UtcNow
+                           Detalhe = String.Concat("Script = " + NomeComando + " / Terminal = " + terminal.Codigo),
+                           Data = DateTime.Now
                        });
-                    _context.SaveChanges();
+                        _context.SaveChanges();
+
+                    }
+                    
 
                 }
             }
@@ -278,8 +297,6 @@ namespace OrionTM_Web.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ComandoPorLista(int? id, IFormCollection form)
@@ -287,7 +304,6 @@ namespace OrionTM_Web.Controllers
             var ComandosEnvioViewModel = new ComandosEnvioViewModel();
             ComandosEnvioViewModel.Comandos = _context.Comando;
 
-            
             List<string> Comandos_from = form["Comandos_from"].ToList();
             List<string> Lista_from = form["Lista_from"].ToList();
 
@@ -296,9 +312,7 @@ namespace OrionTM_Web.Controllers
 
             foreach (var ComandoId in Comandos_from)
             {
-
                 var resultScript = ComandosEnvioViewModel.Comandos.Where(p => p.ComandoId.Equals(Convert.ToInt32(ComandoId)));
-
 
                 foreach (var l in resultScript)
                 {
@@ -306,11 +320,10 @@ namespace OrionTM_Web.Controllers
                     NomeComando = l.Nome;
                 }
 
-
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in Lista_from)
                 {
-                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio;
+                    ComandosEnvioViewModel.DetalheListaEnvio = _context.DetalheListaEnvio.Include(t => t.Terminal);
                     ComandosEnvioViewModel.DetalheListaEnvio = ComandosEnvioViewModel.DetalheListaEnvio.Where(p => p.ListaEnvioId == Convert.ToInt32(item)).ToList();
 
                     foreach (var lista in ComandosEnvioViewModel.DetalheListaEnvio)
@@ -327,16 +340,17 @@ namespace OrionTM_Web.Controllers
                         _context.Script.Add(s);
                         _context.SaveChanges();
 
+                        _context.LogAuditoria.Add(
+                      new LogAuditoria
+                      {
+                          Usuario = User.Identity.Name,
+                          Modulo = "Comandos",
+                          Detalhe = String.Concat("Script = " + NomeComando + " / Terminal = " + lista.Terminal.Codigo),
+                          Data = DateTime.Now
+                      });
+                        _context.SaveChanges();
                     }
-                    _context.LogAuditoria.Add(
-                       new LogAuditoria
-                       {
-                           Usuario = User.Identity.Name,
-                           Modulo = "Comandos",
-                           Detalhe = String.Concat("Envio Comando Por Lista"),
-                           Data = DateTime.UtcNow
-                       });
-                    _context.SaveChanges();
+                   
 
 
                 }
