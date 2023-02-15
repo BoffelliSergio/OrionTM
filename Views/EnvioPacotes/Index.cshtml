@@ -160,11 +160,20 @@
 
 <table class="table ">
     <tr>
-        <td class="col-xs-10 col-sm-10 col-md-10 col-lg-10"> <vc:pager paging-list="@Model"></vc:pager> </td>
-        <td> <h5>@Localizer["GRD_TOTAL"]: @Model.TotalRecordCount</h5> </td>
+        <td class="col-xs-4 col-sm-4 col-md-4col-lg-4">
+            <vc:pager paging-list="@Model"></vc:pager> 
+        </td>
+
+        <td class="col-xs-4 col-sm-4 col-md-4col-lg-4">
+            <ul style="float: right;">
+                <h5> @Localizer["GRD_TOTAL"]: @Model.TotalRecordCount</h5>
+            </ul>
+        </td>
     </tr>
 
 </table>
+
+
 
 <script language='javascript'>
 

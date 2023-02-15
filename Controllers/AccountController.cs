@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using OrionTM_Web.ViewModels;
 using System.Security.Cryptography.X509Certificates;
@@ -79,6 +80,22 @@ namespace OrionTM_Web.Controllers
             var users = _userManager.Users;
             return View(users);
         }
+
+        public IActionResult setlanguage(string culture)
+
+        {
+            Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions
+                {
+                    Expires = DateTimeOffset.UtcNow.AddMonths(6)
+                });
+
+            return RedirectToActionPreserveMethod("Login");
+
+        }
+
+
 
     }
 }

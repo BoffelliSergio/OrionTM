@@ -887,3 +887,6 @@ C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.csproj.GenerateResource
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\en\OrionTM_Web.resources.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\es\OrionTM_Web.resources.dll
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\pt\OrionTM_Web.resources.dll
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.EnvioPacotes.EnvioPacotesPorLista.en.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.EnvioPacotes.EnvioPacotesPorLista.es.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.EnvioPacotes.EnvioPacotesPorLista.pt.resources

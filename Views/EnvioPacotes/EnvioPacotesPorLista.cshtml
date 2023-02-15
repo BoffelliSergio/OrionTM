@@ -1,16 +1,22 @@
 ﻿@model ComandosEnvioViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
 
 
 <div class="container">
     <form asp-action="EnvioPacotesPorLista">
-        <h3>Download de Pacotes por Lista</h3>
+        <h3>@Localizer["TITULO"]</h3>
         <table class="table">
 
             <tr>
                 <td>
-                    <div><h5>Selecione o Pacote</h5></div>
+                    <div><h5>@Localizer["SEL_PACOTE"]</h5></div>
                     <div>
-                        <select name="Pacotes_from" id="multiselect" class="form-control" size="6">
+                        <select name="Pacotes_from" id="multiselect" class="form-control" size="5">
                             @foreach (var item in Model.Pacote)
                             {
                                 <option value="@item.PacoteId">@item.Nome</option>
@@ -22,9 +28,9 @@
 
             <tr>
                 <td>
-                    <div><h5>Selecione a Lista de Terminais</h5></div>
+                    <div><h5>@Localizer["SEL_LISTA"]</h5></div>
                     <div>
-                        <select name="Lista_from" id="multiselect" class="form-control" size="6" multiple="multiple">
+                        <select name="Lista_from" id="multiselect" class="form-control" size="5" multiple="multiple">
                             @foreach (var item in Model.ListaEnvio)
                             {
                                 <option value="@item.ListaEnvioId">@item.Nome</option>
@@ -36,17 +42,18 @@
             <tr>
                 <td>
                     <div >
-                        <label><h5>Selecione a Data Instalação:</h5></label>
+                        <label><h5>@Localizer["SEL_DATA"]</h5></label>
                         <input type="date" id="birthday" name="DataInstalacao" placeholder="dd/mm/yyyy">
-                        <label><h5> e a  Hora Instalação: do Pacote.</h5></label>
+                        <label><h5>@Localizer["SEL_HORA"]</h5></label>
                         <input type="time" id="birthday" name="HoraInstalacao" placeholder="hh:mm">
+                        <label><h5>@Localizer["DO_PACOTE"]</h5></label>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div>
-                        <h6>Para instalação imediata não configurar Data e Hora Instalação!!</h6>
+                        <h6>@Localizer["INST_IMEDIATA"]</h6>
                     </div>
                 </td>
             </tr>
@@ -54,8 +61,8 @@
         <table>
             <div class="row">
                 <div class="col-md-2 offset-md-10">
-                    <button type="submit" class="btn btn-warning  btn-sm">Executar</button>
-                    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+                    <button type="submit" class="btn btn-warning  btn-sm"><h6>@Localizer["BTN_EXECUTAR"]</h6></button>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm"><h6>@Localizer["BTN_VOLTAR"]</h6></a>
                 </div>
             </div>
         </table>

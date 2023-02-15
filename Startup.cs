@@ -20,7 +20,7 @@ public class Startup
     private static readonly List<CultureInfo> _supoetedCultures = new List<CultureInfo>
     {
        
-        new CultureInfo("pt-BR"),
+        new CultureInfo("pt"),
         new CultureInfo("es"),
          new CultureInfo("en"),
 
@@ -82,7 +82,7 @@ public class Startup
 
         services.Configure<RequestLocalizationOptions>(options =>
         {
-            options.DefaultRequestCulture = new RequestCulture("pt-BR", "pt-BR");
+            options.DefaultRequestCulture = new RequestCulture("pt", "pt");
             options.SupportedCultures = _supoetedCultures;
             options.SupportedUICultures = _supoetedCultures;
 

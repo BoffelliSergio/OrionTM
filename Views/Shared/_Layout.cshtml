@@ -33,7 +33,7 @@
 
             @if(User.IsInRole("Admin"))
                 {
-                <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index">Administração</a>
+                <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index">@Localizer["MNU_ADMIN"]</a>
                 }
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                         @await Html.PartialAsync("_LoginParcial")
@@ -45,16 +45,14 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            
-            
-           
 
-           
 
-        </div>
-    </footer>
+  
+
+
+
+
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

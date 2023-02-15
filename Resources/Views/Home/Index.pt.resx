@@ -117,7 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Senha" xml:space="preserve">
-    <value>Senha</value>
+  <data name="LEG_ENVIANDO" xml:space="preserve">
+    <value>Enviando</value>
+  </data>
+  <data name="LEG_ERRO" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="LEG_INICIANDO" xml:space="preserve">
+    <value>Iniciando</value>
+  </data>
+  <data name="LEG_OFFLINE" xml:space="preserve">
+    <value>Inativo</value>
+  </data>
+  <data name="LEG_OK" xml:space="preserve">
+    <value>Finalizado</value>
+  </data>
+  <data name="LEG_ONLINE" xml:space="preserve">
+    <value>Ativo</value>
+  </data>
+  <data name="TIT_BUSCA" xml:space="preserve">
+    <value>Busca de Arquivos</value>
+  </data>
+  <data name="TIT_COMANDO" xml:space="preserve">
+    <value>Execução de Comandos</value>
+  </data>
+  <data name="TIT_ENVIO" xml:space="preserve">
+    <value>Envio de Pacotes</value>
+  </data>
+  <data name="TIT_RESET" xml:space="preserve">
+    <value>Execução de RESET</value>
+  </data>
+  <data name="TIT_STATUS" xml:space="preserve">
+    <value>Status Terminais</value>
   </data>
 </root>

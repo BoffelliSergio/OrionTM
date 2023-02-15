@@ -1,9 +1,16 @@
 ﻿@using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
 @model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.UpLoadOnLine>
- 
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
+
 @{
-    ViewData["Title"] = "Busca Logs";
+    ViewData["Title"] = @Localizer["TITULO"];
 }
 
 <form method="get" class="form-inline">
@@ -11,7 +18,7 @@
     <table class="Table">
         <tr>
             <td class="col-sm-2">
-                <h4>Upload de Arquivos</h4>
+                <h4>@Localizer["TITULO"]</h4>
             </td>
             <td class="col-sm-2">
                 <input name="filter" class="form-control" placeholder="TerminalId" value="@Model.RouteValue["filter"]" />
@@ -22,33 +29,33 @@
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsIniciando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isIniciando"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/21 Incluir.png" />&nbsp;Iniciando</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/21 Incluir.png" />&nbsp;@Localizer["FILTRO_INICIANDO"]</label>
                 </div>
             </td>
 
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsExecutando" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["isExecutando"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Novo Lote.png" />&nbsp;Executando</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Novo Lote.png" />&nbsp;@Localizer["FILTRO_EXECUTANDO"]</label>
                 </div>
             </td>
 
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsOk" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOk"]">
-                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;OK</label>
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;@Localizer["FILTRO_FINALIZADO"]</label>
                 </div>
             </td>
             <td class="col-sm-2">
                 <div class="form-check form-switch">
                     <input class="form-check-input" name="IsErro" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsErro"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Erro</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;@Localizer["FILTRO_ERRO"]</label>
                 </div>
             </td>
 
             <td class="col-sm-3">
                 <button type="submit" class="btn btn-info ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> @Localizer["BTN_PROCURAR"]
                 </button>
             </td>
         </tr>
@@ -62,9 +69,9 @@
 <table>
     <tr>
         <td>
-            <a class="btn btn-primary btn-sm" asp-action="BuscaPorLista">Por Lista </a>
-            <a class="btn btn-warning btn-sm" asp-action="BuscaPorLocais">Por Localidade</a>
-            <a class="btn btn-danger btn-sm" asp-action="BuscaPorTerminais">Por Terminal</a>
+            <a class="btn btn-primary btn-sm" asp-action="BuscaPorLista"> @Localizer["BTN_POR_LISTA"]</a>
+            <a class="btn btn-warning btn-sm" asp-action="BuscaPorLocais"> @Localizer["BTN_POR_LOCALIDADE"]</a>
+            <a class="btn btn-danger btn-sm" asp-action="BuscaPorTerminais"> @Localizer["BTN_POR_TERMINAIS"]</a>
         </td>
     </tr>
 </table>
@@ -75,36 +82,29 @@
     <thead>
         <tr>
             <th>
-                Status
+                @Localizer["GRD_STATUS"]
             </th>
             <th>
-               Terminal
+                @Localizer["GRD_TERMINAL"]
             </th>
            <th>
-                Log
+                @Localizer["GRD_ARQUIVO"]
             </th>
             <th>
-                Tipo Log
+                @Localizer["GRD_TIPO_ARQ"]
             </th>
             <th>
-                Caminho
-            </th>
-
-
-            <th>
-                Data Solicitada
-            </th>
-           
-            <th>
-                Solicitação
+                @Localizer["GRD_CAMINHO"]
             </th>
             <th>
-                Atualização
+                @Localizer["GRD_DT_SOLICITADA"]
             </th>
-
             <th>
-                Log
-                </th>
+                @Localizer["GRD_ATUALIZACAO"]
+            </th>
+            <th>
+                @Localizer["GRD_LOG"]
+            </th>
 
         </tr>
     </thead>
@@ -151,9 +151,7 @@
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.DataArquivo)
                 </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.DataCadastro)
-                </td>
+ 
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Context;
 using OrionTM_Web.Migrations;
@@ -399,7 +400,6 @@ namespace OrionTM_Web.Controllers
             return RedirectToAction("Index", "EnvioPacotes");
 
         }
-
 
 
 

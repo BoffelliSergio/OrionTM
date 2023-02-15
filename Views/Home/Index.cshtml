@@ -20,7 +20,7 @@
             <td>
                 <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Status">
-                        <h5>Status Terminais - Tot: @Model.Terminais.Count()</h5>
+                        <h5>@Localizer["TIT_STATUS"] - Tot: @Model.Terminais.Count()</h5>
                     </a>
                 </div>
                 <div id="Terminais" style="width: 400px; height: 250px;"></div>
@@ -29,7 +29,7 @@
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                  <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="Resets" asp-action="Index">
-                        <h5>Execução de Resets - Tot: @Model.Reset.Count()</h5>
+                        <h5>@Localizer["TIT_RESET"] - Tot: @Model.Reset.Count()</h5>
                     </a>
                 </div>
                 <div id="Resets" style="width: 400px; height: 250px;"></div>
@@ -38,7 +38,7 @@
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="BuscaLog" asp-action="Index">
-                        <h5>Execução de Uploads - Tot: @Model.UpLoadOnLine.Count()</h5>
+                        <h5>@Localizer["TIT_BUSCA"] - Tot: @Model.UpLoadOnLine.Count()</h5>
                     </a>
                 </div>
                 <div id="Upload" style="width: 400px; height: 250px;"></div>
@@ -51,7 +51,7 @@
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                 <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="Comandos" asp-action="Index">
-                        <h5>Execução de Comandos - Tot: @Model.Script.Count()</h5>
+                        <h5>@Localizer["TIT_COMANDO"] - Tot: @Model.Script.Count()</h5>
                     </a>
                 </div>
                 <div id="Comandos" style="width: 400px; height: 250px;"></div>
@@ -60,7 +60,7 @@
             <td>
                 <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">
-                        <h5>Execução de Downloads - Tot: @Model.Download.Count()</h5>
+                        <h5>@Localizer["TIT_ENVIO"] - Tot: @Model.Download.Count()</h5>
                     </a>
                 </div>
                 <div id="Downloads" style="width: 400px; height: 250px;"></div>
@@ -68,13 +68,7 @@
             
         </tr>
 
-
-
-
-
-
 </table>
-      
 
 
 </body>
@@ -96,10 +90,10 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Iniciando', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(0))],
-                ['Executando', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(1))],
-                ['Ok', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(2))],
-                ['Erro', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
+                ['@Localizer["LEG_INICIANDO"]', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(0))],
+                ['@Localizer["LEG_ENVIANDO"]', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(1))],
+                ['@Localizer["LEG_OK"]', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(2))],
+                ['@Localizer["LEG_ERRO"]', @Model.UpLoadOnLine.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
             ]);
             var options = {
                 colors: ['orange', 'blue', 'green', 'red'],
@@ -116,10 +110,10 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Iniciando', @Model.Reset.Count(x => x.StatusId.Equals(0))],
-                ['Executando', @Model.Reset.Count(x => x.StatusId.Equals(1))],
-                ['Ok', @Model.Reset.Count(x => x.StatusId.Equals(2))],
-                ['Erro', @Model.Reset.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
+                ['@Localizer["LEG_INICIANDO"]', @Model.Reset.Count(x => x.StatusId.Equals(0))],
+                ['@Localizer["LEG_ENVIANDO"]', @Model.Reset.Count(x => x.StatusId.Equals(1))],
+                ['@Localizer["LEG_OK"]', @Model.Reset.Count(x => x.StatusId.Equals(2))],
+                ['@Localizer["LEG_ERRO"]', @Model.Reset.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
             ]);
             var options = {
                 colors: ['orange', 'blue', 'green', 'red'],
@@ -136,10 +130,10 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Iniciando', @Model.Script.Count(x => x.StatusId.Equals(0))],
-                ['Executando', @Model.Script.Count(x => x.StatusId.Equals(1))],
-                ['Ok', @Model.Script.Count(x => x.StatusId.Equals(2))],
-                ['Erro', @Model.Script.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
+                ['@Localizer["LEG_INICIANDO"]', @Model.Script.Count(x => x.StatusId.Equals(0))],
+                ['@Localizer["LEG_ENVIANDO"]', @Model.Script.Count(x => x.StatusId.Equals(1))],
+                ['@Localizer["LEG_OK"]', @Model.Script.Count(x => x.StatusId.Equals(2))],
+                ['@Localizer["LEG_ERRO"]', @Model.Script.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
             ]);
             var options = {
                 colors: ['orange', 'blue', 'green', 'red'],
@@ -154,10 +148,10 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Iniciando', @Model.Download.Count(x => x.StatusId.Equals(0))],
-                ['Executando', @Model.Download.Count(x => x.StatusId.Equals(1))],
-                ['Ok', @Model.Download.Count(x => x.StatusId.Equals(2))],
-                ['Erro', @Model.Download.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
+                ['@Localizer["LEG_INICIANDO"]', @Model.Download.Count(x => x.StatusId.Equals(0))],
+                ['@Localizer["LEG_ENVIANDO"]', @Model.Download.Count(x => x.StatusId.Equals(1))],
+                ['@Localizer["LEG_OK"]', @Model.Download.Count(x => x.StatusId.Equals(2))],
+                ['@Localizer["LEG_ERRO"]', @Model.Download.Count(x => x.StatusId.Equals(3) || x.StatusId.Equals(4))],
             ]);
             var options = {
                 colors: ['orange', 'blue', 'green', 'red'],
@@ -172,8 +166,8 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Online', @Model.Terminais.Count(x => x.Status.Equals(1) )],
-                ['Offline', @Model.Terminais.Count(x => x.Status.Equals(0) )],
+                ['@Localizer["LEG_ONLINE"]', @Model.Terminais.Count(x => x.Status.Equals(1) )],
+                ['@Localizer["LEG_OFFLINE"]', @Model.Terminais.Count(x => x.Status.Equals(0) )],
                
             ]);
             var options = {
@@ -184,13 +178,6 @@
             var chart = new google.visualization.PieChart(document.getElementById('Terminais'));
             chart.draw(data, options);
         }
-
-
-
-
-
-
-
 
         function teste() {
             window.location.reload();

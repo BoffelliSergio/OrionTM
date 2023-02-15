@@ -1,14 +1,20 @@
 ﻿@model ComandosEnvioViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
 
 
 <div class="container">
     <form asp-action="BuscaPorLista">
-        <h3>Upload de Arquivos por Lista</h3>
+        <h3>@Localizer["TITULO"]</h3>
         <table class="table">
 
             <tr>
                 <td>
-                    <div><h5>Selecione o Arquivo</h5></div>
+                    <div><h5>@Localizer["SEL_ARQUIVO"]</h5></div>
                     <div>
                         <select name="Logs_from" id="multiselect" class="form-control" size="6">
                             @foreach (var item in Model.Log)
@@ -23,7 +29,7 @@
 
             <tr>
                 <td>
-                    <div><h5>Selecione a Lista de Terminais</h5></div>
+                    <div><h5>@Localizer["SEL_LISTA"]</h5></div>
                     <div>
                         <select name="Lista_from" id="multiselect" class="form-control" size="6" multiple="multiple">
                             @foreach (var item in Model.ListaEnvio)
@@ -37,11 +43,18 @@
             <tr>
                 <td>
                     <div>
-                        <label><h5>Selecione a Data Inicio:</h5></label>
+                        <label><h5>@Localizer["SEL_DATA_INICIO"]</h5></label>
                         <input type="date" id="birthday" name="DataInicio" placeholder="dd/mm/yyyy">
-                        <label><h5> e a Data Fim:</h5></label>
+                        <label><h5>@Localizer["SEL_DATA_FIM"]</h5></label>
                         <input type="date" id="birthday" name="DataFim" placeholder="dd/mm/yyyy">
-                        <label><h5> do Range de Arquivos.</h5></label>
+                        <label><h5> @Localizer["DO_RANGE"]</h5></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <h6><label>@Localizer["INST_IMEDIATA"]</label></h6>
                     </div>
                 </td>
             </tr>
@@ -49,8 +62,8 @@
         <table>
             <div class="row">
                 <div class="col-md-2 offset-md-10">
-                    <button type="submit" class="btn btn-warning  btn-sm">Executar</button>
-                    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+                    <button type="submit" class="btn btn-warning  btn-sm">@Localizer["BTN_EXECUTAR"]</button>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm">@Localizer["BTN_VOLTAR"]</a>
                 </div>
             </div>
         </table>

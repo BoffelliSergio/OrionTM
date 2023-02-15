@@ -5,19 +5,6 @@
 
 @inject IViewLocalizer Localizer
 
-@*@Localizer["Senha"]*@
-
-<table>
-    <tr>
-        <td class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
-        </td>
-          <td>
-            <a asp-route-culture="pt-br" asp-controller="Home" asp-action="setlanguage"><img src="~/images/brasil.png" width="25" height="25"> </a>
-            <a asp-route-culture="en" asp-controller="Home" asp-action="setlanguage"><img src="~/images/estados-unidos.png" width="25" height="25"> </a>
-            <a asp-route-culture="es" asp-controller="Home" asp-action="setlanguage"><img src="~/images/espanha.png" width="25" height="25"> </a>
-        </td>
-    </tr>
-</table>
 
 <table class="table">
     <tr>
@@ -37,6 +24,7 @@
                                 <span asp-validation-for="UserName" class="text-danger"></span>
                             </div>
                         </div>
+                        <br />
                         <div class="form-group">
                             
                             <h6>@Localizer["SENHA"]</h6>
@@ -60,3 +48,23 @@
                
     </tr>
 </table>
+
+<footer class="border-top footer text-muted">
+    <table class="table">
+        <tr>
+            <td class="col-xs-4 col-sm-4 col-md-4col-lg-4">
+                <ul style="float: left;">
+                    &copy; 2023 Orion
+                </ul>
+            </td>
+
+            <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <ul style="float: right;">
+                    <a asp-route-culture="pt-br" asp-controller="Home" asp-action="setlanguage"><img src="~/images/brasil.png" width="25" height="25"> </a>
+                    <a asp-route-culture="en" asp-controller="Home" asp-action="setlanguage"><img src="~/images/estados-unidos.png" width="25" height="25"> </a>
+                    <a asp-route-culture="es" asp-controller="Home" asp-action="setlanguage"><img src="~/images/espanha.png" width="25" height="25"> </a>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</footer>
