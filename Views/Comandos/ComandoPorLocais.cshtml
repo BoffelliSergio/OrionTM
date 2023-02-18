@@ -1,14 +1,20 @@
 ﻿@model ComandosEnvioViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
 
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
 
 <div class="container">
     <form asp-action="ComandoPorLocais">
-        <h3>Execução de Comandos por Localidade</h3>
+        <h3>@Localizer["TITULO"]</h3>
         <table class="table">
 
             <tr>
                 <td>
-                    <div><h5>Selecione o Comando</h5></div>
+                    <div><h5>@Localizer["SEL_COMANDO"]</h5></div>
                     <div>
                         <select name="Comandos_from" id="multiselect" class="form-control" size="7">
                             @foreach (var item in Model.Comandos)
@@ -22,7 +28,7 @@
 
             <tr>
                 <td>
-                    <div><h5>Selecione a Localidade</h5></div>
+                    <div><h5>@Localizer["SEL_TERMINAIS"]</h5></div>
                     <div>
                         <select name="Locais_from" id="multiselect" class="form-control" size="7" multiple="multiple">
                             @foreach (var item in Model.Locais)
@@ -37,8 +43,8 @@
         <table>
             <div class="row">
                 <div class="col-md-2 offset-md-10">
-                    <button type="submit" class="btn btn-warning  btn-sm">Executar</button>
-                    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+                    <button type="submit" class="btn btn-warning  btn-sm">@Localizer["BTN_EXECUTAR"]</button>
+                    <a asp-action="Index" class="btn btn-secondary btn-sm">@Localizer["BTN_VOLTAR"]</a>
                 </div>
             </div>
         </table>
