@@ -9,11 +9,11 @@
             <div class="col-md-12 col-lg-12">
                 <h4>Registrar usuário</h4>
                 <form asp-controller="Account" asp-action="Register" method="post">
-                     <hr />
+                    <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>
 
                     <div class="form-group">
-                        <label asp-for="UserName" ></label>
+                        <label asp-for="UserName"></label>
                         <input asp-for="UserName" class="form-control" />
                         <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
@@ -24,12 +24,12 @@
                     </div>
                     <br />
                     <div class="form-gorup">
-                            <input type="submit" class="btn btn-success" value="Registar" />
-                      
+                        <input type="submit" class="btn btn-success" value="Registar" />
+
                     </div>
 
                 </form>
-             </div>
-         </td>
+            </div>
+        </td>
     </tr>
 </table>

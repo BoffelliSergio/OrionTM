@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OrionTM_Web.styles.css" asp-append-version="true" />
 </head>
+
+
 <body>
 
     @using Microsoft.AspNetCore.Mvc.Localization
@@ -20,39 +22,77 @@
 
 
     <header>
-        
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  bg-dark border-bottom box-shadow mb-3 ">
-     
-            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png"></a>
-            <a class="nav-link text-white" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">@Localizer["MNU_DOWNLOAD"]</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="BuscaLog" asp-action="Index">@Localizer["MNU_UPLOAD"]</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="Comandos" asp-action="Index">@Localizer["MNU_COMANDOS"]</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="Resets" asp-action="Index">@Localizer["MNU_RESETS"]</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="ListaEnvio" asp-action="Index">@Localizer["MNU_LISTA"]</a>
-            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Status">@Localizer["MNU_STATUS"]</a>
 
-            @if(User.IsInRole("Admin"))
-                {
-                <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index">@Localizer["MNU_ADMIN"]</a>
-                }
-                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        @await Html.PartialAsync("_LoginParcial")
-                    </div>
-        </nav>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  bg-dark border-bottom box-shadow mb-3 ">
+                        
+            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png"></a>
+            &nbsp;
+            <a class="btn btn-secondary " asp-area="" asp-controller="Home" asp-action="Status">@Localizer["MNU_STATUS"]</a>
+            &nbsp;
+            <a class="btn btn-secondary " asp-area="" asp-controller="ListaEnvio" asp-action="Index">@Localizer["MNU_LISTA"]</a>
+            &nbsp;
+
+            <li class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Executar
+                </button>
+                <ul class="dropdown-menu">
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="Comandos" asp-action="Index">@Localizer["MNU_COMANDOS"]</a></li>
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="Resets" asp-action="Index">@Localizer["MNU_RESETS"]</a></li>
+                    <li>  <a class="nav-link text-black" asp-area="" asp-controller="EnvioPacotes" asp-action="Index">@Localizer["MNU_DOWNLOAD"]</a></li>
+                    <li>  <a class="nav-link text-black" asp-area="" asp-controller="BuscaLog" asp-action="Index">@Localizer["MNU_UPLOAD"]</a></li>
+                </ul>
+             </li>
+                                            
+              
+            @if (User.IsInRole("Admin"))
+
+            {
+               
+                <li class="btn-group">
+                    &nbsp;
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cadastros
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLocal" asp-action="Index">Locais</a></li>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminComando" asp-action="Index">Comandos</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminModelo" asp-action="Index">Modelos</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminTerminal" asp-action="Index">Terminais</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLog" asp-action="Index">Arquivos</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminPacote" asp-action="Index">Pacotes</a>
+                            
+                    </ul>
+                </li>
+
+                <li class="btn-group">
+                    &nbsp;
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Administração
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="Account" asp-action="Register">Usuários</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLogAuditoria" asp-action="Index">Auditoria</a>
+
+                    </ul>
+                </li>
+                                                                     
+            }
+                   
+
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+            @await Html.PartialAsync("_LoginPartial")
+
+        </div>
+
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-
-  
-
-
-
-
-    
+        
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -61,10 +101,7 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 
-
 </body>
-
-
 
 
 <script type="text/javascript">

@@ -121,21 +121,21 @@
     <value>Administração</value>
   </data>
   <data name="MNU_COMANDOS" xml:space="preserve">
-    <value>Execução de Comandos</value>
+    <value>Comandos</value>
   </data>
   <data name="MNU_DOWNLOAD" xml:space="preserve">
-    <value>Envio de pacotes</value>
+    <value>Pacotes</value>
   </data>
   <data name="MNU_LISTA" xml:space="preserve">
     <value>Lista deTerminais</value>
   </data>
   <data name="MNU_RESETS" xml:space="preserve">
-    <value>Execução de Resets</value>
+    <value>Resets</value>
   </data>
   <data name="MNU_STATUS" xml:space="preserve">
     <value>Status Terminais</value>
   </data>
   <data name="MNU_UPLOAD" xml:space="preserve">
-    <value>Busca de Arquivos</value>
+    <value>Arquivos</value>
   </data>
 </root>

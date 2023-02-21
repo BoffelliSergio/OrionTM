@@ -130,6 +130,6 @@
     <value>Selecione a Localidade</value>
   </data>
   <data name="TITULO" xml:space="preserve">
-    <value>Execução de Tesets por Lista</value>
+    <value>Execução de Resets por Localidade</value>
   </data>
 </root>

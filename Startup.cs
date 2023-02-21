@@ -142,8 +142,8 @@ public class Startup
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllerRoute(
-            name: "areas",
-            pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
+                name: "areas",
+                pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
 
             endpoints.MapControllerRoute(
                name: "categoriaFiltro",
@@ -151,11 +151,11 @@ public class Startup
                defaults: new { controller = "Lanche", Action = "List" });
 
 
-        endpoints.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Account}/{action=Login}/{id?}");
+            endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Account}/{action=Login}/{id?}");
 
-         });
+        });
 
 
 

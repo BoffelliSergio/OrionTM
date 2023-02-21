@@ -1,11 +1,18 @@
 ﻿@model OrionTM_Web.Models.ListaEnvio
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
 
 @{
     ViewData["Title"] = "Lista de Envio";
 }
 
 
-<h2>Lista de Envio > Incluir</h2>
+<h2>@Localizer["TITULO"]</h2>
 
 <div>
     <h3 style="color: red;">@Html.ValidationMessage("Aviso")</h3>
@@ -23,7 +30,7 @@
                 <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                         <div class="form-group">
                             <dt>
-                            <label asp-for="Nome" class="control-label"></label>:
+                                @Localizer["GRD_NOME"]
                             </dt>
                             <dl>
                             <input asp-for="Nome" class="form-control" />
@@ -35,7 +42,7 @@
                     <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                           <div class="form-group">
                             <dt>
-                            <label asp-for="Descricao" class="control-label"></label>:
+                                @Localizer["GRD_DESC"]
                             </dt>
                             <dl>
                                 <input asp-for="Descricao" class="form-control" />
@@ -47,8 +54,8 @@
              </table>
 
             <div class="form-group">
-                <input type="submit" value="Incluir" class="btn btn-primary btn-sm" />
-                <a class="btn btn-secondary btn-sm" asp-action="Index">Voltar</a>
+                <input type="submit" value="@Localizer["BTN_INCLUIR"]" class="btn btn-primary btn-sm" />
+                <a class="btn btn-secondary btn-sm" asp-action="Index">@Localizer["BTN_VOLTAR"]</a>
             </div>
         </form>
     </div>

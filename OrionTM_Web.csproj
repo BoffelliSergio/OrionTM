@@ -31,9 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\Admin\Controllers\HomeController.cs" />
-    <Compile Remove="Areas\Admin\Controllers\LocaisController.cs" />
-    <Compile Remove="Areas\Admin\Controllers\ModelosController.cs" />
     <Compile Remove="Models\CarrinhoCompra.cs" />
     <Compile Remove="Models\CarrinhoCompraItem.cs" />
     <Compile Remove="Models\Categoria.cs" />
@@ -48,6 +45,10 @@
   <ItemGroup>
     <Content Remove="Views\Shared\_CategoriaResumo.cshtml" />
     <Content Remove="Views\Shared\_LanchesResumo.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Resources\Views\ListaEnvio.resx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -160,6 +161,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Areas\Admin\Views\Account\Register.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Update="Views\BuscaLog\Index.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

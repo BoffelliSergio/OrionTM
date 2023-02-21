@@ -1,5 +1,9 @@
 ﻿<!DOCTYPE html>
 
+
+
+
+
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,29 +12,27 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OrionTM_Web.styles.css" asp-append-version="true" />
+
 </head>
 <body>
+    @using Microsoft.AspNetCore.Mvc.Localization
+    @using Microsoft.Extensions.Localization
+
+    @inject IViewLocalizer Localizer
+
+    @*@Localizer["Senha"]*@
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
                
                 <div class="navbar-collapse collapse d-sm-inline-flex" >
                     <a class="nav-link text-white" asp-area="Admin" asp-controller="Admin" asp-action="Index"><img src="~/images/logo.png"></a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminLocal" asp-action="Index">Locais</a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminModelo" asp-action="Index">Modelos</a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminTerminal" asp-action="Index">Terminais</a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminLog" asp-action="Index">Arquivos</a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminComando" asp-action="Index">Comandos</a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminPacote" asp-action="Index">Pacotes</a>
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="Account" asp-action="Register">Usuários</a>
-                    @*<a class="nav-link text-white" asp-area="Admin" asp-controller="Account" asp-action="ListUsers">Listar Usuários</a>*@
-
-                    <a class="nav-link text-white" asp-area="Admin" asp-controller="AdminLogAuditoria" asp-action="Index">Auditoria</a>
-                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Operacional</a>
-                
+                                                  
 
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                         @await Html.PartialAsync("_RegisterPartial")
+
 
                    </div>
                 </div>

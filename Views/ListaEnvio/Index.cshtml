@@ -1,10 +1,16 @@
 ﻿@using ReflectionIT.Mvc.Paging
 @addTagHelper *, ReflectionIT.Mvc.Paging
 @model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.ListaEnvio>
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
 
 
 @{
-    ViewData["Title"] = "Lista Envio";
+    ViewData["Title"] = @Localizer["TITULO"];
 }
 
 
@@ -13,7 +19,7 @@
     <div>
         <dl class="row">
             <dt class="col-sm-3">
-                <h4>Lista de Terminais</h4>
+                <h4>@Localizer["TITULO"]</h4>
             </dt>
 
             <dt class="col-sm-2">
@@ -22,12 +28,12 @@
 
             <dt class="col-sm-1">
                 <button type="submit" class="btn btn-info ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>@Localizer["BTN_PROCURAR"]
                 </button>
             </dt>
             <dt class="col-sm-1">
                 <th class="col-sm-4">
-                    <a class="btn btn-primary " asp-action="Create">Incluir</a>
+                    <a class="btn btn-primary " asp-action="Create">@Localizer["BTN_INCLUIR"]</a>
                 </th>
             </dt>
             
@@ -41,10 +47,10 @@
     <thead>
         <tr>
             <th>
-                Nome
+                @Localizer["GRD_NOME"]
             </th>
             <th>
-                Descrição
+                @Localizer["GRD_DESC"]
             </th>
             <th></th>
         </tr>
@@ -63,9 +69,9 @@
 
                 <td>
 
-                    <a class="btn btn-info btn-sm" asp-action="Terminais" asp-route-id="@item.ListaEnvioId">Terminais</a>
-                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.ListaEnvioId">Editar</a>
-                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ListaEnvioId">Excluir</a>
+                    <a class="btn btn-info btn-sm" asp-action="Terminais" asp-route-id="@item.ListaEnvioId">@Localizer["BTN_TERMINAIS"]</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.ListaEnvioId">@Localizer["BTN_EDITAR"]</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ListaEnvioId">@Localizer["BTN_EXCLUIR"]</a>
                 </td>
             </tr>
         }

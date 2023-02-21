@@ -8,10 +8,10 @@
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <table class="table">
-    <tr >
+        <tr>
 
-        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                  
+            <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
                 <div class="form-group">
                     <label asp-for="UserName"></label>
                     <input asp-for="UserName" class="form-control" />
@@ -29,16 +29,16 @@
                     <input asp-for="PhoneNumber" class="form-control" />
                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                 </div>
-        </th>
+            </th>
 
-        <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
                 <div class="form-group">
                     <label asp-for="Email"></label>
                     <input asp-for="Email" class="form-control" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-                                   
+
 
                 <div class="form-group">
                     <label asp-for="PasswordConf"></label>
@@ -50,7 +50,7 @@
 
                 <div class="form-group">
                     <label>Administrador?</label>
-                    <input type="checkbox" asp-for="IsAdm"  />
+                    <input type="checkbox" asp-for="IsAdm" />
                     <span asp-validation-for="IsAdm" class="text-danger"></span>
                 </div>
 
@@ -58,10 +58,8 @@
                 <div class="form-gorup">
                     <input type="submit" class="btn btn-success" value="Registar" />
                 </div>
-        </th>
-        
-     </tr>
+            </th>
+
+        </tr>
     </table>
 </form>
-
-

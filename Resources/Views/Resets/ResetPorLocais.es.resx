@@ -130,6 +130,6 @@
     <value>Seleccionar la Localizacion</value>
   </data>
   <data name="TITULO" xml:space="preserve">
-    <value>Ejecución de Reset por Lista</value>
+    <value>Ejecución de Reset por Localizacion</value>
   </data>
 </root>

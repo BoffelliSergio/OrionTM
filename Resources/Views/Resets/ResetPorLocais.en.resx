@@ -130,6 +130,6 @@
     <value>Select Locality</value>
   </data>
   <data name="TITULO" xml:space="preserve">
-    <value>Execution of Resets by List</value>
+    <value>Execution of Resets by Locality</value>
   </data>
 </root>

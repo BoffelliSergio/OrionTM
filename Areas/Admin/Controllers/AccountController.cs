@@ -60,7 +60,7 @@ namespace OrionTM_Web.Areas.Admin.Controllers
                     {
                         await _userManager.AddToRoleAsync(user, "Usuario");
                     }
-                                       
+
                     return RedirectToAction("Index", "Admin");
                 }
                 else

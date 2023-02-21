@@ -1,7 +1,18 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Terminal>
-         
+
+
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
       
-@{    ViewData["Title"] = "Terminais";}
+@{
+    ViewData["Title"] = @Localizer["TITULO"];
+}
 
 
 <form method="get" class="form-inline">
@@ -9,7 +20,7 @@
         <table class="Table">
             <tr>
                 <td class="col-sm-3">
-                    <h4>Status Terminais</h4>
+                    <h4>@Localizer["TITULO_1"]</h4>
                 </td>
                 <td class="col-sm-3">
                     <input name="filter" class="form-control" placeholder="Codigo" value="@Model.RouteValue["filter"]" />
@@ -17,21 +28,21 @@
                 <td class="col-sm-1">
 
                 </td>
-                <td class="col-sm-3">
+                <td class="col-sm-2">
                     <div class="form-check form-switch">
                         <input class="form-check-input" name="IsOnLine" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOnLine"]">
-                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />&nbsp;Terminal Online</label>
+                    <label class="form-check-label" name="IsOnLine" for="flexSwitchCheckDefault"> <img src="~/images/Online.png" />@Localizer["FLT_ATIVOS"]</label>
                     </div>
                 </td>
                 <td class="col-sm-3">
                     <div class="form-check form-switch">
                         <input class="form-check-input" name="IsOffLine" type="checkbox" id="flexSwitchCheckDefault" checked="@Model.RouteValue["IsOffLine"]">
-                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />&nbsp;Terminal Offline</label>
+                    <label class="form-check-label" name="IsOffLine" for="flexSwitchCheckDefault"><img src="~/images/Offline.png" />@Localizer["FLT_INATIVOS"]</label>
                     </div>
                 </td>
                 <td class="col-sm-3">
                     <button type="submit" class="btn btn-info ">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> @Localizer["BTN_PROCURAR"]
                     </button>
                 </td>
             </tr>
@@ -44,28 +55,22 @@
     <thead>
         <tr>
             <th>
-                Status
+                @Localizer["GRD_STATUS"]
             </th>
             <th>
-                Terminal
+                @Localizer["GRD_TERMINAL"]
             </th>
             <th>
-               Local
+                @Localizer["GRD_LOCAL"]
             </th>
             <th>
-                Modelo
+                @Localizer["GRD_MODELO"]
             </th>
             <th>
-                IP
+                @Localizer["GRD_IP"]
             </th>
             <th>
-                Vrs Distribuida
-            </th>
-            <th>
-                Vrs Instalada
-            </th>
-            <th>
-                Atualizado
+                @Localizer["GRD_ATUAL"]
             </th>
             <th></th>
         </tr>
@@ -98,13 +103,7 @@
             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.IP)
             </td>
-             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                @Html.DisplayFor(modelItem => item.Vrs_Distribuida)
-             </td>
-             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                    @Html.DisplayFor(modelItem => item.Vrs_Instalada)
-                </td>
-             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.DtAtualizaao)
             </td>
             
