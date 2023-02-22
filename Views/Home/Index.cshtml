@@ -19,15 +19,6 @@
     <table class="table">
 
         <tr>
-            <td>
-                <div>
-                    <a class="nav-link text-black" asp-area="" asp-controller="Home" asp-action="Status">
-                        <h5>@Localizer["TIT_STATUS"] - Tot: @Model.Terminais.Count()</h5>
-                    </a>
-                </div>
-                <div id="Terminais" style="width: 400px; height: 250px;"></div>
-            </td>
-
             <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                  <div>
                     <a class="nav-link text-black" asp-area="" asp-controller="Resets" asp-action="Index">
@@ -45,8 +36,7 @@
                 </div>
                 <div id="Upload" style="width: 400px; height: 250px;"></div>
             </td>
-
-         </tr>
+        </tr>
 
 
         <tr>
@@ -82,7 +72,6 @@
         google.charts.load('current', { 'packages': ['corechart'] });
        
         google.charts.setOnLoadCallback(drawChart_Resets);
-        google.charts.setOnLoadCallback(drawChart_Terminais);
         google.charts.setOnLoadCallback(drawChart_Upload);
         google.charts.setOnLoadCallback(drawChart_Comandos);
         google.charts.setOnLoadCallback(drawChart_Downloads);
@@ -164,22 +153,7 @@
             chart.draw(data, options);
         }
 
-        function drawChart_Terminais() {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['@Localizer["LEG_ONLINE"]', @Model.Terminais.Count(x => x.Status.Equals(1) )],
-                ['@Localizer["LEG_OFFLINE"]', @Model.Terminais.Count(x => x.Status.Equals(0) )],
-               
-            ]);
-            var options = {
-                colors: ['green', 'red'],
-                is3D: true
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('Terminais'));
-            chart.draw(data, options);
-        }
+       
 
         function teste() {
             window.location.reload();

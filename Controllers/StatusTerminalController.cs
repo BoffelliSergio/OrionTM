@@ -19,5 +19,6 @@ namespace OrionTM_Web.Controllers
             var StatusTerminal = _dbContext.GetMyEntitiesFromStoredProcedure();
             return View(StatusTerminal);
         }
-    }
+
+        }
 }

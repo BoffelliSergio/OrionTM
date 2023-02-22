@@ -23,9 +23,8 @@
 else
 {
     <ul class="nav navbar-nav navbar-left">
-        <a class="btn btn-secondary " asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path,Context.Request.QueryString)" style="color:white">Log In</a>
-
+        <a  asp-controller="Account" asp-action="Login" asp-route-returnUrl="@string.Format("{0}{1}",Context.Request.Path,Context.Request.QueryString)" style="color:white">Log In</a>
+        &nbsp; &nbsp; &nbsp;
     </ul>
 
-
-}
+    }
