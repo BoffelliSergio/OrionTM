@@ -144,6 +144,12 @@
   <data name="GRD_TERMINAL" xml:space="preserve">
     <value>Terminal</value>
   </data>
+  <data name="LEG_OFFELINE" xml:space="preserve">
+    <value>Inativos</value>
+  </data>
+  <data name="LEG_ONLINE" xml:space="preserve">
+    <value>Ativos</value>
+  </data>
   <data name="TILUTO" xml:space="preserve">
     <value>Terminais</value>
   </data>

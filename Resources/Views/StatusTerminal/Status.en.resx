@@ -144,6 +144,12 @@
   <data name="GRD_TERMINAL" xml:space="preserve">
     <value>Terminal</value>
   </data>
+  <data name="LEG_OFFELINE" xml:space="preserve">
+    <value>Off Line</value>
+  </data>
+  <data name="LEG_ONLINE" xml:space="preserve">
+    <value>On Line</value>
+  </data>
   <data name="TITULO" xml:space="preserve">
     <value>Terminals</value>
   </data>

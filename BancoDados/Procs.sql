@@ -134,35 +134,8 @@ Select
 	DtAtualizaao, 
 	(select count(*) from terminal )  as CtTerTot,
 	(select count(*) from terminal where (DATEDIFF(second,  GETDATE(), DtAtualizaao)*-1) <= 35) as CtTerOn,
-	(select count(*) from terminal where (DATEDIFF(second,  GETDATE(), DtAtualizaao)*-1) > 35) as CtTerOff,
-
-	-- Upload
-	(select count(*) from UpLoadOnLine )  as CtUpLoadTot,
-	(select count(*) from UpLoadOnLine where StatusId = 0)  as CtUpLoadINIC,
-	(select count(*) from UpLoadOnLine where StatusId = 1)  as CtUpLoadEXEC,
-	(select count(*) from UpLoadOnLine where StatusId = 2)  as CtUpLoadOK,
-	(select count(*) from UpLoadOnLine where StatusId = 3 or StatusId = 4)  as CtUpLoadERR,
-
-	-- Download
-	(select count(*) from Download )  as CtDownLoadTot,
-	(select count(*) from Download where StatusId = 0)  as CtDownLoadINIC,
-	(select count(*) from Download where StatusId = 1)  as CtDownLoadEXEC,
-	(select count(*) from Download where StatusId = 2)  as CtDownLoadOK,
-	(select count(*) from Download where StatusId = 3 or StatusId = 4)  as CtDownLoadERR,
-
-	-- Script
-	(select count(*) from Script )  as CtScriptTot,
-	(select count(*) from Script where StatusId = 0)  as CtScriptINIC,
-	(select count(*) from Script where StatusId = 1)  as CtScriptEXEC,
-	(select count(*) from Script where StatusId = 2)  as CtScriptOK,
-	(select count(*) from Script where StatusId = 3 or StatusId = 4)  as CtScriptERR,
+	(select count(*) from terminal where (DATEDIFF(second,  GETDATE(), DtAtualizaao)*-1) > 35) as CtTerOff
 	
-	-- Reset
-	(select count(*) from Reset )  as CtResetTot,
-	(select count(*) from Reset where StatusId = 0)  as CtResetINIC,
-	(select count(*) from Reset where StatusId = 1)  as CtResetEXEC,
-	(select count(*) from Reset where StatusId = 2)  as CtResetOK,
-	(select count(*) from Reset where StatusId = 3 or StatusId = 4)  as CtResetERR
 
 	FROM Terminal t
 	inner join modelo m on m.ModeloId = t.ModeloId
