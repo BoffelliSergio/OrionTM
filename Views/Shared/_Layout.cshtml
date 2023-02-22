@@ -31,7 +31,7 @@
             <li class="btn-group">
                 &nbsp;
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Executar
+                    @Localizer["MNU_EXECUTAR"]
                 </button>
                 <ul class="dropdown-menu">
                     <li> <a class="nav-link text-black" asp-area="" asp-controller="Comandos" asp-action="Index">@Localizer["MNU_COMANDOS"]</a></li>
@@ -46,12 +46,12 @@
 
                 &nbsp;
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Cadastros
+                    @Localizer["MNU_CADASTROS"]
                 </button>
                 <ul class="dropdown-menu">
-                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminPacote" asp-action="Index">Pacotes</a>
-                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLog" asp-action="Index">Arquivos</a>
-                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminComando" asp-action="Index">Comandos</a>
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminPacote" asp-action="Index">@Localizer["MNU_DOWNLOAD"]</a>
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLog" asp-action="Index">@Localizer["MNU_UPLOAD"]</a>
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminComando" asp-action="Index">@Localizer["MNU_COMANDOS"]</a>
                     <li> <a class="nav-link text-black" asp-area="" asp-controller="ListaEnvio" asp-action="Index">@Localizer["MNU_LISTA"]</a> </li>
 
                     
@@ -71,23 +71,23 @@
                 <li class="btn-group">
                     &nbsp;
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Configurações
+                        @Localizer["MNU_CONFIGURACAO"]
                     </button>
                     <ul class="dropdown-menu">
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLocal" asp-action="Index">Locais</a></li>
-                         <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminModelo" asp-action="Index">Modelos</a>
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminTerminal" asp-action="Index">Terminais</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLocal" asp-action="Index">@Localizer["MNU_LOCAIS"]</a></li>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminModelo" asp-action="Index">@Localizer["MNU_MODELOS"]</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminTerminal" asp-action="Index">@Localizer["MNU_TERMINAIS"]</a>
                     </ul>
                 </li>
 
                 <li class="btn-group">
                     &nbsp;
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Administração
+                        @Localizer["MNU_ADMIN"]
                     </button>
                     <ul class="dropdown-menu">
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="Account" asp-action="Register">Usuários</a>
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLogAuditoria" asp-action="Index">Auditoria</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="Account" asp-action="Register">@Localizer["MNU_USUARIOS"]</a>
+                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLogAuditoria" asp-action="Index">@Localizer["MNU_AUDITORIA"]</a>
 
                     </ul>
                 </li>

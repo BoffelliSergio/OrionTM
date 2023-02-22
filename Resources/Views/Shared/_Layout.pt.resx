@@ -120,14 +120,32 @@
   <data name="MNU_ADMIN" xml:space="preserve">
     <value>Administração</value>
   </data>
+  <data name="MNU_AUDITORIA" xml:space="preserve">
+    <value>Auditoria</value>
+  </data>
+  <data name="MNU_CADASTROS" xml:space="preserve">
+    <value>Cadastros</value>
+  </data>
   <data name="MNU_COMANDOS" xml:space="preserve">
     <value>Comandos</value>
+  </data>
+  <data name="MNU_CONFIGURACAO" xml:space="preserve">
+    <value>Configurações</value>
   </data>
   <data name="MNU_DOWNLOAD" xml:space="preserve">
     <value>Pacotes</value>
   </data>
+  <data name="MNU_EXECUTAR" xml:space="preserve">
+    <value>Executar</value>
+  </data>
   <data name="MNU_LISTA" xml:space="preserve">
     <value>Lista deTerminais</value>
+  </data>
+  <data name="MNU_LOCAIS" xml:space="preserve">
+    <value>Locais</value>
+  </data>
+  <data name="MNU_MODELOS" xml:space="preserve">
+    <value>Modelos</value>
   </data>
   <data name="MNU_RESETS" xml:space="preserve">
     <value>Resets</value>
@@ -135,7 +153,13 @@
   <data name="MNU_STATUS" xml:space="preserve">
     <value>Status Terminais</value>
   </data>
+  <data name="MNU_TERMINAIS" xml:space="preserve">
+    <value>Terminais</value>
+  </data>
   <data name="MNU_UPLOAD" xml:space="preserve">
     <value>Arquivos</value>
+  </data>
+  <data name="MNU_USUARIOS" xml:space="preserve">
+    <value>Usuários</value>
   </data>
 </root>

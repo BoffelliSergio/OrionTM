@@ -150,4 +150,7 @@
   <data name="TITULO_1" xml:space="preserve">
     <value>Estado Terminales</value>
   </data>
+  <data name="TITULO_2" xml:space="preserve">
+    <value>&gt; Terminales Totales =</value>
+  </data>
 </root>

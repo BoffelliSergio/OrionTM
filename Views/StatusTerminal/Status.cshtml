@@ -1,92 +1,137 @@
 ﻿@model List<StatusTerminal>
 
 
-@using Microsoft.AspNetCore.Mvc.Localization
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+@using OrionTM_Web.Controllers
+@using Microsoft.AspNetCore.Mvc.Localization
 @using Microsoft.Extensions.Localization
 
 @inject IViewLocalizer Localizer
 
+
 @*@Localizer["Senha"]*@
 
 
+  @{
+        var CtTerOn  = "";
+        var CtTerOff = "";
+    }
 
-@{
-    ViewData["Title"] = @Localizer["TITULO"];
-}
-
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>
-                @Localizer["GRD_STATUS"]
-            </th>
-            <th>
-                @Localizer["GRD_TERMINAL"]
-            </th>
-            <th>
-                @Localizer["GRD_LOCAL"]
-            </th>
-            <th>
-                @Localizer["GRD_MODELO"]
-            </th>
-            <th>
-                @Localizer["GRD_IP"]
-            </th>
-            <th>
-                @Localizer["GRD_ATUAL"]
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var entity in Model)
-        {
-            <tr>
-                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                    @if (@entity.Status == 1)
-                    {
-                        <img src="~/images/Online.png" alt="Minha Figura">
-
-                    }
-                    else
-                    {
-                        <img src="~/images/Offline.png" alt="Minha Figura">
-                    }
-
-                </td>
-
-                <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                    @entity.Codigo
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @entity.NmLocal
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @entity.NmModelo
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @entity.IP
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @entity.DtAtualizaao
-                </td>
-
-            </tr>
-        }
-    </tbody>
-</table>
-
-
-
-
-<script language='javascript'>
+<body>
    
-function teste(){
-     window.location.reload();
-}
+    <table class="table">
+        <tr >
+            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2" >
+               
+                @if (Model != null && Model.Any())
+                {
+                    var firstEntity = Model.FirstOrDefault();
 
-setTimeout(teste,15000);
+                    CtTerOn = @firstEntity.CtTerOn.ToString();
+                    CtTerOff = @firstEntity.CtTerOff.ToString();
 
-</script>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>
+                                    @Localizer["TITULO_1"] @Localizer["TITULO_2"] @firstEntity.CtTerTot
+
+                           </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div id="Resets" style="width: 400px; height: 250px;"></div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                }
+
+            </td>
+            <td > 
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Localizer["GRD_STATUS"]
+                            </th>
+                            <th>
+                                @Localizer["GRD_TERMINAL"]
+                            </th>
+                            <th>
+                               @Localizer["GRD_ATUAL"]
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    @foreach (var entity in Model)
+                        {
+                        <tr>
+                            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                    @if (@entity.Status == 1)
+                                    {
+                                    <img src="~/images/Online.png" alt="Minha Figura">
+                                    }
+                                    else
+                                    {
+                                    <img src="~/images/Offline.png" alt="Minha Figura">
+                                    }
+                            </td>
+
+                            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                    @entity.Codigo
+                            </td>
+
+                            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                    @entity.DtAtualizaao
+                            </td>
+                             </tr>
+                        }
+                     
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+
+        google.charts.setOnLoadCallback(drawChart_Resets);
+        
+
+        function drawChart_Resets() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['@Localizer["LEG_INICIANDO"]', @CtTerOn],
+            ['@Localizer["LEG_ENVIANDO"]',  @CtTerOff],
+              
+            ]);
+            var options = {
+                colors: ['green', 'red'],
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('Resets'));
+            chart.draw(data, options);
+        }
+
+
+
+        function teste() {
+            window.location.reload();
+        }
+
+        setTimeout(teste, 15000);
+
+    </script>
+</head>
