@@ -1806,3 +1806,6 @@ C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.ListaEnvi
 C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.Home.Status.en.resources
 C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.Home.Status.es.resources
 C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.Home.Status.pt.resources
+C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.StatusTerminal.Status.en.resources
+C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.StatusTerminal.Status.es.resources
+C:\Boffelli\Orion\OrionTM\obj\Debug\net6.0\OrionTM_Web.Resources.Views.StatusTerminal.Status.pt.resources

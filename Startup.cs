@@ -45,6 +45,7 @@ public class Startup
         //   options.UseNpgsql(connectionString)
         //);
 
+        services.AddDbContext<GetStatusDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
         services.AddIdentity<IdentityUser,IdentityRole>()
             .AddEntityFrameworkStores<AppDbContext>()

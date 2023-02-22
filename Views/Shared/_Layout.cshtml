@@ -29,10 +29,13 @@
             &nbsp;
             <a class="btn btn-secondary " asp-area="" asp-controller="Home" asp-action="Status">@Localizer["MNU_STATUS"]</a>
             &nbsp;
-            <a class="btn btn-secondary " asp-area="" asp-controller="ListaEnvio" asp-action="Index">@Localizer["MNU_LISTA"]</a>
+            <a class="btn btn-secondary " asp-area="" asp-controller="StatusTerminal" asp-action="Status">Proc</a>
             &nbsp;
+            <a class="btn btn-secondary " asp-area="" asp-controller="ListaEnvio" asp-action="Index">@Localizer["MNU_LISTA"]</a>
+           
 
             <li class="btn-group">
+                &nbsp;
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Executar
                 </button>
@@ -43,7 +46,24 @@
                     <li>  <a class="nav-link text-black" asp-area="" asp-controller="BuscaLog" asp-action="Index">@Localizer["MNU_UPLOAD"]</a></li>
                 </ul>
              </li>
-                                            
+                           
+           
+            <li class="btn-group">
+
+                &nbsp;
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cadastros
+                </button>
+                <ul class="dropdown-menu">
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminPacote" asp-action="Index">Pacotes</a>
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLog" asp-action="Index">Arquivos</a>
+                    <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminComando" asp-action="Index">Comandos</a>
+                    </ul>
+            </li>
+          
+
+
+
               
             @if (User.IsInRole("Admin"))
 
@@ -52,16 +72,12 @@
                 <li class="btn-group">
                     &nbsp;
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Cadastros
+                        Configurações
                     </button>
                     <ul class="dropdown-menu">
                         <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLocal" asp-action="Index">Locais</a></li>
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminComando" asp-action="Index">Comandos</a>
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminModelo" asp-action="Index">Modelos</a>
+                         <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminModelo" asp-action="Index">Modelos</a>
                         <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminTerminal" asp-action="Index">Terminais</a>
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminLog" asp-action="Index">Arquivos</a>
-                        <li> <a class="nav-link text-black" asp-area="" asp-controller="AdminPacote" asp-action="Index">Pacotes</a>
-                            
                     </ul>
                 </li>
 
@@ -80,7 +96,7 @@
             }
                    
 
-        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <div class="navbar-collapse collapse d-sm-inline-flex ">
             @await Html.PartialAsync("_LoginPartial")
 
         </div>

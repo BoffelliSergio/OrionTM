@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Models;
+using System.Xml;
 
 namespace OrionTM_Web.Context
 {
@@ -31,6 +32,8 @@ namespace OrionTM_Web.Context
         public DbSet<Script> Script { get; set; }
         public DbSet<UpLoadOnLine> UpLoadOnLine { get; set; }
         public DbSet<Download> Download { get; set; }
+      
 
     }
+
 }
