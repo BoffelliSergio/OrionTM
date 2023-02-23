@@ -138,6 +138,9 @@
   <data name="MNU_EXECUTAR" xml:space="preserve">
     <value>Executar</value>
   </data>
+  <data name="MNU_LINKS" xml:space="preserve">
+    <value>Rede</value>
+  </data>
   <data name="MNU_LISTA" xml:space="preserve">
     <value>Lista deTerminais</value>
   </data>

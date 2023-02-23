@@ -1,7 +1,17 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.Pacote>
 
+
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
+
 @{
-    ViewData["Title"] = "Pacotes";
+    ViewData["Title"] = @Localizer["TITULO"];
 }
 
 
@@ -11,7 +21,7 @@
         <dl class="row">
 
             <dt class="col-sm-3">
-                <h3>Cadastro de Pacotes</h3>
+                <h3>@Localizer["TITULO"]</h3>
             </dt>
 
 
@@ -21,12 +31,12 @@
 
             <dt class="col-sm-1">
                 <button type="submit" class="btn btn-info ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>@Localizer["BTN_PROCURAR"]
                 </button>
             </dt>
             <dt class="col-sm-1">
                 <th class="col-sm-4">
-                    <a class="btn btn-primary " asp-action="Create">Incluir</a>
+                    <a class="btn btn-primary " asp-action="Create">@Localizer["BTN_INCLUIR"]</a>
                 </th>
             </dt>
            
@@ -41,19 +51,16 @@
     <thead>
         <tr>
             <th>
-               nome
+                @Localizer["GRD_NOME"]
             </th>
             <th>
-               descrição
+                @Localizer["GRD_DESCRICAO"]
             </th>
             <th>
-                caminho
+                @Localizer["GRD_VERSAO"]
             </th>
             <th>
-               versão
-            </th>
-            <th>
-               produção
+                @Localizer["GRD_PRODUCAO"]
             </th>
             <th></th>
         </tr>
@@ -69,17 +76,14 @@
                     @Html.DisplayFor(modelItem => item.Descricao)
                 </td>
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    @Html.DisplayFor(modelItem => item.Caminho)
-                </td>
-                <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.Versao)
                 </td>
                 <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                     @Html.DisplayFor(modelItem => item.Prod)
                 </td>
                 <td>
-                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.PacoteId">Editar</a>
-                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.PacoteId">Excluir</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.PacoteId">@Localizer["BTN_EDITAR"]</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.PacoteId">@Localizer["BTN_EXCLUIR"]</a>
                 </td>
             </tr>
         }

@@ -138,6 +138,9 @@
   <data name="MNU_EXECUTAR" xml:space="preserve">
     <value>Execute</value>
   </data>
+  <data name="MNU_LINKS" xml:space="preserve">
+    <value>Link</value>
+  </data>
   <data name="MNU_LISTA" xml:space="preserve">
     <value>Terminal List</value>
   </data>
@@ -157,7 +160,7 @@
     <value>Terminals</value>
   </data>
   <data name="MNU_UPLOAD" xml:space="preserve">
-    <value>Archives</value>
+    <value>Files</value>
   </data>
   <data name="MNU_USUARIOS" xml:space="preserve">
     <value>Users</value>

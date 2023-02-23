@@ -177,6 +177,10 @@ namespace OrionTM_Web.Controllers
                
             }
 
+            if (Resets_from.Count == 0 || terminais_from.Count == 0)
+            {
+                return RedirectToAction("ResetPorTerminais", "Resets");
+            }
 
             return RedirectToAction("Index", "Resets");
 
@@ -242,6 +246,12 @@ namespace OrionTM_Web.Controllers
                     
 
                 }
+            }
+
+
+            if (Resets_from.Count == 0 || Locais_from.Count == 0)
+            {
+                return RedirectToAction("ResetPorLocais", "Resets");
             }
 
             return RedirectToAction("Index", "Resets");
@@ -312,6 +322,11 @@ namespace OrionTM_Web.Controllers
                         
                     }
                 }
+            }
+
+            if (Resets_from.Count == 0 || Lista_from.Count == 0)
+            {
+                return RedirectToAction("ResetPorLista", "Resets");
             }
 
             return RedirectToAction("Index", "Resets");

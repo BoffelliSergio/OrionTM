@@ -37,19 +37,22 @@
     <thead>
         <tr>
             <th>
-codigo
+                Terminal ID
             </th>
             <th>
-              local
+                Codigo
             </th>
             <th>
-                modelo
+              Local
             </th>
             <th>
-               ip
+               Modelo
             </th>
             <th>
-                atualização
+               Ip
+            </th>
+            <th>
+               Atualização
             </th>
             <th></th>
         </tr>
@@ -57,14 +60,17 @@ codigo
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                    @Html.DisplayFor(modelItem => item.TerminalId)
+            </td>
+            <td class="col-xs-1 col-sm-1 col-md-1col-lg-1">
                 @Html.DisplayFor(modelItem => item.Codigo)
             </td>
             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.Local.Nome)
             </td>
             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                @Html.DisplayFor(modelItem => item.Modelo.Descricao)
+                @Html.DisplayFor(modelItem => item.Modelo.Nome)
             </td>
             <td class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 @Html.DisplayFor(modelItem => item.IP)

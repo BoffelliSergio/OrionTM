@@ -96,11 +96,9 @@
            <th>
                  @Localizer["GRD_ATUALIZACAO"]
             </th>
-            <th>
+            @*<th>
                 @Localizer["GRD_LOG"]
-            </th> 
-
-
+            </th> *@
 
         </tr>
     </thead>
@@ -140,10 +138,10 @@
                 <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @Html.DisplayFor(modelItem => item.DataAtualizacao)
                 </td>
-
+@*
                 <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                     @Html.DisplayFor(modelItem => item.StrLog)
-                </td>
+                </td>*@
 
             </tr>
 
@@ -164,6 +162,6 @@
         window.location.reload();
     }
 
-    setTimeout(teste, 15000);
+    setTimeout(teste, 10000);
 
 </script>

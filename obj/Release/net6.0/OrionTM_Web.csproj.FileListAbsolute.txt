@@ -953,3 +953,12 @@ C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.ListaEn
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.StatusTerminal.Status.en.resources
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.StatusTerminal.Status.es.resources
 C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.StatusTerminal.Status.pt.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminComando.Index.en.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminComando.Index.es.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminComando.Index.pt.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminLog.Index.en.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminLog.Index.es.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminLog.Index.pt.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminPacote.Index.en.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminPacote.Index.es.resources
+C:\Boffelli\Orion\OrionTM\obj\Release\net6.0\OrionTM_Web.Resources.Views.AdminPacote.Index.pt.resources

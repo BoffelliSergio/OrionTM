@@ -122,7 +122,7 @@ namespace OrionTM_Web.Controllers
                         await _userManager.AddToRoleAsync(user, "Usuario");
                     }
 
-                    return RedirectToAction("Status", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {

@@ -59,6 +59,10 @@ namespace OrionTM_Web.Controllers
                 }
                 else
                 {
+
+                    pacote.Nome = pacote.Nome + ".zip";
+                    pacote.Caminho = pacote.Nome;
+
                     _context.Add(pacote);
                     await _context.SaveChangesAsync();
 
@@ -111,6 +115,8 @@ namespace OrionTM_Web.Controllers
             {
                 try
                 {
+                    pacote.Nome = pacote.Nome + ".zip";
+                    pacote.Caminho = pacote.Nome;
                     _context.Update(pacote);
                     await _context.SaveChangesAsync();
 

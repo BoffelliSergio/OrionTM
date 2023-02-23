@@ -197,10 +197,13 @@ namespace OrionTM_Web.Controllers
 
                 }
 
-                
+               
 
             }
-
+            if (Comandos_from.Count == 0 || terminais_from.Count == 0)
+            {
+                return RedirectToAction("ComandoPorTerminais", "Comandos");
+            }
             return RedirectToAction("Index", "Comandos");
         }
 
@@ -280,6 +283,11 @@ namespace OrionTM_Web.Controllers
                 }
             }
 
+            if (Comandos_from.Count == 0 || Locais_from.Count == 0)
+            {
+                return RedirectToAction("ComandoPorLocais", "Comandos");
+            }
+
             return RedirectToAction("Index", "Comandos");
         }
 
@@ -354,6 +362,11 @@ namespace OrionTM_Web.Controllers
 
 
                 }
+            }
+
+            if (Comandos_from.Count == 0 || Lista_from.Count == 0)
+            {
+                return RedirectToAction("ComandoPorLista", "Comandos");
             }
             return RedirectToAction("Index", "Comandos");
 

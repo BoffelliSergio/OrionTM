@@ -10,6 +10,7 @@ using ReflectionIT.Mvc.Paging;
 
 using System.ComponentModel.Design;
 using System.Linq;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace OrionTM_Web.Controllers
 {
@@ -158,9 +159,9 @@ namespace OrionTM_Web.Controllers
                     pacoteId = l.PacoteId;
                     NomePacote = l.Nome;
                 }
-                              
 
-               if (HoraInstalacao is null || DataInstalacao is null)
+               
+                if (HoraInstalacao is null && DataInstalacao is null)
                 {
                     HoraInstalacao = "IMED";
                     DataInstalacao = "IMED";
@@ -208,6 +209,12 @@ namespace OrionTM_Web.Controllers
 
             }
 
+            if (pacoteId == 0 || NomeTerminal.Equals(""))
+            {
+                
+                return RedirectToAction("EnvioPacotesPorTerminais", "EnvioPacotes");
+            }
+
             return RedirectToAction("Index", "EnvioPacotes");
         }
 
@@ -236,6 +243,7 @@ namespace OrionTM_Web.Controllers
            
             List<string> Pacotes_from = form["Pacotes_from"].ToList();
             List<string> Locais_from = form["Locais_from"].ToList();
+
             var pacoteId = 0;
             var NomePacote = "";
 
@@ -248,7 +256,6 @@ namespace OrionTM_Web.Controllers
                 {
                     pacoteId = l.PacoteId;
                     NomePacote = l.Nome;
-
                 }
 
 
@@ -299,6 +306,11 @@ namespace OrionTM_Web.Controllers
                     }
 
                 }
+            }
+
+            if (pacoteId == 0 || Locais_from.Count == 0)
+            {
+                return RedirectToAction("EnvioPacotesPorLocais", "EnvioPacotes");
             }
 
             return RedirectToAction("Index", "EnvioPacotes");
@@ -389,14 +401,17 @@ namespace OrionTM_Web.Controllers
                       });
                         _context.SaveChanges();
 
-
-
                     }
-                   
 
 
                 }
+                
             }
+            if (pacoteId == 0 || Lista_from.Count == 0)
+            {
+                return RedirectToAction("EnvioPacotesPorLista", "EnvioPacotes");
+            }
+
             return RedirectToAction("Index", "EnvioPacotes");
 
         }

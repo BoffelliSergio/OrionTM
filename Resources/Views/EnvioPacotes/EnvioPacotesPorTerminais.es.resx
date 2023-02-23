@@ -142,6 +142,6 @@
     <value>Seleccionar los Terminales</value>
   </data>
   <data name="TITULO" xml:space="preserve">
-    <value>Enviar Paquetes por Lista</value>
+    <value>Enviar Paquetes por Terminales</value>
   </data>
 </root>

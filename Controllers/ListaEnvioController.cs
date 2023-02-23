@@ -82,7 +82,9 @@ namespace OrionTM_Web.Controllers
                 _context.SaveChanges();
             }
 
-            return RedirectToAction(nameof(Terminais));
+            return RedirectToAction("Index", "ListaEnvio");
+
+            //return RedirectToAction(nameof(Terminais));
         }
 
 

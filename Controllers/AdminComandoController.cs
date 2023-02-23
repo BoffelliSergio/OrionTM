@@ -55,7 +55,6 @@ namespace OrionTM_Web.Controllers
                 if (resultado.Count() > 0)
                 {
                     ModelState.AddModelError("Aviso", "Comando já existe!!!!");
-
                 }
                 else
                 {

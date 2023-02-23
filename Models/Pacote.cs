@@ -10,7 +10,7 @@ namespace OrionTM_Web.Models
 
         [Required(ErrorMessage = "Nome Obrigatorio")]
         [Display(Name = "Nome")]
-        [MaxLength(10)]
+        [MaxLength(50)]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Descrição Obrigatoria")]
@@ -18,8 +18,8 @@ namespace OrionTM_Web.Models
         [MaxLength(50)]
         public string Descricao { get; set; }
 
-        [Required(ErrorMessage = "Caminho Obrigatorio")]
-        [Display(Name = "Caminho do Pacote")]
+        
+        [Display(Name = "Nome do Arquivo")]
         [MaxLength(200)]
         public string Caminho { get; set; }
 

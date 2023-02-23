@@ -10,7 +10,7 @@ namespace OrionTM_Web.Models
 
         [Required(ErrorMessage = "Digite o Nome do Comando")]
         [Display(Name = "Digite o Nome do Comando")]
-        [MaxLength(10)]
+        [MaxLength(25)]
         public string Nome { get; set; }
 
 

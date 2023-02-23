@@ -68,7 +68,7 @@ namespace OrionTM_Web.Controllers
         public IActionResult Create()
         {
             ViewData["LocalId"] = new SelectList(_context.Local, "LocalId", "Nome");
-            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Descricao");
+            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Nome");
             return View();
         }
 
@@ -120,7 +120,7 @@ namespace OrionTM_Web.Controllers
             }
 
             ViewData["LocalId"] = new SelectList(_context.Local, "LocalId", "Nome", terminal.LocalId);
-            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Descricao", terminal.ModeloId);
+            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Nome", terminal.ModeloId);
             return View(terminal);
         }
 
@@ -138,7 +138,7 @@ namespace OrionTM_Web.Controllers
                 return NotFound();
             }
             ViewData["LocalId"] = new SelectList(_context.Local, "LocalId", "Nome", terminal.LocalId);
-            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Descricao", terminal.ModeloId);
+            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Nome", terminal.ModeloId);
             return View(terminal);
         }
 
@@ -176,7 +176,7 @@ namespace OrionTM_Web.Controllers
             }
 
             ViewData["LocalId"] = new SelectList(_context.Local, "LocalId", "Nome", terminal.LocalId);
-            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Descricao", terminal.ModeloId);
+            ViewData["ModeloId"] = new SelectList(_context.Modelo, "ModeloId", "Nome", terminal.ModeloId);
             return View(terminal);
         }
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Context;
+using OrionTM_Web.Migrations;
 using OrionTM_Web.Models;
 using OrionTM_Web.ViewModels;
 using ReflectionIT.Mvc.Paging;
@@ -253,8 +254,12 @@ namespace OrionTM_Web.Controllers
                          Data = DateTime.Now
                      });
                     _context.SaveChanges();
-
                 }
+            }
+
+            if (Logs_from.Count == 0 || terminais_from.Count == 0)
+            {
+                return RedirectToAction("BuscaPorTerminais", "BuscaLog");
             }
 
             return RedirectToAction("Index", "BuscaLog");
@@ -391,6 +396,11 @@ namespace OrionTM_Web.Controllers
                 }
             }
 
+            if (Logs_from.Count == 0 || Locais_from.Count == 0)
+            {
+                return RedirectToAction("BuscaPorLocais", "BuscaLog");
+            }
+
             return RedirectToAction("Index", "BuscaLog");
         }
 
@@ -520,9 +530,12 @@ namespace OrionTM_Web.Controllers
 
                     }
 
-
-
                 }
+            }
+
+            if (Logs_from.Count == 0 || Lista_from.Count == 0)
+            {
+                return RedirectToAction("BuscaPorLista", "BuscaLog");
             }
 
             return RedirectToAction("Index", "BuscaLog");
