@@ -133,7 +133,7 @@
     <value>Settings</value>
   </data>
   <data name="MNU_DOWNLOAD" xml:space="preserve">
-    <value>Download</value>
+    <value>Package</value>
   </data>
   <data name="MNU_EXECUTAR" xml:space="preserve">
     <value>Execute</value>

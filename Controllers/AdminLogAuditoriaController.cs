@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OrionTM_Web.Context;
+using OrionTM_Web.Models;
+using OrionTM_Web.ViewModels;
 using ReflectionIT.Mvc.Paging;
 
 
@@ -32,8 +33,8 @@ namespace OrionTM_Web.Controllers
             }
 
             //resultado  = resultado.OrderByDescending(p => p.Data);
-
-            var model = await PagingList.CreateAsync(resultado, 11, pageindex, sort, "Modulo");
+                                  
+            var model = await PagingList.CreateAsync(resultado, 10, pageindex, sort, "Modulo");
 
             model.RouteValue = new RouteValueDictionary { { "filter", filter } };
 

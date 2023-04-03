@@ -1,10 +1,18 @@
 ﻿@model OrionTM_Web.Models.Pacote
 
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = @Localizer["TITULO"];
 }
 
-<h2>Pacotes > Editar</h2>
+<h2>@Localizer["TITULO"]</h2>
 
 <hr />
 <div class="row">
@@ -18,28 +26,21 @@
                 <tr>
                     <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                         <div class="form-group">
-                             <label asp-for="Nome" class="control-label"></label>:
+                            @Localizer["GRD_NOME"]
                             <input asp-for="Nome" class="form-control" readonly />
                             <span asp-validation-for="Nome" class="text-danger"></span>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Descricao" class="control-label"></label>:
+                            @Localizer["GRD_DESCRICAO"]
                             <input asp-for="Descricao" class="form-control" />
                             <span asp-validation-for="Descricao" class="text-danger"></span>
                         </div>
                     </th>
 
-
                     <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 
-                     @*   <div class="form-group">
-                            <label asp-for="Caminho" class="control-label"></label>:
-                            <input asp-for="Caminho" class="form-control" />
-                            <span asp-validation-for="Caminho" class="text-danger"></span>
-                        </div>*@
-
                         <div class="form-group">
-                            <label asp-for="Versao" class="control-label"></label>:
+                            @Localizer["GRD_VERSAO"]
                             <input asp-for="Versao" class="form-control" />
                             <span asp-validation-for="Versao" class="text-danger"></span>
                         </div>
@@ -50,7 +51,7 @@
                     <th class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 
                         <div class="form-group">
-                            <label>Produção?</label>
+                            @Localizer["GRD_PRODUCAO"]
                             <br />
                             <input type="checkbox" asp-for="Prod" />
                             <span asp-validation-for="Prod" class="text-danger"></span>
@@ -64,8 +65,8 @@
             </table>
 
             <div class="form-group">
-                <input type="submit" value="Salvar" class="btn btn-warning btn-sm" />
-                <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+                <input type="submit" value=@Localizer["BTN_SALVAR"] class="btn btn-warning btn-sm" />
+                <a asp-action="Index" class="btn btn-secondary btn-sm">@Localizer["BTN_VOLTAR"]</a>
             </div>
         </form>
     </div>

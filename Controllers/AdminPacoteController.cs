@@ -115,7 +115,7 @@ namespace OrionTM_Web.Controllers
             {
                 try
                 {
-                    pacote.Nome = pacote.Nome + ".zip";
+                    pacote.Nome = pacote.Nome ;
                     pacote.Caminho = pacote.Nome;
                     _context.Update(pacote);
                     await _context.SaveChangesAsync();

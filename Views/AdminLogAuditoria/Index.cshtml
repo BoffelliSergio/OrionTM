@@ -1,7 +1,19 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<OrionTM_Web.Models.LogAuditoria>
+@addTagHelper *, ReflectionIT.Mvc.Paging
 
 
-@{ViewData["Title"] = "Auditoria";}
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
+
+@{
+    ViewData["Title"] = @Localizer["TITULO"];
+}
 
 
 <form method="get" class="form-inline">
@@ -20,7 +32,7 @@
 
             <dt class="col-sm-1">
                 <button type="submit" class="btn btn-info ">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Procurar
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span> @Localizer["BTN_PROCURAR"]
                 </button>
              </dt>
 
@@ -35,16 +47,16 @@
     <thead>
         <tr>
             <th>
-               modelo
+                @Localizer["GRD_MODULO"]
             </th>
             <th>
-                detalhe
+                @Localizer["GRD_DETALHE"]
             </th>
             <th>
-               data
+                @Localizer["GRD_DATA"]
             </th>
             <th>
-                usuario
+                @Localizer["GRD_USUARIO"]
             </th>
 
             <th></th>
@@ -81,3 +93,13 @@
     </tr>
 
 </table>
+
+<script language='javascript'>
+
+    function teste() {
+        window.location.reload();
+    }
+
+    setTimeout(teste, 10000);
+
+</script>

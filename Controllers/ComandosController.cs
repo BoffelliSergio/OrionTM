@@ -110,7 +110,7 @@ namespace OrionTM_Web.Controllers
 
 
 
-                var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
+            var model = await PagingList.CreateAsync(resultado, 8, pageindex, sort, "TerminalId");
             model.RouteValue = new RouteValueDictionary { { "filter", filter }, { "isIniciando", isIniciando }, { "IsExecutando", IsExecutando }, { "IsOk", IsOk }, { "IsErro", IsErro } };
             return View(model);
             }

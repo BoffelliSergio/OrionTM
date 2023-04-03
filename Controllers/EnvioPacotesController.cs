@@ -160,10 +160,14 @@ namespace OrionTM_Web.Controllers
                     NomePacote = l.Nome;
                 }
 
-               
-                if (HoraInstalacao is null && DataInstalacao is null)
+                if (HoraInstalacao is null)
                 {
                     HoraInstalacao = "IMED";
+                }
+               
+
+                if (DataInstalacao is null)
+                {
                     DataInstalacao = "IMED";
                 }
                 else
@@ -171,6 +175,7 @@ namespace OrionTM_Web.Controllers
                     var dtDataInstalacao = DateTime.Parse(DataInstalacao);
                     DataInstalacao = dtDataInstalacao.ToString("dd/MM/yyyy");
                 }
+
 
                 //ADICIONA NOVOS ITENS A LISTA
                 foreach (var item in terminais_from)
@@ -259,9 +264,15 @@ namespace OrionTM_Web.Controllers
                 }
 
 
-                if (HoraInstalacao is null || DataInstalacao is null)
+
+                if (HoraInstalacao is null)
                 {
                     HoraInstalacao = "IMED";
+                }
+
+
+                if (DataInstalacao is null)
+                {
                     DataInstalacao = "IMED";
                 }
                 else
@@ -269,6 +280,7 @@ namespace OrionTM_Web.Controllers
                     var dtDataInstalacao = DateTime.Parse(DataInstalacao);
                     DataInstalacao = dtDataInstalacao.ToString("dd/MM/yyyy");
                 }
+
 
 
                 //ADICIONA NOVOS ITENS A LISTA
@@ -356,9 +368,14 @@ namespace OrionTM_Web.Controllers
                 }
 
 
-                if (HoraInstalacao is null || DataInstalacao is null)
+                if (HoraInstalacao is null)
                 {
                     HoraInstalacao = "IMED";
+                }
+
+
+                if (DataInstalacao is null)
+                {
                     DataInstalacao = "IMED";
                 }
                 else
@@ -366,7 +383,6 @@ namespace OrionTM_Web.Controllers
                     var dtDataInstalacao = DateTime.Parse(DataInstalacao);
                     DataInstalacao = dtDataInstalacao.ToString("dd/MM/yyyy");
                 }
-
 
 
                 //ADICIONA NOVOS ITENS A LISTA
