@@ -37,9 +37,8 @@ namespace OrionTM_Web.Controllers
 
             var user = await _userManager.FindByNameAsync(loginVM.UserName);
 
-            if (user != null)
+            if (user != null && loginVM.Password != null)
             {
-
                 var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
 
                 if (result.Succeeded)
@@ -52,6 +51,7 @@ namespace OrionTM_Web.Controllers
 
                 }
             }
+
             ModelState.AddModelError("", "Falha ao realizar o login!!");
             return View(loginVM);
         }

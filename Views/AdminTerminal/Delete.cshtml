@@ -1,10 +1,20 @@
 ﻿@model OrionTM_Web.Models.Terminal
 
-@{
-    ViewData["Title"] = "Delete";
-}
+@using Microsoft.AspNetCore.Mvc.Localization
 
-<h2>Terminais > Excluir</h2>
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
+@{
+    ViewData["Title"] = @Localizer["TITULO"];
+
+    }
+
+    <h2>@Localizer["TITULO"]</h2>
+    
 
 
 <div class="col-md-6">
@@ -14,35 +24,35 @@
         <tr>
             <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                  <div class="form-group">
-                    <label asp-for="Codigo" class="control-label"></label>
+                        @Localizer["GRD_CODIGO"]
                     <input asp-for="Codigo" class="form-control" readonly />
                     <span asp-validation-for="Codigo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Modelo</label>
+                        @Localizer["GRD_MODELO"]
                     <select asp-for="ModeloId" class="form-control" asp-items="ViewBag.ModeloId" readonly></select>
                     <span asp-validation-for="ModeloId" class="text-danger"></span>
                 </div>
                
                 <div class="form-group">
-                    <label class="control-label">Local</label>
+                        @Localizer["GRD_LOCAL"]
                     <select asp-for="LocalId" class="form-control" asp-items="ViewBag.LocalId" readonly></select>
                     <span asp-validation-for="LocalId" class="text-danger"></span>
                 </div>
             </th>
             <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="form-group">
-                    <label asp-for="IP" class="control-label"></label>
+                        @Localizer["GRD_IP"]
                     <input asp-for="IP" class="form-control" readonly />
                     <span asp-validation-for="IP" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="DNS" class="control-label"></label>
+                        @Localizer["GRD_DNS"]
                     <input asp-for="DNS" class="form-control" readonly />
                     <span asp-validation-for="DNS" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="DefaultGateway" class="control-label"></label>
+                        @Localizer["GRD_GATEWAY"]
                     <input asp-for="DefaultGateway" class="form-control" readonly />
                     <span asp-validation-for="DefaultGateway" class="text-danger"></span>
                 </div>
@@ -52,17 +62,17 @@
 
 
 </div>
-<h4 class="modal-title">Atenção!</h4>
+    <h4 class="modal-title">  @Localizer["ATENCAO"]</h4>
 <div class="modal-body">
-    
-    Tem certeza que deseja excluir o TERMINAL: <strong>@Html.DisplayFor(model => model.Codigo) </strong>?
+
+        @Localizer["ATENCAO1"]: <strong>@Html.DisplayFor(model => model.Codigo) </strong>?
 </div>
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     <div>
-        <input class="btn btn-primary btn-sm btn-danger" type="submit" value="Excluir" />
-        <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+            <input class="btn btn-primary btn-sm btn-danger" type="submit" value="  @Localizer["BTN_SALVAR"]" />
+            <a asp-action="Index" class="btn btn-secondary btn-sm">  @Localizer["BTN_VOLTAR"]</a>
     </div>
 }
 

@@ -1,11 +1,17 @@
 ﻿@model OrionTM_Web.Models.Comando
 
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer Localizer
+@*@Localizer["Senha"]*@
+
 
 @{
-    ViewData["Title"] = "Comandos";
+    ViewData["Title"] = @Localizer["TITULO"];
 }
 
 <h2>Comandos > Exclir</h2>
+
 
 
 <div class="col-md-6">
@@ -16,18 +22,18 @@
         <tr>
             <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="form-group">
-                    <label asp-for="Nome" class="control-label"></label>:
+                    @Localizer["GRD_NOME"]
                     <input asp-for="Nome" class="form-control" readonly />
                     <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Descricao" class="control-label"></label>:
+                    @Localizer["GRD_DESCRICAO"]
                     <input asp-for="Descricao" class="form-control" readonly />
                     <span asp-validation-for="Descricao" class="text-danger"></span>
                 </div>
            
                 <div class="form-group">
-                    <label asp-for="Caminho" class="control-label"></label>:
+                    @Localizer["GRD_COMANDO"]
                     <input asp-for="Caminho" class="form-control" readonly />
                     <span asp-validation-for="Caminho" class="text-danger"></span>
                 </div>
@@ -40,10 +46,10 @@
 
 
 </div>
-<h4 class="modal-title">Atenção!</h4>
+<h4 class="modal-title"> @Localizer["ATENCAO"]</h4>
 <div class="modal-body">
-    
-    Tem certeza que deseja excluir o Comando:  <strong>@Html.DisplayFor(model => model.Nome) </strong>?
+
+    @Localizer["ATENCAO1"]  <strong>@Html.DisplayFor(model => model.Nome) </strong>?
 </div>
 @using (Html.BeginForm())
 {

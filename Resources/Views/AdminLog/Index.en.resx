@@ -124,7 +124,7 @@
     <value>Edit</value>
   </data>
   <data name="BTN_EXCLUIR" xml:space="preserve">
-    <value>Delete</value>
+    <value>Exclude</value>
   </data>
   <data name="BTN_INCLUIR" xml:space="preserve">
     <value>Include</value>

@@ -1,12 +1,18 @@
 ﻿@model OrionTM_Web.Models.Comando
 
 
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer Localizer
+@*@Localizer["Senha"]*@
+
+
 
 @{
-    ViewData["Title"] = "Comandos";
+    ViewData["Title"] = @Localizer["TITULO"];
 }
 
-<h2>Comandos > Detalhes</h2>
+<h2>@Localizer["TITULO"]</h2>
 
 <div class="col-md-6">
     <hr />
@@ -15,18 +21,18 @@
         <tr>
             <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="form-group">
-                        <label asp-for="Nome" class="control-label"></label>:
+                    @Localizer["GRD_NOME"]
                         <input asp-for="Nome" class="form-control" readonly />
                         <span asp-validation-for="Nome" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                        <label asp-for="Descricao" class="control-label"></label>:
+                    @Localizer["GRD_DESCRICAO"]
                         <input asp-for="Descricao" class="form-control" readonly />
                         <span asp-validation-for="Descricao" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">
-                    <label asp-for="Caminho" class="control-label"></label>:
+                    @Localizer["GRD_COMANDO"]
                     <textarea asp-for="Caminho" id="w3review" name="Caminho" rows="10" cols="170" readonly>
                        </textarea>
                     <span asp-validation-for="Caminho" class="text-danger"></span>
@@ -41,6 +47,6 @@
 
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ComandoId" class="btn btn-primary btn-sm">Editar</a>
-    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+    <a asp-action="Edit" asp-route-id="@Model?.ComandoId" class="btn btn-primary btn-sm"> @Localizer["BTN_EDITAR"]</a>
+    <a asp-action="Index" class="btn btn-secondary btn-sm"> @Localizer["BTN_VOLTAR"]</a>
 </div>

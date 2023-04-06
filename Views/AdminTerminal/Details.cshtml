@@ -1,10 +1,19 @@
 ﻿@model OrionTM_Web.Models.Terminal
 
-@{
-    ViewData["Title"] = "Details";
-}
+@using Microsoft.AspNetCore.Mvc.Localization
 
-<h2>Terminais > Detalhes</h2>
+@using Microsoft.Extensions.Localization
+
+@inject IViewLocalizer Localizer
+
+@*@Localizer["Senha"]*@
+
+@{
+    ViewData["Title"] = @Localizer["TITULO"];
+    }
+
+    <h2>@Localizer["TITULO"]</h2>
+   
 
 <div class="col-md-6">
 <hr />
@@ -13,35 +22,35 @@
         <tr>
             <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="form-group">
-                    <label asp-for="Codigo" class="control-label"></label>
+                        @Localizer["GRD_CODIGO"]
                     <input asp-for="Codigo" class="form-control" readonly />
                     <span asp-validation-for="Codigo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label class="control-label">Modelo</label>
+                        @Localizer["GRD_MODELO"]
                     <select asp-for="ModeloId" class="form-control" asp-items="ViewBag.ModeloId" readonly ></select>
                     <span asp-validation-for="ModeloId" class="text-danger"></span>
                 </div>
                
                 <div class="form-group">
-                    <label class="control-label">Local</label>
+                        @Localizer["GRD_LOCAL"]
                     <select asp-for="LocalId" class="form-control" asp-items="ViewBag.LocalId" readonly></select>
                     <span asp-validation-for="LocalId" class="text-danger"></span>
                 </div>
             </th>
             <th class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <div class="form-group">
-                    <label asp-for="IP" class="control-label"></label>
+                        @Localizer["GRD_IP"]
                     <input asp-for="IP" class="form-control" readonly />
                     <span asp-validation-for="IP" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="DNS" class="control-label"></label>
+                        @Localizer["GRD_DNS"]
                     <input asp-for="DNS" class="form-control" readonly />
                     <span asp-validation-for="DNS" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="DefaultGateway" class="control-label"></label>
+                        @Localizer["GRD_GATEWAY"]
                     <input asp-for="DefaultGateway" class="form-control" readonly />
                     <span asp-validation-for="DefaultGateway" class="text-danger"></span>
                 </div>
@@ -54,6 +63,6 @@
 
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.TerminalId" class="btn btn-primary btn-sm">Editar</a>
-    <a asp-action="Index" class="btn btn-secondary btn-sm">Voltar</a>
+        <a asp-action="Edit" asp-route-id="@Model?.TerminalId" class="btn btn-primary btn-sm">  @Localizer["BTN_SALVAR"]</a>
+        <a asp-action="Index" class="btn btn-secondary btn-sm">  @Localizer["BTN_VOLTAR"]</a>
 </div>
