@@ -121,8 +121,8 @@
     <value>Atención!!!</value>
   </data>
   <data name="ATENCAO1" xml:space="preserve">
-    <value>La exclusión de este Local resultará en la exclusión de los TERMINALES relacionados
-Está seguro de que desea eliminar ? LOCAL:</value>
+    <value>La exclusión de esta UBICACIÓN resultará en la exclusión de los TERMINALES relacionados
+Está seguro de que desea eliminar ?</value>
   </data>
   <data name="BTN_SALVAR" xml:space="preserve">
     <value>Excluir</value>
@@ -137,6 +137,6 @@ Está seguro de que desea eliminar ? LOCAL:</value>
     <value>Nombre</value>
   </data>
   <data name="TITULO" xml:space="preserve">
-    <value>Localidad &gt; Excluir</value>
+    <value>Ubicación &gt; Excluir</value>
   </data>
 </root>

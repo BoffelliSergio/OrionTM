@@ -133,6 +133,6 @@
     <value>Nome</value>
   </data>
   <data name="TITULO" xml:space="preserve">
-    <value>Editar Comando</value>
+    <value>Comando &gt; Editar</value>
   </data>
 </root>
