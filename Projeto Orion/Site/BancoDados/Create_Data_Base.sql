@@ -17,6 +17,7 @@ EXEC [OtmDataBase].[dbo].[sp_fulltext_database] @action = 'enable'
 end
 GO
 
+
 ALTER DATABASE [OtmDataBase] SET ANSI_NULL_DEFAULT OFF 
 GO
 
