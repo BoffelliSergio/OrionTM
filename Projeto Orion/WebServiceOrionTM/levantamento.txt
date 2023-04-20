@@ -1,0 +1,28 @@
+instancia a classe WS
+instancia a classe ZipLib
+
+PathUpload
+
+Lista de arquivos Fazer recursivo com subDiretórios
+string[] strListaArqs = Directory.GetFiles(this.prstrPathUpload, @"*_ReqOnl_*.*");
+GeraArquivoUpload()
+internal class UploadOnLine : Comum
+
+				
+AtmUplOnLineEstat_V100
+
+		private int printSequencia;
+		private short prshrStatusTransmissao;
+		private string prstrNomeArquivoTmp;
+		private string prstrNomeArquivo;
+		private Int64 prlngTamanhoTotal;
+		private string prstrCRC;
+		private short prshrFrequencia;
+		private string prstrEstagio;
+		private int printTamanhoLinkUsado = -1;
+		private enuAtmTipoAtualizUpload prenuTipoRequisicao;
+
+
+//Calcula o CRC do arquivo
+				if (!this.probjZipLib.CRC32File(this.prstrPathArqGerado))
+				  

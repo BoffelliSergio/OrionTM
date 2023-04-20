@@ -1,0 +1,511 @@
+02/02/2023 13:22:48 - execution time=02/02/2023 13:22:48
+02/02/2023 13:22:48 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 13:22:48 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 13:22:48 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 13:22:48 - ClearTrace() Starting daily clear...
+02/02/2023 13:22:48 - PerformCleaning() Executing perform cleaning...
+02/02/2023 13:22:48 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 13:22:50 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 13:23:30 - SendTaskInit()
+02/02/2023 13:24:06 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 13:24:14 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 13:24:16 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 13:24:18 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 13:25:52 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=A conexão subjacente estava fechada: Erro inesperado em um recebimento.   InnerException=System.IO.IOException: Não é possível ler os dados da conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   em System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 155
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 90
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 82
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 13:33:23 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 13:33:23 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=False
+02/02/2023 13:33:23 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =False
+02/02/2023 13:33:23 - ClearTrace() Starting daily clear...
+02/02/2023 13:33:23 - PerformCleaning() Executing perform cleaning...
+02/02/2023 13:33:23 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 13:33:23 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 13:33:27 - SendTaskInit()
+02/02/2023 13:33:35 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 13:33:47 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 13:33:49 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 13:33:50 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 13:35:30 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=A solicitação foi anulada: O tempo limite da operação foi atingido.   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 155
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 90
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 82
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 13:54:05 - execution time=02/02/2023 13:54:05
+02/02/2023 13:54:05 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 13:54:05 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 13:54:05 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 13:54:05 - ClearTrace() Starting daily clear...
+02/02/2023 13:54:05 - PerformCleaning() Executing perform cleaning...
+02/02/2023 13:54:05 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 13:54:27 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 13:54:31 - SendTaskInit()
+02/02/2023 13:54:39 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 13:54:43 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 13:54:52 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 13:54:55 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 13:56:35 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 91
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 83
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 14:01:55 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:01:55 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=False
+02/02/2023 14:02:25 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:02:25 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=False
+02/02/2023 14:02:56 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:02:56 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=False
+02/02/2023 14:03:02 - execution time=02/02/2023 14:03:02
+02/02/2023 14:03:02 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:03:02 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:03:02 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:03:02 - ClearTrace() Starting daily clear...
+02/02/2023 14:03:02 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:03:02 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:03:11 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:03:14 - SendTaskInit()
+02/02/2023 14:03:15 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:03:26 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:03:26 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 14:03:31 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 14:05:12 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 91
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 83
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 14:10:10 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:10:15 - SendTaskInit()
+02/02/2023 14:10:15 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:10:23 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:10:23 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 14:10:28 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 14:12:08 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 91
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 83
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 14:12:52 - execution time=02/02/2023 14:12:52
+02/02/2023 14:12:52 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:12:52 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:12:52 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:12:52 - ClearTrace() Starting daily clear...
+02/02/2023 14:12:52 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:12:52 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:14:48 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:14:50 - SendTaskInit()
+02/02/2023 14:16:37 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:16:46 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:16:53 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 14:16:53 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 14:18:03 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=Caminho não pode ser nulo.
+Nome do parâmetro: path   InnerException=   Source=mscorlib   StackTrace=   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   em System.IO.FileStream..ctor(String path, FileMode mode)
+   em OrionTMClient.Infra.DeserializeObj.Descerialize(String pastrFileSource, String pastrClassName) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Infra\DeserializeObj.cs:linha 64
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 91
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 83
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=Void Init(System.String, System.IO.FileMode, System.IO.FileAccess, Int32, Boolean, System.IO.FileShare, Int32, System.IO.FileOptions, SECURITY_ATTRIBUTES, System.String, Boolean)
+02/02/2023 14:18:30 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:18:34 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:18:40 - Source: WSConect_ConectMessenger() - Communicates in a commom environment. HTTP
+02/02/2023 14:18:56 - Source: Send() - OrionTMClient.Entity.OrionEquipment
+02/02/2023 14:19:04 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=Caminho não pode ser nulo.
+Nome do parâmetro: path   InnerException=   Source=mscorlib   StackTrace=   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   em System.IO.FileStream..ctor(String path, FileMode mode)
+   em OrionTMClient.Infra.DeserializeObj.Descerialize(String pastrFileSource, String pastrClassName) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Infra\DeserializeObj.cs:linha 64
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(OrionEquipment& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 91
+   em OrionTMClient.Controller.WSConect.ConectMessenger() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 83
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 165
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 58   TargetSite=Void Init(System.String, System.IO.FileMode, System.IO.FileAccess, Int32, Boolean, System.IO.FileShare, Int32, System.IO.FileOptions, SECURITY_ATTRIBUTES, System.String, Boolean)
+02/02/2023 14:20:08 - execution time=02/02/2023 14:20:08
+02/02/2023 14:20:08 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:20:08 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:20:08 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:20:08 - ClearTrace() Starting daily clear...
+02/02/2023 14:20:08 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:20:08 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:20:15 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:20:15 - SendTaskInit()
+02/02/2023 14:20:27 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:20:29 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:22:33 - execution time=02/02/2023 14:22:33
+02/02/2023 14:22:33 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:22:33 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:22:33 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:22:33 - ClearTrace() Starting daily clear...
+02/02/2023 14:22:33 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:22:33 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:23:01 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:23:04 - SendTaskInit()
+02/02/2023 14:25:10 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:28:22 - execution time=02/02/2023 14:28:22
+02/02/2023 14:28:22 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:28:22 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:28:22 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:28:22 - ClearTrace() Starting daily clear...
+02/02/2023 14:28:22 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:28:22 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:28:24 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:28:29 - SendTaskInit()
+02/02/2023 14:28:35 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:28:38 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:29:27 - execution time=02/02/2023 14:29:27
+02/02/2023 14:29:27 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:29:27 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:29:27 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:29:27 - ClearTrace() Starting daily clear...
+02/02/2023 14:29:27 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:29:27 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:29:30 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:29:31 - SendTaskInit()
+02/02/2023 14:29:35 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:29:37 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:33:55 - execution time=02/02/2023 14:33:55
+02/02/2023 14:33:55 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:33:55 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:33:55 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:33:55 - ClearTrace() Starting daily clear...
+02/02/2023 14:33:55 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:33:55 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:33:57 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:33:59 - SendTaskInit()
+02/02/2023 14:37:14 - execution time=02/02/2023 14:37:14
+02/02/2023 14:37:14 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:37:14 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:37:14 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:37:14 - ClearTrace() Starting daily clear...
+02/02/2023 14:37:14 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:37:14 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:37:22 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:37:24 - SendTaskInit()
+02/02/2023 14:37:43 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:37:46 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:39:11 - execution time=02/02/2023 14:39:11
+02/02/2023 14:39:11 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:39:11 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:39:11 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:39:11 - ClearTrace() Starting daily clear...
+02/02/2023 14:39:11 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:39:11 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:39:15 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:39:15 - SendTaskInit()
+02/02/2023 14:39:27 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:39:36 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:48:25 - execution time=02/02/2023 14:48:25
+02/02/2023 14:48:25 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:48:25 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:48:25 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:48:25 - ClearTrace() Starting daily clear...
+02/02/2023 14:48:25 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:48:25 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:48:44 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:48:44 - SendTaskInit()
+02/02/2023 14:48:54 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:48:57 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:49:52 - execution time=02/02/2023 14:49:52
+02/02/2023 14:49:52 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:49:52 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:49:52 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:49:52 - ClearTrace() Starting daily clear...
+02/02/2023 14:49:52 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:49:52 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:49:59 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:50:01 - SendTaskInit()
+02/02/2023 14:50:20 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:50:25 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:54:29 - execution time=02/02/2023 14:54:29
+02/02/2023 14:54:29 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:54:29 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:54:29 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:54:29 - ClearTrace() Starting daily clear...
+02/02/2023 14:54:29 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:54:29 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:54:32 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:54:32 - SendTaskInit()
+02/02/2023 14:55:35 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:55:53 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 14:56:51 - execution time=02/02/2023 14:56:51
+02/02/2023 14:56:51 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 14:56:51 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 14:56:51 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 14:56:51 - ClearTrace() Starting daily clear...
+02/02/2023 14:56:51 - PerformCleaning() Executing perform cleaning...
+02/02/2023 14:56:51 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 14:56:55 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 14:56:55 - SendTaskInit()
+02/02/2023 14:56:59 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 14:57:06 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:01:14 - execution time=02/02/2023 15:01:14
+02/02/2023 15:01:14 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:01:14 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:01:14 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:01:14 - ClearTrace() Starting daily clear...
+02/02/2023 15:01:14 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:01:14 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:01:16 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:01:17 - SendTaskInit()
+02/02/2023 15:01:23 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:01:27 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:02:03 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:10:06 - execution time=02/02/2023 15:10:06
+02/02/2023 15:10:06 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:10:06 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:10:06 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:10:06 - ClearTrace() Starting daily clear...
+02/02/2023 15:10:06 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:10:06 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:10:10 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:10:10 - SendTaskInit()
+02/02/2023 15:10:15 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:10:18 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:10:22 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:12:03 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=A solicitação foi anulada: A solicitação foi cancelada.   InnerException=System.IO.IOException: Não é possível ler os dados da conexão de transporte: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu. ---> System.Net.Sockets.SocketException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+   em System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 178
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 15:13:14 - execution time=02/02/2023 15:13:14
+02/02/2023 15:13:14 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:13:14 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:13:14 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:13:14 - ClearTrace() Starting daily clear...
+02/02/2023 15:13:14 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:13:14 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:13:18 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:13:19 - SendTaskInit()
+02/02/2023 15:13:25 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:13:27 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:13:29 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:15:09 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 178
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 15:20:40 - execution time=02/02/2023 15:20:40
+02/02/2023 15:20:40 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:20:40 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:20:40 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:20:40 - ClearTrace() Starting daily clear...
+02/02/2023 15:20:40 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:20:40 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:20:44 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:20:44 - SendTaskInit()
+02/02/2023 15:20:49 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:20:52 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:20:54 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:22:34 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 178
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 15:27:34 - execution time=02/02/2023 15:27:34
+02/02/2023 15:27:34 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:27:34 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:27:34 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:27:34 - ClearTrace() Starting daily clear...
+02/02/2023 15:27:34 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:27:34 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:27:36 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:27:37 - SendTaskInit()
+02/02/2023 15:27:41 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:27:45 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:27:46 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:29:27 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 178
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 15:29:53 - execution time=02/02/2023 15:29:53
+02/02/2023 15:29:53 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:29:53 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:29:53 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:29:53 - ClearTrace() Starting daily clear...
+02/02/2023 15:29:53 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:29:53 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:30:03 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:30:03 - SendTaskInit()
+02/02/2023 15:30:07 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:30:09 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:30:11 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:31:51 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=A solicitação foi anulada: A solicitação foi cancelada.   InnerException=System.IO.IOException: Não é possível ler os dados da conexão de transporte: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu. ---> System.Net.Sockets.SocketException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+   em System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 178
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 15:42:27 - execution time=02/02/2023 15:42:26
+02/02/2023 15:42:27 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 15:42:27 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 15:42:27 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 15:42:27 - ClearTrace() Starting daily clear...
+02/02/2023 15:42:27 - PerformCleaning() Executing perform cleaning...
+02/02/2023 15:42:27 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 15:42:30 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 15:42:30 - SendTaskInit()
+02/02/2023 15:42:35 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 15:42:37 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 15:42:38 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 15:44:18 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=A solicitação foi anulada: A solicitação foi cancelada.   InnerException=System.IO.IOException: Não é possível ler os dados da conexão de transporte: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu. ---> System.Net.Sockets.SocketException: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu
+   em System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   em System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 178
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)
+02/02/2023 16:07:29 - execution time=02/02/2023 16:07:29
+02/02/2023 16:07:29 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 16:07:29 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 16:07:29 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 16:07:29 - ClearTrace() Starting daily clear...
+02/02/2023 16:07:29 - PerformCleaning() Executing perform cleaning...
+02/02/2023 16:07:29 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 16:07:34 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 16:07:34 - SendTaskInit()
+02/02/2023 16:08:00 - execution time=02/02/2023 16:08:00
+02/02/2023 16:08:00 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 16:08:00 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 16:08:00 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 16:08:00 - ClearTrace() Starting daily clear...
+02/02/2023 16:08:00 - PerformCleaning() Executing perform cleaning...
+02/02/2023 16:08:00 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 16:08:03 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 16:08:03 - SendTaskInit()
+02/02/2023 16:08:44 - execution time=02/02/2023 16:08:44
+02/02/2023 16:08:44 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 16:08:44 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 16:08:44 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 16:08:44 - ClearTrace() Starting daily clear...
+02/02/2023 16:08:44 - PerformCleaning() Executing perform cleaning...
+02/02/2023 16:08:44 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 16:08:46 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 16:08:47 - SendTaskInit()
+02/02/2023 16:09:40 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 16:09:42 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 16:10:09 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 16:15:16 - execution time=02/02/2023 16:15:16
+02/02/2023 16:15:16 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 16:15:16 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 16:15:16 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 16:15:16 - ClearTrace() Starting daily clear...
+02/02/2023 16:15:16 - PerformCleaning() Executing perform cleaning...
+02/02/2023 16:15:16 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 16:16:02 - execution time=02/02/2023 16:16:02
+02/02/2023 16:16:02 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 16:16:02 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 16:16:02 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 16:16:02 - ClearTrace() Starting daily clear...
+02/02/2023 16:16:02 - PerformCleaning() Executing perform cleaning...
+02/02/2023 16:16:02 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 16:16:12 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 16:16:12 - SendTaskInit()
+02/02/2023 16:16:22 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 16:16:24 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 16:16:57 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=Referência de objeto não definida para uma instância de um objeto.   InnerException=   Source=OrionTMClient   StackTrace=   em OrionTMClient.Entity.OrionEquipment.set_Message(String value) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Entity\OrionEquipment.cs:linha 90
+   em OrionTMClient.Entity.UploadOnLineParameter..ctor(OrionEquipment paobjOrionEquipment) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Entity\UploadOnLineParameter.cs:linha 30
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 176
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=Void set_Message(System.String)
+02/02/2023 16:17:17 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 16:17:20 - SendTaskInit()
+02/02/2023 16:17:27 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 16:17:35 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 16:18:04 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=Referência de objeto não definida para uma instância de um objeto.   InnerException=   Source=OrionTMClient   StackTrace=   em OrionTMClient.Entity.OrionEquipment.set_Message(String value) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Entity\OrionEquipment.cs:linha 90
+   em OrionTMClient.Entity.UploadOnLineParameter..ctor(OrionEquipment paobjOrionEquipment) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Entity\UploadOnLineParameter.cs:linha 30
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 176
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=Void set_Message(System.String)
+02/02/2023 16:28:30 - execution time=02/02/2023 16:28:30
+02/02/2023 16:28:30 - Source: OTMClient_MainLoop() - MainLoop Version=  Config Timeout=30000ms
+02/02/2023 16:28:30 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient=True
+02/02/2023 16:28:30 - OTMClient_MainLoop() BlInitExecuteProbeOTMClient loop =True
+02/02/2023 16:28:30 - ClearTrace() Starting daily clear...
+02/02/2023 16:28:30 - PerformCleaning() Executing perform cleaning...
+02/02/2023 16:28:30 - PerformCleaning() Perform cleaning executed successfully!!!
+02/02/2023 16:28:34 - Source: WSConect_ConnectTask() - Communicates in a commom environment. HTTP
+02/02/2023 16:28:35 - SendTaskInit()
+02/02/2023 16:28:42 - Source: UploadOnLine_Execute() - Start the online upload process.
+02/02/2023 16:28:45 - Source: UploadOnLine_GetParameters() - 
+02/02/2023 16:28:59 - Source: Send() - OrionTMClient.Entity.UploadOnLineParameter
+02/02/2023 16:30:39 - Source=UploadOnLine_Execute() - Unexpected error occurs on Upload...   Message=O tempo limite da operação foi atingido   InnerException=   Source=System.Web.Services   StackTrace=   em System.Web.Services.Protocols.WebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(WebRequest request)
+   em System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   em OrionTMClient.WSOrion.MainServerOrionTM.Messenger(String pastrMsg) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Web References\WSOrion\Reference.cs:linha 93
+   em OrionTMClient.Controller.WSConect.Send(Object& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 156
+   em OrionTMClient.Controller.WSConect.Send(UploadOnLineParameter& paobjSend) na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\WSConect.cs:linha 130
+   em OrionTMClient.Controller.UploadOnLine.GetParameters() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 179
+   em OrionTMClient.Controller.UploadOnLine.Execute() na C:\Proijetos\OrionTMSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\Controller\UploadOnLine.cs:linha 61   TargetSite=System.Net.WebResponse GetWebResponse(System.Net.WebRequest)

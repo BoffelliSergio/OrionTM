@@ -1,0 +1,15 @@
+
+
+ /// <summary>
+        /// Calcula o tamanho do Buffer de leitura ou gravacao
+        /// O tamanho é passado em KBits (palngChunkSize) que é a capacidade do Link
+        /// Baseando-se num link de 32Kbits chegou-se a conclusao que o ideal seria um buffer de 3KBytes ou 3072 bytes
+        /// Tamanho maximo definido link de 256K 
+        /// </summary>
+        /// <param name="paintLinkSize">Tamanho do Link</param>
+        /// <returns>Tamanho do Buffer</returns>
+
+
+
+
+C:\Proijetos\Aguinaldo\2.00.08\Site\bin\AntiXSSLibrary.dll

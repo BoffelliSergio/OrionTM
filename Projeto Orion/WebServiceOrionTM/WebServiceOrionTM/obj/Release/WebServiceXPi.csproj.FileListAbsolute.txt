@@ -1,0 +1,965 @@
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll.config
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.pdb
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.dll
+C:\Projects\WebServiceXPi\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.pdb
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll.config
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.pdb
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.dll
+C:\Users\mvinicius\Documents\Projetos\WebServiceXPi_V1\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.pdb
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll.config
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.pdb
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.dll
+F:\Projetos\WebServiceXPi_V2\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.pdb
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll.config
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerRico.pdb
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.dll
+F:\Projetos\WebServiceXPi_V3\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerRico.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V4\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V5\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V6\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V7\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+F:\Simulador XP\Versões\WebServiceXPi_V8\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\WebServiceXPi_V10\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V12\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V13\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V14\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V15\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V16\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V17\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V18\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V19\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V20\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V21\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\csi.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.AppContext.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\vbc.rsp
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll.config
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\WebServiceServerSimuladorXP.pdb
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\Ionic.Zip.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\Newtonsoft.Json.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\System.Net.Http.Formatting.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\System.Web.Http.WebHost.xml
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Net.Http.Formatting.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceXPi.csprojResolveAssemblyReference.cache
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.dll
+C:\Projects\ProjetosXPi\WebServiceXPi_V23\WebServiceServerXPiV1\WebServiceXPi\obj\Release\WebServiceServerSimuladorXP.pdb

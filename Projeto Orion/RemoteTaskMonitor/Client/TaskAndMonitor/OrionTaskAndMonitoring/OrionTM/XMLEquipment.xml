@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Equipment>
+  <NumberEquipment>11</NumberEquipment>
+  <NameEquipment>Test1</NameEquipment>
+  <SerialNumber>2222222222</SerialNumber>
+  <Model>Model test</Model>
+  <Version>1.00.00</Version>
+  <LastConnection>2022-11-01 00:00:00.000</LastConnection>
+  <GeneralInformation>Test Orion</GeneralInformation>
+  <LastDailyUpload>2022-11-01</LastDailyUpload>
+  <NetWorkIP>10.110.155.50</NetWorkIP>
+  <NetWorkMask>255.255.224.0</NetWorkMask>
+  <NetWorkProxy></NetWorkProxy>
+  <NetWorkGateway>10.110.155.1</NetWorkGateway>
+  <NetWorkServerURL>http://localhost:63241/MainServerOrionTM.asmx</NetWorkServerURL>
+  <LogAmoutDaysToDelete>30</LogAmoutDaysToDelete>
+  <PublicToken>3BFB2BC0-F6E3-46C1-8278-3666003CE4B8</PublicToken>
+  <InstalationPackage>N</InstalationPackage>
+  <InstalationDateTime>2023-02-20 22:00:00.000</InstalationDateTime>
+  <BOOT>N</BOOT> 
+</Equipment>
+

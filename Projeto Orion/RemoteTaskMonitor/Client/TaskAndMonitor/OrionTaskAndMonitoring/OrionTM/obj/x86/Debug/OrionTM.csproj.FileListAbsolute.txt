@@ -1,0 +1,4 @@
+D:\Aguinaldo\OrionSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\bin\Debug\OrionTM.exe
+D:\Aguinaldo\OrionSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\bin\Debug\OrionTM.pdb
+D:\Aguinaldo\OrionSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\obj\x86\Debug\OrionTM.exe
+D:\Aguinaldo\OrionSolution\RemoteTaskMonitor\Client\TaskAndMonitor\OrionTaskAndMonitoring\OrionTM\obj\x86\Debug\OrionTM.pdb

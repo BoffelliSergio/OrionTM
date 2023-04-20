@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Temp\Publish\WebServiceXPi</_PublishTargetUrl>
+    <History>True|2023-02-23T01:12:29.0428417Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AntiXssLibrary.dll">
+      <publishTime>06/30/2017 20:36:26</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>09/20/2012 13:50:22</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>07/20/2017 11:21:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2016 03:10:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/23/2022 23:10:26</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Net.Http.Formatting.resources.dll">
+      <publishTime>01/28/2015 04:02:50</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Http.resources.dll">
+      <publishTime>01/28/2015 04:03:02</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Http.WebHost.resources.dll">
+      <publishTime>01/28/2015 04:03:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/SharpCompress.dll">
+      <publishTime>06/09/2017 00:41:48</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>05/27/2022 20:41:54</publishTime>
+    </File>
+    <File Include="bin/WebServiceServerComparador.dll">
+      <publishTime>02/24/2018 15:17:30</publishTime>
+    </File>
+    <File Include="bin/WebServiceServerExcelsior.dll">
+      <publishTime>02/15/2018 14:28:20</publishTime>
+    </File>
+    <File Include="bin/WebServiceServerMain.dll">
+      <publishTime>07/24/2017 13:29:05</publishTime>
+    </File>
+    <File Include="bin/WebServiceServerRico.dll">
+      <publishTime>01/30/2019 15:53:50</publishTime>
+    </File>
+    <File Include="bin/WebServiceServerSimuladorXP.dll">
+      <publishTime>05/10/2019 09:25:17</publishTime>
+    </File>
+    <File Include="bin/webServicesOrionTM.dll">
+      <publishTime>02/22/2023 21:37:40</publishTime>
+    </File>
+    <File Include="bin/webServicesOrionTM.pdb">
+      <publishTime>02/22/2023 21:37:40</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/09/2022 17:12:42</publishTime>
+    </File>
+    <File Include="MainServer.asmx">
+      <publishTime>03/23/2017 17:05:14</publishTime>
+    </File>
+    <File Include="MainServerComparador.asmx">
+      <publishTime>02/14/2018 18:19:55</publishTime>
+    </File>
+    <File Include="MainServerOrionTM.asmx">
+      <publishTime>10/09/2022 17:13:35</publishTime>
+    </File>
+    <File Include="MainServerRico.asmx">
+      <publishTime>07/18/2018 13:08:04</publishTime>
+    </File>
+    <File Include="MainServerXPi.asmx">
+      <publishTime>01/08/2019 20:21:57</publishTime>
+    </File>
+    <File Include="MainServerXPiJson.asmx">
+      <publishTime>02/01/2019 15:06:04</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/14/2023 22:43:56</publishTime>
+    </File>
+    <File Include="TemplateFiles.xml">
+      <publishTime>03/24/2017 09:01:56</publishTime>
+    </File>
+    <File Include="TesteWebService.asmx">
+      <publishTime>01/21/2023 16:54:41</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/22/2023 22:12:28</publishTime>
+    </File>
+    <File Include="XmlFiles.xml">
+      <publishTime>09/11/2017 18:20:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

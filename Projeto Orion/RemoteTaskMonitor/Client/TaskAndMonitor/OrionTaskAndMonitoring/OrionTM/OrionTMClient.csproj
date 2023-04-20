@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{734DB88D-F7F5-4026-9056-404C1B2440DE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrionTMClient</RootNamespace>
+    <AssemblyName>OrionTMClient</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OrionTMClient.Controller.TestConsole</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ClearTrace.cs" />
+    <Compile Include="Controller\DownloadPackage.cs" />
+    <Compile Include="Controller\ExecReset.cs" />
+    <Compile Include="Controller\ExecScript.cs" />
+    <Compile Include="Controller\InstallPackage.cs" />
+    <Compile Include="Controller\OTMClientInterface.cs" />
+    <Compile Include="Controller\Common.cs" />
+    <Compile Include="Controller\Core.cs" />
+    <Compile Include="Controller\OTMClient.cs" />
+    <Compile Include="Controller\OTMHeartBeat.cs" />
+    <Compile Include="Controller\OTMInstallPackage.cs" />
+    <Compile Include="Controller\ServiceControler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controller\TestConsole.cs" />
+    <Compile Include="Controller\UploadOnLine.cs" />
+    <Compile Include="Controller\WSConect.cs" />
+    <Compile Include="Entity\DownloadPackageParameter.cs" />
+    <Compile Include="Entity\DownloadPackageSend.cs" />
+    <Compile Include="Entity\DownloadPackageStatistic.cs" />
+    <Compile Include="Entity\EquipmentMsgStatus.cs" />
+    <Compile Include="Entity\OrionEquipment.cs" />
+    <Compile Include="Entity\ResetParameter.cs" />
+    <Compile Include="Entity\ResetStatistic.cs" />
+    <Compile Include="Entity\ScriptParameter.cs" />
+    <Compile Include="Entity\ScriptStatistic.cs" />
+    <Compile Include="Entity\UploadOnLineParameter.cs" />
+    <Compile Include="Entity\UploadOnLineSend.cs" />
+    <Compile Include="Entity\UploadOnLineESatistic.cs" />
+    <Compile Include="Infra\CertificateValidation.cs" />
+    <Compile Include="Infra\ConfigParameters.cs" />
+    <Compile Include="Infra\DeserializeObject.cs" />
+    <Compile Include="Infra\FindFileByDate.cs" />
+    <Compile Include="Infra\GenerateLogEvent.cs" />
+    <Compile Include="Infra\LocalLog.cs" />
+    <Compile Include="Infra\SerializeObject.cs" />
+    <Compile Include="Infra\SystemEvent.cs" />
+    <Compile Include="Infra\ZipLib.cs" />
+    <Compile Include="Infra\ZipLib\BZip2\BZip2.cs" />
+    <Compile Include="Infra\ZipLib\BZip2\BZip2Constants.cs" />
+    <Compile Include="Infra\ZipLib\BZip2\BZip2Exception.cs" />
+    <Compile Include="Infra\ZipLib\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Infra\ZipLib\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Infra\ZipLib\Checksums\Adler32.cs" />
+    <Compile Include="Infra\ZipLib\Checksums\CRC32.cs" />
+    <Compile Include="Infra\ZipLib\Checksums\IChecksum.cs" />
+    <Compile Include="Infra\ZipLib\Checksums\StrangeCRC.cs" />
+    <Compile Include="Infra\ZipLib\Core\FileSystemScanner.cs" />
+    <Compile Include="Infra\ZipLib\Core\INameTransform.cs" />
+    <Compile Include="Infra\ZipLib\Core\NameFilter.cs" />
+    <Compile Include="Infra\ZipLib\Core\PathFilter.cs" />
+    <Compile Include="Infra\ZipLib\Encryption\PkzipClassic.cs" />
+    <Compile Include="Infra\ZipLib\GZip\GZIPConstants.cs" />
+    <Compile Include="Infra\ZipLib\GZip\GZipException.cs" />
+    <Compile Include="Infra\ZipLib\GZip\GzipInputStream.cs" />
+    <Compile Include="Infra\ZipLib\GZip\GzipOutputStream.cs" />
+    <Compile Include="Infra\ZipLib\SharpZipBaseException.cs" />
+    <Compile Include="Infra\ZipLib\Tar\InvalidHeaderException.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarArchive.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarBuffer.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarEntry.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarException.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarHeader.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarInputStream.cs" />
+    <Compile Include="Infra\ZipLib\Tar\TarOutputStream.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\Deflater.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\Inflater.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="Infra\ZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="Infra\ZipLib\Zip\FastZip.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipConstants.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipEntry.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipException.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipFile.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipInputStream.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipNameTransform.cs" />
+    <Compile Include="Infra\ZipLib\Zip\ZipOutputStream.cs" />
+    <Compile Include="Interface\EnumsOrion.cs" />
+    <Compile Include="Model\Orion.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommonViews.cs" />
+    <Compile Include="Web References\WSOrion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSTeste\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reset\ShudownEquipment.bat" />
+    <None Include="Web References\WSTeste\TesteWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSOrion\MainServerOrionTM.wsdl" />
+    <None Include="Web References\WSOrion\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSTeste\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSTeste\TesteWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:63241/MainServerOrionTM.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSOrion\</RelPath>
+      <UpdateFromURL>http://localhost:63241/MainServerOrionTM.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>OrionTMClient_WSOrion_MainServerOrionTM</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:63241/TesteWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSTeste\</RelPath>
+      <UpdateFromURL>http://localhost:63241/TesteWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>OrionTMClient_WSTeste_TesteWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WSOrion\MainServerOrionTM.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reset\Shutdown.exe" />
+    <Content Include="XMLEquipment.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DownloadPackage\Temp\" />
+    <Folder Include="Script\" />
+    <Folder Include="UploadOnline\Temp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

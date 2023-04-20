@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Orion Equipment Messenger</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Messenger">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pastrMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MessengerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MessengerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaTaskJS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strIdEquipment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPublKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPrivKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strTask" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaTaskJSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerificaTaskJSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecebeHeartBeatJS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strIdEquipment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecebeHeartBeatJSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecebeHeartBeatJSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MessengerSoapIn">
+    <wsdl:part name="parameters" element="tns:Messenger" />
+  </wsdl:message>
+  <wsdl:message name="MessengerSoapOut">
+    <wsdl:part name="parameters" element="tns:MessengerResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificaTaskJSSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificaTaskJS" />
+  </wsdl:message>
+  <wsdl:message name="VerificaTaskJSSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificaTaskJSResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecebeHeartBeatJSSoapIn">
+    <wsdl:part name="parameters" element="tns:RecebeHeartBeatJS" />
+  </wsdl:message>
+  <wsdl:message name="RecebeHeartBeatJSSoapOut">
+    <wsdl:part name="parameters" element="tns:RecebeHeartBeatJSResponse" />
+  </wsdl:message>
+  <wsdl:message name="MessengerHttpGetIn">
+    <wsdl:part name="pastrMsg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MessengerHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerificaTaskJSHttpGetIn">
+    <wsdl:part name="strIdEquipment" type="s:string" />
+    <wsdl:part name="strPublKey" type="s:string" />
+    <wsdl:part name="strPrivKey" type="s:string" />
+    <wsdl:part name="strTask" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerificaTaskJSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RecebeHeartBeatJSHttpGetIn">
+    <wsdl:part name="strIdEquipment" type="s:string" />
+    <wsdl:part name="strVersion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecebeHeartBeatJSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MessengerHttpPostIn">
+    <wsdl:part name="pastrMsg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MessengerHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerificaTaskJSHttpPostIn">
+    <wsdl:part name="strIdEquipment" type="s:string" />
+    <wsdl:part name="strPublKey" type="s:string" />
+    <wsdl:part name="strPrivKey" type="s:string" />
+    <wsdl:part name="strTask" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerificaTaskJSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RecebeHeartBeatJSHttpPostIn">
+    <wsdl:part name="strIdEquipment" type="s:string" />
+    <wsdl:part name="strVersion" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RecebeHeartBeatJSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="MainServerOrionTMSoap">
+    <wsdl:operation name="Messenger">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Messengers</wsdl:documentation>
+      <wsdl:input message="tns:MessengerSoapIn" />
+      <wsdl:output message="tns:MessengerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Tasks Jason</wsdl:documentation>
+      <wsdl:input message="tns:VerificaTaskJSSoapIn" />
+      <wsdl:output message="tns:VerificaTaskJSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Tasks Jason</wsdl:documentation>
+      <wsdl:input message="tns:RecebeHeartBeatJSSoapIn" />
+      <wsdl:output message="tns:RecebeHeartBeatJSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MainServerOrionTMHttpGet">
+    <wsdl:operation name="Messenger">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Messengers</wsdl:documentation>
+      <wsdl:input message="tns:MessengerHttpGetIn" />
+      <wsdl:output message="tns:MessengerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Tasks Jason</wsdl:documentation>
+      <wsdl:input message="tns:VerificaTaskJSHttpGetIn" />
+      <wsdl:output message="tns:VerificaTaskJSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Tasks Jason</wsdl:documentation>
+      <wsdl:input message="tns:RecebeHeartBeatJSHttpGetIn" />
+      <wsdl:output message="tns:RecebeHeartBeatJSHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MainServerOrionTMHttpPost">
+    <wsdl:operation name="Messenger">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Messengers</wsdl:documentation>
+      <wsdl:input message="tns:MessengerHttpPostIn" />
+      <wsdl:output message="tns:MessengerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Tasks Jason</wsdl:documentation>
+      <wsdl:input message="tns:VerificaTaskJSHttpPostIn" />
+      <wsdl:output message="tns:VerificaTaskJSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Equipments Tasks Jason</wsdl:documentation>
+      <wsdl:input message="tns:RecebeHeartBeatJSHttpPostIn" />
+      <wsdl:output message="tns:RecebeHeartBeatJSHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MainServerOrionTMSoap" type="tns:MainServerOrionTMSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Messenger">
+      <soap:operation soapAction="http://tempuri.org/Messenger" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <soap:operation soapAction="http://tempuri.org/VerificaTaskJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <soap:operation soapAction="http://tempuri.org/RecebeHeartBeatJS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MainServerOrionTMSoap12" type="tns:MainServerOrionTMSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Messenger">
+      <soap12:operation soapAction="http://tempuri.org/Messenger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <soap12:operation soapAction="http://tempuri.org/VerificaTaskJS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <soap12:operation soapAction="http://tempuri.org/RecebeHeartBeatJS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MainServerOrionTMHttpGet" type="tns:MainServerOrionTMHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Messenger">
+      <http:operation location="/Messenger" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <http:operation location="/VerificaTaskJS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <http:operation location="/RecebeHeartBeatJS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MainServerOrionTMHttpPost" type="tns:MainServerOrionTMHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Messenger">
+      <http:operation location="/Messenger" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaTaskJS">
+      <http:operation location="/VerificaTaskJS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecebeHeartBeatJS">
+      <http:operation location="/RecebeHeartBeatJS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MainServerOrionTM">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Orion Equipment Messenger</wsdl:documentation>
+    <wsdl:port name="MainServerOrionTMSoap" binding="tns:MainServerOrionTMSoap">
+      <soap:address location="http://localhost:63241/MainServerOrionTM.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MainServerOrionTMSoap12" binding="tns:MainServerOrionTMSoap12">
+      <soap12:address location="http://localhost:63241/MainServerOrionTM.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MainServerOrionTMHttpGet" binding="tns:MainServerOrionTMHttpGet">
+      <http:address location="http://localhost:63241/MainServerOrionTM.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MainServerOrionTMHttpPost" binding="tns:MainServerOrionTMHttpPost">
+      <http:address location="http://localhost:63241/MainServerOrionTM.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
